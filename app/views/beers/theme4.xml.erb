@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<wordrad_cfg>
+
+  <% font = "Taco_Salad"  %>     
+  <% x = 1.25  %>
+  <altw val=<%="'#{choose 'A 2E 62 6A 8A A3 A4 A6 A7 CA E6'}'" %>  />     
+  <textr_fg source="g_0a6c787f6f.jpg" />
+  <textr_bg source="g_94e8cd25f3.jpg" />
+  <textr_fgn source="fgn_a9e7ec1fd.jpg" color="#8b008b" />
+  <textr_fgn source="g_94e8cd25f3.jpg" />
+  <light val="textr_fg" />        
+         
+  <%= render :partial => @template, locals: {font: font, x: x} %>
+
+</wordrad_cfg>       

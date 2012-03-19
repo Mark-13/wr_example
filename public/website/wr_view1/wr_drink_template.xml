@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<wordrad_cfg>
+    <title>{{ drink.name }}</title>
+    <font_dir path="{{P}}" />
+    <textr_dir path="{{P}}" />
+    <img_dir path="{{P}}" />
+    <textr_fg source="g_3f9f4a5816.jpg" />
+    <textr_bg source="g_2e0ea8a894.jpg" />
+    <light val="textr_fg" />
+    <altw val="{{wyswyg}}" />
+    <img n="1" source="img_2f4188dfb8.jpg" width="439" height="600" offset="29" blendMode="ERASE"/>
+    <img n="1" source="{{ drink.picture.url }}" width="440" e_wyswyg="true" height="602" offset="29" border_pct="11" blendMode="NORMAL" type="APP" />
+    <text_width val="0" />
+    <font_swf source="Cooper_Black_I.swf" />
+    <font_swf source="Cooper_Black_I_A0.swf" />
+    <font_swf source="Cooper_Black.swf" />
+    <font_swf source="Cooper_Black_A0.swf" />
+    <text_scale val="6.666000" scale0="1.333333" max_sz="563.522817" />
+    <textr_fgn source="fgn_4a31cdf5b5.jpg" color="#8b008b" span="227,231;235,261;265,268;272,275;279,283;" />
+    <textr_fgn source="g_2e0ea8a894.jpg" />
+    <a href="{{prev_drink.slug}}~{{theme}}.xml" wr_n="2">Prev</a>
+    <a href="{{next_drink.slug}}~{{theme}}.xml" wr_n="3">Next</a>
+    <a href="/website_wr1/default~{{theme}}.xml" wr_n="4">Beer</a>
+    <a href="{{drink.slug}}~{{next_theme}}.xml" wr_n="0">Theme</a>
+    <a href="{{drink.slug}}~{{theme}}.xml" wr_n="1">List of All Drinks Available</a>
+    <!-- a href="notabeer/all.xml" wr_n="1">List of All Drinks Available</a> -->
+    <htmlText><![CDATA[<p align="center" /><font face="Cooper Black"><font size="20"><br></font><font size="36">You've <font color="#8b008b">just</font> been offered...<br><font face="imgfont0"><font size="563.512817">&#x57;</font></font><br><font size="20">A NonBeer over IP<font size="24"><br><p align="left" /><font size="20"><font color="#8b008b">more</font> precisely: <i>{{ drink.name }}</i><font size="24"><i><br></i><p align="right" /><font size="15"><font color="#8b008b">Credits:</font> {{ drink.picture.credits }}<br><p align="center" /><br><font color="#8b008b">Theme<font color="#000000"> | <font color="#8b008b">List of All Drinks Available<font color="#000000"> | <font color="#8b008b">Prev<font color="#000000"> | <font color="#8b008b">Next<font color="#000000"> | <font color="#8b008b">Beer<font color="#000000"><br><br><br><font face="imgfont0"><font size="21.529560">&#x74;</font></font><br>]]></htmlText>
+</wordrad_cfg>

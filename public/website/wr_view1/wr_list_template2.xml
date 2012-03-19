@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<wordrad_cfg>
+    <title>Beer List</title>
+    <font_dir path="{{P}}" />
+    <textr_dir path="{{P}}" />
+    <img_dir path="{{P}}" />
+    <textr_fg source="g_919c464ba4.jpg" />
+    <textr_bg source="g_b4ca484dc1.jpg" />
+    <light val="textr_fg" />
+    <altw val="AC    BFSBxax" />
+    <text_width val="0" />
+    <font_swf source="Platinum_Hub_Caps_Solid.swf" />
+    <font_swf source="Platinum_Hub_Caps_Solid_A0.swf" />
+    <text_scale val="2.667000" scale0="1.333333" max_sz="36.010000" />
+    <textr_fgn source="fgn_86a580ff4.jpg" color="#8b008b" />
+    <textr_fgn source="g_b4ca484dc1.jpg" />
+    <htmlText><![CDATA[
+    <font face="Platinum Hub Caps Solid"><font size="36">The Beer List<br><br>
+    {% regroup object_list by initial as initial_list %}
+    {% for initial in initial_list %}
+       <font size="30">{{ initial.grouper }}</font><br>
+       <textformat  leftmargin="50">
+       {% for beer in initial.list %}
+       <font size="20" color="#8b008b"><li><a href="{{ beer.slug }}~{{theme}}.xml">{{ beer.name }}</a></li>
+       </font>{% endfor %}
+       </textformat>
+    {% endfor %}]]>
+    </htmlText>
+</wordrad_cfg>

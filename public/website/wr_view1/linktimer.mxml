@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- Simple example to demonstrate the Button control. -->
+<mx:Application 
+  xmlns:mx="http://www.adobe.com/2006/mxml"
+  initialize=  "Init();"
+  visible="false" 
+>
+
+    <mx:Script>
+        <![CDATA[
+           
+    	    import flextrace.Dumper;
+	    import my_components.CanvasWR;   
+
+	    private var txt_event:TextEvent = new TextEvent(TextEvent.LINK,false,false,"next.xml");
+
+            private var timer:Timer = new Timer(10000);
+                        
+            private function Init():void {
+              timer.addEventListener(TimerEvent.TIMER,timer_handlr);      
+              timer.start(); 
+            }
+
+	   private function timer_handlr(event:Event) {
+	     	     	    	  	     
+	     this.dispatchEvent(new TextEvent(TextEvent.LINK,true,false,"next.xml"));
+	   }
+                                               
+      ]]>
+    </mx:Script>
+
+</mx:Application>

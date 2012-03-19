@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<wordrad_cfg>
+
+  <% font = "Xcelsion" %>     
+  <% x = 1.0  %>
+  <altw val=<%="'#{choose '68 8A 2C A8 E6 E8 A0 62 86'}'" %>  />     
+  <textr_fg source="g_dd924e8a86.jpg" />
+  <textr_bg source="g_f473920e94.jpg" />
+  <textr_fgn source="fgn_b6a58ce3b.jpg" color="#8b008b" />
+  <textr_fgn source="g_f473920e94.jpg" />
+  <light val="textr_fg" />        
+         
+  <%= render :partial => @template, locals: {font: font, x: x} %>
+
+</wordrad_cfg>       

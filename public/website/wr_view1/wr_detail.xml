@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<wordrad_cfg>
+    <title>beer_list_wr</title>
+    <main_html source="wr_detail.html" />
+    <main_swf source="rad_5xf.swf" />
+    <main_pi_swf source="playerproductinstall.swf" />
+    <main_js source="ac_oetags.js" />
+    <main_addr_js source="swfaddress.js" />
+    <main_txt source="txt_wr_detail.dat" />
+    <font_dir path="" />
+    <textr_dir path="" />
+    <img_dir path="" />
+    <textr_fg source="g_3f9f4a5816.jpg" />
+    <textr_bg source="g_2e0ea8a894.jpg" />
+    <light val="textr_fg" />
+    <no_scrl_texture />
+    <embed_alpha g="FGND" min_pct="0" />
+    <img n="1" source="img_63a3671c05.jpg" width="439" height="600" offset="29" blendMode="NORMAL" />
+    <img n="1" source="../media/beers/leffe-9.jpg" width="439" height="600" offset="29" border_pct="11" blendMode="NORMAL" type="APP" e_alpha="true" e_wyswyg="true" />
+    <img n="2" source="img_2f4188dfb8.jpg" width="33" height="35" offset="286" blendMode="" type="APP" />
+    <text_width val="0" />
+    <font_swf source="Cooper_Black_I.swf" />
+    <font_swf source="Cooper_Black_I_A0.swf" />
+    <font_swf source="Cooper_Black.swf" />
+    <font_swf source="Cooper_Black_A0.swf" />
+    <font_swf source="Bullet.swf" />
+    <font_swf source="Bullet_A0.swf" />
+    <text_scale val="6.667000" scale0="1.333333" max_sz="561.650686" />
+    <font_swf source="imgfont0.swf" />
+    <font_swf source="imgfont1.swf" />
+    <font_swf source="imgfont2.swf" />
+    <font_swf source="imgfont3.swf" />
+    <textr_fgn source="fgn_4a31cdf5b5.jpg" color="#8b008b" span="227,231;235,261;265,268;272,275;279,283;" />
+    <textr_fgn source="g_2e0ea8a894.jpg" />
+    <a href="next.xml" wr_n="1">Next</a>
+    <a href="prev.xml" wr_n="0">Prev</a>
+    <a href="default.xml" wr_n="4">Drink</a>
+    <a href="default.xml" wr_n="2">About</a>
+    <a href="default.xml" wr_n="3">List of All Beers Available</a>
+    <htmlText><![CDATA[<p align="center" /><font face="Cooper Black"><font size="36"><br>You've just been offered...<br><font face="imgfont0"><font size="561.640686">&#x57;</font></font><br><font size="20">A Beer over IP<font size="24"><br><p align="left" /><br><font size="20">more precisely: <i>Blackfriar Scottish Ale</i><font size="24"><i><br></i><br><p align="right" /><font size="15">Credits: Blackfriar Scottish Ale, by 'mezzoblue'. Creative Commons licensed BY-NC-ND<br>(http://www.flickr.com/photos/mezzoblue/1465331742/)<br><p align="center" /><br><font color="#8b008b">About<font color="#000000"> | <font color="#8b008b">List of All Beers Available<font color="#000000"> | <font color="#8b008b">Prev<font color="#000000"> | <font color="#8b008b">Next<font color="#000000"> | <font color="#8b008b">Drink<font color="#000000"><br><br><font face="imgfont0"><font size="32.762375">&#x69;</font></font><br>]]></htmlText>
+</wordrad_cfg>

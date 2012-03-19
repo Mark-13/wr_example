@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{{ drink.name }}</title>
+<script src="{{P}}ac_oetags.js" language="javascript"></script>
+<script src="{{P}}swfaddress.js" language="javascript"></script>
+<style>
+body { margin: 0px; overflow:hidden }
+</style>
+          
+<script language="JavaScript" type="text/javascript">
+
+var requiredMajorVersion = 10;
+var requiredMinorVersion = 0;
+var requiredRevision = 0;
+
+function getBrowserType() {
+  return navigator.appName;
+}
+
+function getBrowserName() {
+  return navigator.userAgent;
+}
+
+function removeIFrame(iFrameId) {
+  var frameContainerRef=document.getElementById("iFrameContainer");
+  var divFrameId = "c" + iFrameId;
+  var divFrame=document.getElementById(divFrameId);
+  frameContainerRef.removeChild(divFrame);
+}
+
+function moveIFrame(iFrameId,x,y,w,h) {
+  var divFrameId = "c" + iFrameId;
+  var divFrame=document.getElementById(divFrameId);
+  if (divFrame == null) return;
+  divFrame.style.left=x;
+  divFrame.style.top=y;
+  var iFrameRef=document.getElementById(iFrameId);
+  iFrameRef.width=w;
+  iFrameRef.height=h;
+}
+
+function hideIFrame(iFrameId){
+  var divFrameId = "c" + iFrameId;
+  var divFrame=document.getElementById(divFrameId);
+  if (divFrame == null) return;
+  divFrame.style.visibility="hidden";
+}
+
+function showIFrame(iFrameId){
+  var divFrameId = "c" + iFrameId;
+  var divFrame=document.getElementById(divFrameId);
+  if (divFrame == null) return;
+  divFrame.style.visibility="visible";
+}
+
+function loadIFrame(iFrameId,url,border){
+
+  var iFrameSrc = "<iframe id='" + iFrameId + "' src='" + url + "' frameborder='" + border + "'></iframe>"
+  var divFrameId = "c" + iFrameId;
+
+  if (navigator.appName == 'Netscape') {
+	var divFrame = document.createElement('div');
+	divFrame.setAttribute('id',divFrameId);
+	divFrame.setAttribute('style','position:absolute;background-color:transparent;border:' + border + 'px;visibility:hidden;');
+  } else {
+	var divFrame = document.createElement("<div id='"+ divFrameId + "' style='position:absolute;background-color:transparent;border:" + border + "px;visibility:hidden;'></div>");
+  }
+
+  document.getElementById("iFrameContainer").appendChild(divFrame);
+  document.getElementById(divFrameId).innerHTML = iFrameSrc;
+
+}
+
+</script>
+</head>
+
+<body scroll="no">
+<script language="JavaScript" type="text/javascript">
+<!--
+// Version check for the Flash Player that has the ability to start Player Product Install (6.0r65)
+var hasProductInstall = DetectFlashVer(6, 0, 65);
+
+// Version check based upon the values defined in globals
+var hasRequestedVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+
+
+// Check to see if a player with Flash Product Install is available and the version does not meet the requirements for playback
+if ( hasProductInstall && !hasRequestedVersion ) {
+	// MMdoctitle is the stored document.title value used by the installation process to close the window that started the process
+	// This is necessary in order to close browser windows that are still utilizing the older version of the player after installation has completed
+	// DO NOT MODIFY THE FOLLOWING FOUR LINES
+	// Location visited after installation is complete if installation is required
+	var MMPlayerType = (isIE == true) ? "ActiveX" : "PlugIn";
+	var MMredirectURL = window.location;
+    document.title = document.title.slice(0, 47) + " - Flash Player Installation";
+    var MMdoctitle = document.title;
+
+	AC_FL_RunContent(
+		"src", "playerProductInstall",
+		"FlashVars", "MMredirectURL="+MMredirectURL+'&MMplayerType='+MMPlayerType+'&MMdoctitle='+MMdoctitle+"",
+		"width", "100%",
+		"height", "100%",
+		"align", "middle",
+		"id", "IFrameDemo",
+		"quality", "high",
+		"bgcolor", "${bgcolor}",
+		"name", "IFrameDemo",
+		"allowScriptAccess","sameDomain",
+		"type", "application/x-shockwave-flash",
+		"pluginspage", "http://www.adobe.com/go/getflashplayer"
+	);
+}   else if (hasRequestedVersion) {
+	// if we've detected an acceptable version
+	// embed the Flash Content SWF when all tests are passed
+	AC_FL_RunContent(
+			"src", "{{P}}rad_3xf",
+			"width", "100%",
+			"height", "100%",
+			"align", "middle",
+			"id", "wr_detail",
+			"quality", "high",
+			"bgcolor", "#869ca7",
+			"name", "wr_detail",
+			"flashvars",'cfg={{drink.slug}}~{{theme}}.xml',
+			//"flashvars",'historyUrl=history.htm&lconid=' + lc_id + '',
+			"allowScriptAccess","sameDomain",
+			"type", "application/x-shockwave-flash",
+			"pluginspage", "http://www.adobe.com/go/getflashplayer"
+
+	);
+  } else {  // flash is too old or we can't detect the plugin
+    var alternateContent = 'Alternate HTML content should be placed here. '
+  	+ 'This content requires the Adobe Flash Player. '
+   	+ '<a href=http://www.adobe.com/go/getflash/>Get Flash</a>';
+    document.write(alternateContent);  // insert non-flash content
+  }
+// -->
+</script>
+   <noscript>
+  	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+			id="wr_detail" width="100%" height="100%"
+			codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab">
+			<param name="movie" value="rad_4xf.swf" />
+			<param name="quality" value="high" />
+			<param name="bgcolor" value="${bgcolor}" />
+			<param name="allowScriptAccess" value="sameDomain" />
+            <param name="flashvars" value="{{drink.slug}}~{{theme}}.xml" />
+			<embed src="rad_4xf.swf" quality="high" bgcolor="#869ca7"
+				FlashVars="cfg={{drink.slug}}~{{theme}}.xml"
+				width="100%" height="100%" name="wr_detail" align="middle"
+				play="true"
+				loop="false"
+				quality="high"
+				allowScriptAccess="sameDomain"
+				type="application/x-shockwave-flash"
+				pluginspage="http://www.adobe.com/go/getflashplayer">
+			</embed>
+	</object>
+   </noscript>
+<!--
+<iframe name="_history" src="history.htm" frameborder="0" scrolling="no" width="22" height="0"></iframe>
+<div id="myFrame" style="position:absolute;background-color:transparent;border:0px;visibility:hidden;"></div>
+-->
+<div id="iFrameContainer">
+</div>
+</body>
+</html>

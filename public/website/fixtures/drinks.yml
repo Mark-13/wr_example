@@ -1,0 +1,9 @@
+id_1:
+  id: 1
+  name: Drink
+  slug: default
+
+id_2:
+  id: 2
+  name: Vittel
+  slug: vittel

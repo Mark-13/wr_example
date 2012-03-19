@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<wordrad_cfg>
+    <title>{% load filters %}{{ drink.name }}</title>
+    <main_swf source="rad_3xf.swf" />
+    <font_dir path="{{P}}" />
+    <textr_dir path="{{P}}" />
+    <img_dir path="{{P}}" />
+    <textr_fg source="g_b8ea7c319f.jpg" />
+    <textr_bg source="g_94e8cd25f3.jpg" />
+    <light val="textr_fg" />
+    <altw val="{{ 'A 2E 62 6A 8A A3 A4 A6 A7 CA E6'|choose }}" />
+    <img n="1" source="img_b8945dff14.jpg" width="439" height="599" offset="29" blendMode="ALPHA" wyswyg="true" />
+    <img n="1" source="{{ drink.picture.url }}" width="439" height="599" offset="29" border_pct="11" wyswyg="true" blendMode="ALPHA" type="APP" e_wyswyg="true" />
+    <text_width val="0" />
+    <font_swf source="Taco_Salad_I.swf" />
+    <font_swf source="Taco_Salad_I_A0.swf" />
+    <font_swf source="Taco_Salad.swf" />
+    <font_swf source="Taco_Salad_A0.swf" />
+    <text_scale val="6.667000" scale0="1.333333" max_sz="560.714590" />
+    <textr_fgn source="fgn_2dd913e183.jpg" color="#8b008b" />
+    <textr_fgn source="g_94e8cd25f3.jpg" />
+    <a href="/website_wr1/default~{{theme}}.xml" wr_n="4">Beer</a>
+    <a href="{{prev_drink.slug}}~{{theme}}.xml" wr_n="2">Prev</a>
+    <a href="{{next_drink.slug}}~{{theme}}.xml" wr_n="3">Next</a>
+    <a href="{{drink.slug}}~{{next_theme}}.xml" wr_n="0">Theme</a>
+    <a href="{{drink.slug}}~{{theme}}.xml" wr_n="1">List of All Drinks Available</a>
+    <htmlText><![CDATA[<p align="center"><font face="Taco Salad"><font size="11"><br><font size="42">You've <font color="#8b008b">just<font color="#000000"> been offered...<br><font color="#000000"><font face="imgfont0"><font size="560.704590">&#x57;</font></font><font color="#000000"><font face="Taco Salad"><font size="36"><br><font size="25">A NonBeer over IP<br><p align="left"><font color="#8b008b">more<font color="#000000"> precisely: <i>{{ drink.name }}</i><font size="20"><i></i><font size="24"><i><br></i><p align="right"><font color="#8b008b"><font size="20">Credits:<font color="#000000"> {{ drink.picture.credits }}<br><p align="center"><font color="#8b008b">Theme<font color="#000000"> | <font color="#8b008b">List of All Drinks Available<font color="#000000"> | <font color="#8b008b">Prev<font color="#000000"> | <font color="#8b008b">Next<font color="#000000"> | <font color="#8b008b">Beer<font color="#000000"><br><font size="15"><br><font color="#000000"><br><font face="Platinum Hub Caps Solid"><font size="15">]]></htmlText>
+</wordrad_cfg>
