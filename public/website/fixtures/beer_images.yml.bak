@@ -1,0 +1,1364 @@
+id_1:
+  id: 1
+  credits: A Glass of Ayinger, by wickenden, http://flickr.com/photos/wickenden/1104589745
+  beer_id: 1
+  picture: beers/default.jpg
+  upload_date: 2008-08-14 12:47:32
+
+id_2:
+  id: 2
+  credits: Murphy's, by adactio, http://flickr.com/photos/adactio/60443262/
+  beer_id: 2
+  picture: beers/stout.jpg
+  upload_date: 2008-08-23 00:45:07
+
+id_3:
+  id: 3
+  credits: Allagash Dubbel Ale, by MontageMan, http://www.flickr.com/photos/montage_man/2178721155/
+  beer_id: 3
+  picture: beers/dubbel.jpg
+  upload_date: 2008-09-03 23:45:11
+
+id_4:
+  id: 4
+  credits: Belle-Vue Gueuze, by H4NUM4N, http://www.flickr.com/photos/hanuman/682378582/
+  beer_id: 4
+  picture: beers/gueuze.jpg
+  upload_date: 2008-09-03 23:45:12
+
+id_5:
+  id: 5
+  credits: Maredsous Triple, by kapital, http://flickr.com/photos/kapital/2371953228/
+  beer_id: 5
+  picture: beers/tripel.jpg
+  upload_date: 2008-09-03 23:45:13
+
+id_6:
+  id: 6
+  credits: Maudite, by Pierre Roussel, Creative Commons licensed, CC-BY
+  beer_id: 6
+  picture: beers/maudite.jpg
+  upload_date: 2008-09-10 19:46:57
+
+id_7:
+  id: 7
+  credits: Guinness pint, by coda, http://flickr.com/photos/coda/61991984/
+  beer_id: 7
+  picture: beers/guinness.jpg
+  upload_date: 2008-09-10 21:01:27
+
+id_8:
+  id: 8
+  credits: Kirin Ichiban, by Pierre Roussel, Creative Commons Licensed, CC-BY-NC-SA
+  beer_id: 8
+  picture: beers/kirinichiban.jpg
+  upload_date: 2008-09-18 21:23:12
+
+id_9:
+  id: 9
+  credits: Fin du Monde, by Pierre Roussel, Creative Commons Licensed, CC-BY-NC-SA
+  beer_id: 9
+  picture: beers/fin-du-monde.jpg
+  upload_date: 2008-09-18 22:00:19
+
+id_10:
+  id: 10
+  credits: Barbar, by Bruno Bord, Creative Commons Licensed, CC-BY-SA
+  beer_id: 10
+  picture: beers/barbar.jpg
+  upload_date: 2008-09-19 18:52:14
+
+id_11:
+  id: 11
+  credits: Rochefort, by Bruno Bord, Creative Commons Licensed, CC-BY-SA
+  beer_id: 11
+  picture: beers/rochefort.jpg
+  upload_date: 2008-09-19 18:53:14
+
+id_12:
+  id: 12
+  credits: Pietra, by Bruno Bord, Creative Commons Licensed, CC-BY-SA
+  beer_id: 12
+  picture: beers/pietra.jpg
+  upload_date: 2008-09-19 18:54:14
+
+id_13:
+  id: 13
+  credits: Faro, by Bruno Bord, Creative Commons Licensed, CC-BY-SA
+  beer_id: 13
+  picture: beers/faro.jpg
+  upload_date: 2008-09-19 18:55:14
+
+id_14:
+  id: 14
+  credits: Super des Fagnes, by Bruno Bord, Creative Commons Licensed, CC-BY-SA
+  beer_id: 14
+  picture: beers/super-des-fagnes.jpg
+  upload_date: 2008-09-19 18:52:14
+
+id_15:
+  id: 15
+  credits: Ename, by Beno\u00eet Chesneau, (Public Domain)
+  beer_id: 15
+  picture: beers/ename.jpg
+  upload_date: 2008-09-20 23:27:05
+
+id_16:
+  id: 16
+  credits: Nessie Mac Queen's, by Gilles Fabio (Public Domain)
+  beer_id: 16
+  picture: beers/nessie.jpg
+  upload_date: 2008-10-22 21:25:06
+
+id_17:
+  id: 17
+  credits: Lapin Kulta, by Gilles Fabio (Public Domain)
+  beer_id: 17
+  picture: beers/lapin-kulta.jpg
+  upload_date: 2008-10-22 21:31:17
+
+id_18:
+  id: 18
+  credits: Saint Landelin, by Pierre Roussel, Creative Commons licensed, CC-BY-NC-SA
+  beer_id: 18
+  picture: beers/st-landelin.jpg
+  upload_date: 2008-10-22 21:38:17
+
+id_19:
+  id: 19
+  credits: Leffe Ruby, by Bruno Bord, Creative Commons licensed, CC-BY-SA, http://flickr.com/photos/brunobord/2590409600/
+  beer_id: 19
+  picture: beers/leffe-ruby.jpg
+  upload_date: 2008-10-22 22:20:06
+
+id_20:
+  id: 20
+  credits: Picon bi\u00e8re, by Victor Stinner, Creative Commons licensed, CC-BY-SA
+  beer_id: 20
+  picture: beers/picon.jpg
+  upload_date: 2008-10-31 21:00:06
+
+id_21:
+  id: 21
+  credits: Leffe Brune (6,5\u00b0), by Victor Stinner, Creative Commons licensed, CC-BY-SA
+  beer_id: 21
+  picture: beers/leffe_brune.jpg
+  upload_date: 2008-10-31 21:03:16
+
+id_22:
+  id: 22
+  credits: Kronebourg, by gzap, Creative Commons licensed, CC-BY-NC-SA, http://www.flickr.com/photos/gzap/16924449/
+  beer_id: 22
+  picture: beers/kro.jpg
+  upload_date: 2008-10-31 21:06:44
+
+id_23:
+  id: 23
+  credits: Monty Python Holy Ail, by Ploum, Creative Commons licensed, CC-BY
+  beer_id: 23
+  picture: beers/monty-python-holy-ail.jpg
+  upload_date: 2008-11-02 18:05:44
+
+id_24:
+  id: 24
+  credits: Triple Karmeliet, by Pierre Roussel, Creative Commons licensed, CC-BY-NC-SA
+  beer_id: 24
+  picture: beers/tripel-karmeliet.jpg
+  upload_date: 2008-11-05 21:50:00
+
+id_25:
+  id: 25
+  credits: Ciney Blonde, by DJ, Creative Commons licensed, CC-BY-SA
+  beer_id: 25
+  picture: beers/ciney-blonde.jpg
+  upload_date: 2008-11-06 22:25:00
+
+id_26:
+  id: 26
+  credits: Redbocq, by DJ, Creative Commons licensed, CC-BY-SA
+  beer_id: 26
+  picture: beers/redbocq.jpg
+  upload_date: 2008-11-06 22:29:00
+
+id_27:
+  id: 27
+  credits: Jupiler, by DJ, Creative Commons licensed, CC-BY-SA
+  beer_id: 27
+  picture: beers/jupiler.jpg
+  upload_date: 2008-11-06 22:33:00
+
+id_28:
+  id: 28
+  credits: Hoegaarden Ros\u00e9e, by DJ, Creative Commons licensed, CC-BY-SA
+  beer_id: 28
+  picture: beers/hoegaarden-rosee.jpg
+  upload_date: 2008-11-06 22:36:00
+
+id_29:
+  id: 29
+  credits: Hoegaarden Citron, by DJ, Creative Commons licensed, CC-BY-SA
+  beer_id: 29
+  picture: beers/hoegaarden-citron.jpg
+  upload_date: 2008-11-06 22:39:00
+
+id_30:
+  id: 30
+  credits: Weihenstephaner Hefe Weiss, by Nicolas Dufour, Creative Commons licensed, CC-BY-SA
+  beer_id: 30
+  picture: beers/weihenstephaner.jpg
+  upload_date: 2008-11-13 21:34:00
+
+id_31:
+  id: 31
+  credits: XXXX, by Gilles Fabio, (Public Domain)
+  beer_id: 31
+  picture: beers/xxxx.jpg
+  upload_date: 2008-11-13 21:41:00
+
+id_32:
+  id: 32
+  credits: Leffe Radieuse (8,2\u00b0), by Jarrod Sharp, Creative Commons licensed, CC-BY-SA
+  beer_id: 32
+  picture: beers/leffe-radieuse.jpg
+  upload_date: 2008-11-28 22:35:00
+
+id_33:
+  id: 33
+  credits: Pilsner Urquell, a strongly hopped Czech beer, by Nicolas Dufour, Creative Commons licensed, CC-BY-SA
+  beer_id: 33
+  picture: beers/pilsner-urquell.jpg
+  upload_date: 2008-11-28 22:41:00
+
+id_34:
+  id: 34
+  credits: Leffe 9 (9,0\u00b0), by Jarrod Sharp, Creative Commons licensed, CC-BY-SA
+  beer_id: 34
+  picture: beers/leffe-9.jpg
+  upload_date: 2009-01-04 23:03:00
+
+id_35:
+  id: 35
+  credits: Leffe Vieille Cuvee (no longer in production) (8,2\u00b0), by Jarrod Sharp, Creative Commons licensed, CC-BY-SA
+  beer_id: 35
+  picture: beers/leffe-vieille-cuvee.jpg
+  upload_date: 2009-01-04 23:08:00
+
+id_36:
+  id: 36
+  credits: Leffe Brune (6,5\u00b0), by Jarrod Sharp, Creative Commons licensed, CC-BY-SA
+  beer_id: 36
+  picture: beers/leffe-brune-2.jpg
+  upload_date: 2009-01-04 23:11:00
+
+id_37:
+  id: 37
+  credits: Beamish, by Bruno Bord, Creative Commons licensed, CC-BY-SA
+  beer_id: 37
+  picture: beers/beamish.jpg
+  upload_date: 2009-01-23 18:56:00
+
+id_38:
+  id: 38
+  credits: Bi\u00e8re des ours, by Bruno Bord, Creative Commons licensed, CC-BY-SA
+  beer_id: 38
+  picture: beers/biere-des-ours.jpg
+  upload_date: 2009-01-23 18:58:00
+
+id_39:
+  id: 39
+  credits: Caffrey's, by Bruno Bord, Creative Commons licensed, CC-BY-SA
+  beer_id: 39
+  picture: beers/caffreys.jpg
+  upload_date: 2009-01-23 19:00:00
+
+id_40:
+  id: 40
+  credits: Carling, by Bruno Bord, Creative Commons licensed, CC-BY-SA
+  beer_id: 40
+  picture: beers/carling.jpg
+  upload_date: 2009-01-23 19:01:00
+
+id_41:
+  id: 41
+  credits: Gordon Finest Gold, by Bruno Bord, Creative Commons licensed, CC-BY-SA
+  beer_id: 41
+  picture: beers/gordon-finest-gold.jpg
+  upload_date: 2009-01-23 19:04:00
+
+id_42:
+  id: 42
+  credits: Old Speckled Hen, by Bruno Bord, Creative Commons licensed, CC-BY-SA
+  beer_id: 42
+  picture: beers/old-speckled-hen.jpg
+  upload_date: 2009-01-23 19:06:00
+
+id_43:
+  id: 43
+  credits: Smithwicks, by Bruno Bord, Creative Commons licensed, CC-BY-SA
+  beer_id: 43
+  picture: beers/smithwicks.jpg
+  upload_date: 2009-01-23 19:07:00
+
+id_44:
+  id: 44
+  credits: Blanche de Chambly (Unibroue), by Pierre Roussel, Creative Commons licensed, CC-BY-NC-SA
+  beer_id: 44
+  picture: beers/blanche-de-chambly.jpg
+  upload_date: 2009-01-23 19:49:00
+
+id_45:
+  id: 45
+  credits: Grain d'orge, by Bruno Bord, Creative Commons licensed, CC-BY-SA
+  beer_id: 45
+  picture: beers/grain-d-orge.jpg
+  upload_date: 2009-04-04 22:14:00
+
+id_46:
+  id: 46
+  credits: Vieux Bruges, bi\u00e8re blanche, by Pierre Roussel, Creative Commons licensed, CC-BY-NC-SA
+  beer_id: 46
+  picture: beers/vieux-bruges.jpg
+  upload_date: 2009-04-04 22:21:00
+
+id_47:
+  id: 47
+  credits: Belle-Vue Kriek, by [puamelia], Creative Commons licensed, CC-BY-SA
+  beer_id: 47
+  picture: beers/belle-vue-kriek.jpg
+  upload_date: 2009-04-24 21:48:00
+
+id_48:
+  id: 48
+  credits: Bourbon from La R\u00e9union, by Eric Veiras Galisson. Creative Commons licensed BY-SA
+  beer_id: 48
+  picture: beers/bourbon1.jpg
+  upload_date: 2009-06-10 21:54:00
+
+id_49:
+  id: 49
+  credits: Bourbon from La R\u00e9union, by Eric Veiras Galisson. Creative Commons licensed BY-SA
+  beer_id: 48
+  picture: beers/bourbon2.jpg
+  upload_date: 2009-06-10 21:55:00
+
+id_50:
+  id: 50
+  credits: Mythos, a greek beer, by Eric Veiras Galisson. Creative Commons licensed BY-SA
+  beer_id: 68
+  picture: beers/mythos.jpg
+  upload_date: 2009-06-10 22:01:00
+
+id_51:
+  id: 51
+  credits: Guiness, by Guillaume Schaeffer. Creative Commons licensed BY-NC-SA
+  beer_id: 7
+  picture: beers/guinness_giz404.jpg
+  upload_date: 2009-06-10 22:42:00
+
+id_52:
+  id: 52
+  credits: Pilsner-Urquell underwater, by Pierre Roussel. Creative Commons licensed BY-SA
+  beer_id: 33
+  picture: beers/pilsner-urquell-underwater.jpg
+  upload_date: 2009-09-10 17:56:00
+
+id_53:
+  id: 53
+  credits: Pagoa Pilsner, by Bruno Bord. Creative Commons licensed BY-SA
+  beer_id: 49
+  picture: beers/pagoa-pilsner.jpg
+  upload_date: 2009-11-02 21:42:00
+
+id_54:
+  id: 54
+  credits: Pagoa Red Ale, by Bruno Bord. Creative Commons licensed BY-SA
+  beer_id: 50
+  picture: beers/pagoa-red-ale.jpg
+  upload_date: 2009-11-02 21:47:00
+
+id_55:
+  id: 55
+  credits: Pagoa Stout, by Bruno Bord. Creative Commons licensed BY-SA
+  beer_id: 51
+  picture: beers/pagoa-stout.jpg
+  upload_date: 2009-11-02 21:49:00
+
+id_56:
+  id: 56
+  credits: Affligem, by 'nagzi'. Creative Commons licensed BY-NC-SA (http://www.flickr.com/photos/nagzi/2750523729/)
+  beer_id: 52
+  picture: beers/affligem.jpg
+  upload_date: 2009-11-14 21:02:00
+
+id_57:
+  id: 57
+  credits: Westmalle Tripel, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1394996962/)
+  beer_id: 53
+  picture: beers/westmalle.jpg
+  upload_date: 2010-01-19 21:37:00
+
+id_58:
+  id: 58
+  credits: Russel Cream Ale, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1436911230/)
+  beer_id: 54
+  picture: beers/russel-cream-ale.jpg
+  upload_date: 2010-01-19 21:42:00
+
+id_59:
+  id: 59
+  credits: Crann\u00f3g Back Hand of God Stout, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1436911294/)
+  beer_id: 55
+  picture: beers/crannog.jpg
+  upload_date: 2010-01-19 21:50:00
+
+id_60:
+  id: 60
+  credits: Blackfriar Scottish Ale, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1465331742/)
+  beer_id: 56
+  picture: beers/blackfriar.jpg
+  upload_date: 2010-01-19 21:53:00
+
+id_61:
+  id: 61
+  credits: Brooklyn Lager, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1464488143/)
+  beer_id: 57
+  picture: beers/brooklyn.jpg
+  upload_date: 2010-01-19 21:56:00
+
+id_62:
+  id: 62
+  credits: Pauwel Kwak, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1595614982/)
+  beer_id: 58
+  picture: beers/kwak.jpg
+  upload_date: 2010-01-19 22:01:00
+
+id_63:
+  id: 63
+  credits: Tripel Karmeliet, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1595615434/)
+  beer_id: 24
+  picture: beers/tripel-karmeliet-2.jpg
+  upload_date: 2010-01-19 22:04:00
+
+id_64:
+  id: 64
+  credits: Chimay Tripel, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1594727863/)
+  beer_id: 59
+  picture: beers/chimay-tripel.jpg
+  upload_date: 2010-01-19 22:14:00
+
+id_65:
+  id: 65
+  credits: Young Double Chocolate Stout, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1722520512/)
+  beer_id: 60
+  picture: beers/young-double-chocolate.jpg
+  upload_date: 2010-01-19 22:35:00
+
+id_66:
+  id: 66
+  credits: Piraat, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1722519982/)
+  beer_id: 61
+  picture: beers/piraat.jpg
+  upload_date: 2010-01-19 22:37:00
+
+id_67:
+  id: 67
+  credits: Pike IPA, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/1923666089/)
+  beer_id: 62
+  picture: beers/pike.jpg
+  upload_date: 2010-01-19 22:51:00
+
+id_68:
+  id: 68
+  credits: Traquair Jacobite Ale, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/2071916175/)
+  beer_id: 63
+  picture: beers/traquair.jpg
+  upload_date: 2010-01-19 23:05:00
+
+id_69:
+  id: 69
+  credits: Duchesse de Bourgogne, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/2072709140/)
+  beer_id: 64
+  picture: beers/duchesse-de-bourgogne.jpg
+  upload_date: 2010-01-19 23:09:00
+
+id_70:
+  id: 70
+  credits: Celebrator, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/2296742402/)
+  beer_id: 65
+  picture: beers/celebrator.jpg
+  upload_date: 2010-01-19 23:23:00
+
+id_71:
+  id: 71
+  credits: Turbodog, by 'mezzoblue'. Creative Commons licensed BY-NC-ND (http://www.flickr.com/photos/mezzoblue/2446164875/)
+  beer_id: 66
+  picture: beers/turbodog.jpg
+  upload_date: 2010-01-19 23:27:00
+
+id_72:
+  id: 72
+  credits: Abbaye des Rocs, by Bruno Bord. Creative Commons licensed BY-SA (http://www.flickr.com/photos/brunobord/4365391785/)
+  beer_id: 67
+  picture: beers/abbaye-des-rocs.jpg
+  upload_date: 2010-02-22 23:29:00
+
+id_73:
+  id: 73
+  credits: Westmalle Dubbel-16/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4531432423/
+  beer_id: 69
+  picture: beers/westmalle-dubbel.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_74:
+  id: 74
+  credits: Rochefort 10-15/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4516236064/
+  beer_id: 70
+  picture: beers/rochefort-10.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_75:
+  id: 75
+  credits: Rochefort 8-14/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4493385373/
+  beer_id: 71
+  picture: beers/rochefort-8.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_76:
+  id: 76
+  credits: Hefeweizen-13/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4475258676/
+  beer_id: 72
+  picture: beers/hefeweizen.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_77:
+  id: 77
+  credits: Doom-12/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4460313109/
+  beer_id: 73
+  picture: beers/doom.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_78:
+  id: 78
+  credits: Black IPA-11/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4461092818/
+  beer_id: 74
+  picture: beers/black-ipa.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_79:
+  id: 79
+  credits: Yippee IPA-10/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4452404928/
+  beer_id: 75
+  picture: beers/yipee-ipa.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_80:
+  id: 80
+  credits: Revolution is in the Air-9/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4452404374/
+  beer_id: 76
+  picture: beers/revolution.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_81:
+  id: 81
+  credits: Pale Ale-8/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4394436523/
+  beer_id: 77
+  picture: beers/st-ambroise.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_82:
+  id: 82
+  credits: Bitburger-7/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4395203586/
+  beer_id: 78
+  picture: beers/bitburger.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_83:
+  id: 83
+  credits: Hoegaarden-6/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4338714598/
+  beer_id: 79
+  picture: beers/hoegaarden.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_84:
+  id: 84
+  credits: Winter Warmer-5/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4337971655/
+  beer_id: 80
+  picture: beers/winter-warmer-5.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_85:
+  id: 85
+  credits: Winter Warmer-4/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4335733145/
+  beer_id: 81
+  picture: beers/winter-warmer-4.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_86:
+  id: 86
+  credits: Scotch Ale-3/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4288924615/
+  beer_id: 82
+  picture: beers/pumphouse.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_87:
+  id: 87
+  credits: Red Ale-2/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4289667050/
+  beer_id: 83
+  picture: beers/griffon-rousse.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_88:
+  id: 88
+  credits: First Beer of the Year-1/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4234773071/
+  beer_id: 84
+  picture: beers/konings-hoeven.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_89:
+  id: 89
+  credits: Chocolate Stout-52/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4232450544/
+  beer_id: 85
+  picture: beers/chocolate-stout.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_90:
+  id: 90
+  credits: Tripel-51/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4231679831/
+  beer_id: 86
+  picture: beers/de-koninck-tripel.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_91:
+  id: 91
+  credits: Dunkel-50/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4231676279/
+  beer_id: 87
+  picture: beers/warsteiner.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_92:
+  id: 92
+  credits: Dunkel-49/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4229956804/
+  beer_id: 88
+  picture: beers/erdinger.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_93:
+  id: 93
+  credits: Blonde-48/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4229908250/
+  beer_id: 52
+  picture: beers/affligem-2.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_94:
+  id: 94
+  credits: Amber Ale-47/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4229136393/
+  beer_id: 89
+  picture: beers/de-koninck-amber.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_95:
+  id: 95
+  credits: Bah Humbug!-46/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4229357398/
+  beer_id: 90
+  picture: beers/bah-humbug.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_96:
+  id: 96
+  credits: Wheat Beer-45/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4228578497/
+  beer_id: 91
+  picture: beers/erdinger-weisbier.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_97:
+  id: 97
+  credits: Dubbel-44/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4228450987/
+  beer_id: 92
+  picture: beers/affligem-dubbel.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_98:
+  id: 98
+  credits: Tripel-43/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4228449735/
+  beer_id: 93
+  picture: beers/affligem-tripel.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_99:
+  id: 99
+  credits: Triple Matured-42/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4228448115/
+  beer_id: 94
+  picture: beers/innis-gunn-triple.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_100:
+  id: 100
+  credits: IPA-41/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4229212084/
+  beer_id: 95
+  picture: beers/innis-gunn-ipa.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_101:
+  id: 101
+  credits: The Original-40/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4228439865/
+  beer_id: 96
+  picture: beers/innis-gunn-original.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_102:
+  id: 102
+  credits: This is a Strong One-39/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4228437483/
+  beer_id: 97
+  picture: beers/aventinus.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_103:
+  id: 103
+  credits: Hoegaarden, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3991673926/
+  beer_id: 79
+  picture: beers/hoegaarden-2.jpg
+  upload_date: 2010-05-16 01:59:57
+
+id_104:
+  id: 104
+  credits: Leffe, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3991673652/
+  beer_id: 98
+  picture: beers/leffe.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_105:
+  id: 105
+  credits: German Wheat-38/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3991672460/
+  beer_id: 99
+  picture: beers/hacker-pshorr.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_106:
+  id: 106
+  credits: Paul-37/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3990916341/
+  beer_id: 100
+  picture: beers/paulaner.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_107:
+  id: 107
+  credits: hmm...nutty-36/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3898871560/
+  beer_id: 101
+  picture: beers/nut-brown.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_108:
+  id: 108
+  credits: A Witch\u2019s Brew-35/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3876462296/
+  beer_id: 102
+  picture: beers/wychcraft.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_109:
+  id: 109
+  credits: Organic Beer-34/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3875671341/
+  beer_id: 103
+  picture: beers/organic-ale.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_110:
+  id: 110
+  credits: Nova Scotian Raspberries-33/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3872322529/
+  beer_id: 104
+  picture: beers/raspberry-wheat.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_111:
+  id: 111
+  credits: Mythical Fail-32/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3873104922/
+  beer_id: 68
+  picture: beers/mythos-2.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_112:
+  id: 112
+  credits: British IPA-31/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3872319127/
+  beer_id: 105
+  picture: beers/green-king-ipa.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_113:
+  id: 113
+  credits: Ontario Raspberries-30/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3835529184/
+  beer_id: 106
+  picture: beers/ontario-raspberry.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_114:
+  id: 114
+  credits: A Blonde!-29/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3834729615/
+  beer_id: 107
+  picture: beers/amsterdam.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_115:
+  id: 115
+  credits: hmm...maple-28/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3835521882/
+  beer_id: 108
+  picture: beers/sugar-maple.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_116:
+  id: 116
+  credits: From the Worker Bees-27/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3702108132/
+  beer_id: 109
+  picture: beers/oxford-gold.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_117:
+  id: 117
+  credits: Citrous Bomb-26/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3702108130/
+  beer_id: 110
+  picture: beers/harvestoun-bitter.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_118:
+  id: 118
+  credits: It burns!-25/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3701207071/
+  beer_id: 111
+  picture: beers/jalapeno.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_119:
+  id: 119
+  credits: The Wild Porter-24/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3701190595/
+  beer_id: 112
+  picture: beers/timber-hog.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_120:
+  id: 120
+  credits: Thistle IPA-23/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3701190589/
+  beer_id: 113
+  picture: beers/thistle-ipa.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_121:
+  id: 121
+  credits: Spitfire-22/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3701190575/
+  beer_id: 114
+  picture: beers/spitfire.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_122:
+  id: 122
+  credits: hmm...hoppiness-21/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3701190567/
+  beer_id: 115
+  picture: beers/hop-yard-pale.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_123:
+  id: 123
+  credits: Tall Ship-20/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3701190559/
+  beer_id: 116
+  picture: beers/tall-ship.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_124:
+  id: 124
+  credits: 1845-19/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3701190543/
+  beer_id: 117
+  picture: beers/1845.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_125:
+  id: 125
+  credits: Made With Canadian Whiskey-18/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3562869862/
+  beer_id: 118
+  picture: beers/innis-gunn-cask.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_126:
+  id: 126
+  credits: Not That Great-17/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3562869660/
+  beer_id: 119
+  picture: beers/peroni.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_127:
+  id: 127
+  credits: American Beer-16/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3457234149/
+  beer_id: 120
+  picture: beers/anchor-steam-beer.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_128:
+  id: 128
+  credits: Delirious!-15/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3435951993/
+  beer_id: 121
+  picture: beers/delirium-tremens.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_129:
+  id: 129
+  credits: Finally!, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3422943022/
+  beer_id: 122
+  picture: beers/chimay.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_130:
+  id: 130
+  credits: A Fruity Blonde-14/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3417985800/
+  beer_id: 123
+  picture: beers/innis-gunn-blonde.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_131:
+  id: 131
+  credits: Organic Lager-13/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3414740857/
+  beer_id: 124
+  picture: beers/organic-lager.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_132:
+  id: 132
+  credits: At least its cheap-12/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3414735769/
+  beer_id: 125
+  picture: beers/selection-lager.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_133:
+  id: 133
+  credits: La bi\u00e8re fran\u00e7ais-11/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3320323817/
+  beer_id: 126
+  picture: beers/fischer.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_134:
+  id: 134
+  credits: Gluten Free?-10/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3303876222/
+  beer_id: 127
+  picture: beers/glutaner.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_135:
+  id: 135
+  credits: Beer from Rum-9/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3303032471/
+  beer_id: 128
+  picture: beers/innis-gunn-rum.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_136:
+  id: 136
+  credits: Vintage Ale-8/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3303019701/
+  beer_id: 129
+  picture: beers/vintage-ale.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_137:
+  id: 137
+  credits: hmm..., by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3264297700/
+  beer_id: 122
+  picture: beers/chimay-2.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_138:
+  id: 138
+  credits: Fruity Beer-7/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3263464799/
+  beer_id: 130
+  picture: beers/fruli.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_139:
+  id: 139
+  credits: Scottish Ale-6/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3226500286/
+  beer_id: 131
+  picture: beers/caledonian-brewery.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_140:
+  id: 140
+  credits: Sweet Sweet Orval-5/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3219460564/
+  beer_id: 132
+  picture: beers/orval.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_141:
+  id: 141
+  credits: Italiana Birra!-4/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3206990558/
+  beer_id: 133
+  picture: beers/birra-moretti.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_142:
+  id: 142
+  credits: Chocolate Beer!-3/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3206110919/
+  beer_id: 134
+  picture: beers/sinha-stout.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_143:
+  id: 143
+  credits: Apricot Beer-2/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3167937744/
+  beer_id: 77
+  picture: beers/st-ambroise-2.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_144:
+  id: 144
+  credits: Happy New Year!!!-1/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/3158299936/
+  beer_id: 7
+  picture: beers/guinness-2.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_145:
+  id: 145
+  credits: Sweet Beer!, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2975643379/
+  beer_id: 135
+  picture: beers/organic-honey.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_146:
+  id: 146
+  credits: London Pride, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2972518982/
+  beer_id: 136
+  picture: beers/london-pride.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_147:
+  id: 147
+  credits: London Porter, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2955933169/
+  beer_id: 137
+  picture: beers/london-porter.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_148:
+  id: 148
+  credits: German Bier, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2933493825/
+  beer_id: 88
+  picture: beers/erdinger-2.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_149:
+  id: 149
+  credits: Irish Stout, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2923108466/
+  beer_id: 138
+  picture: beers/o-haras.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_150:
+  id: 150
+  credits: Yippee!!!, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2919325951/
+  beer_id: 139
+  picture: beers/yippee.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_151:
+  id: 151
+  credits: Yankee Beer, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2917002190/
+  beer_id: 140
+  picture: beers/ice-bock.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_152:
+  id: 152
+  credits: German Bier, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2914376391/
+  beer_id: 91
+  picture: beers/erdinger-weisbier-2.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_153:
+  id: 153
+  credits: Chambly, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2812693784/
+  beer_id: 141
+  picture: beers/chambly.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_154:
+  id: 154
+  credits: Beerski, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2804890714/
+  beer_id: 142
+  picture: beers/czechvar.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_155:
+  id: 155
+  credits: biiru, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2803501369/
+  beer_id: 143
+  picture: beers/sapporo.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_156:
+  id: 156
+  credits: hmm..., by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2793547511/
+  beer_id: 96
+  picture: beers/innis-gunn-original-2.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_157:
+  id: 157
+  credits: Affligem, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2750523729/
+  beer_id: 52
+  picture: beers/affligem-3.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_158:
+  id: 158
+  credits: De koninck, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2747489389/
+  beer_id: 144
+  picture: beers/de-koninck.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_159:
+  id: 159
+  credits: Guinness, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2739204601/
+  beer_id: 7
+  picture: beers/guinness-3.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_160:
+  id: 160
+  credits: Heineken, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2737206918/
+  beer_id: 145
+  picture: beers/heineken.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_161:
+  id: 161
+  credits: Stella!, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2712560514/
+  beer_id: 146
+  picture: beers/stella.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_162:
+  id: 162
+  credits: French Beer, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2704713240/
+  beer_id: 6
+  picture: beers/maudite-2.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_163:
+  id: 163
+  credits: The Grande Biere, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2697372824/
+  beer_id: 147
+  picture: beers/chimay-grande-reserve.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_164:
+  id: 164
+  credits: hmm...Belgium Beer, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2665896132/
+  beer_id: 98
+  picture: beers/leffe-2.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_165:
+  id: 165
+  credits: hmm...Belgium Beer, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2665067173/
+  beer_id: 79
+  picture: beers/hoegaarden-3.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_166:
+  id: 166
+  credits: British Ale, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2600424505/
+  beer_id: 148
+  picture: beers/black-sheep.jpg
+  upload_date: 2010-05-16 01:59:58
+
+id_167:
+  id: 167
+  credits: Blonde Ale, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2526161984/
+  beer_id: 149
+  picture: beers/picaroons.jpg
+  upload_date: 2010-05-16 01:59:59
+
+id_168:
+  id: 168
+  credits: Aussie Beer, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2130412051/
+  beer_id: 150
+  picture: beers/coopers.jpg
+  upload_date: 2010-05-16 01:59:59
+
+id_169:
+  id: 169
+  credits: Garbage, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/2131189770/
+  beer_id: 151
+  picture: beers/brahma.jpg
+  upload_date: 2010-05-16 01:59:59
+
+id_170:
+  id: 170
+  credits: The Original, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/1296154246/
+  beer_id: 33
+  picture: beers/pilsner-urquell-2.jpg
+  upload_date: 2010-05-16 01:59:59
+
+id_171:
+  id: 171
+  credits: Disappointing, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/1295280917/
+  beer_id: 152
+  picture: beers/8-6-bavaria.jpg
+  upload_date: 2010-05-16 01:59:59
+
+id_172:
+  id: 172
+  credits: meh..., by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/1295277933/
+  beer_id: 153
+  picture: beers/propeller-porter.jpg
+  upload_date: 2010-05-16 01:59:59
+
+id_173:
+  id: 173
+  credits: Excellent, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/1296145736/
+  beer_id: 154
+  picture: beers/konig-ludwig.jpg
+  upload_date: 2010-05-16 01:59:59
+
+id_174:
+  id: 174
+  credits: biiru da yo, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/1060766331/
+  beer_id: 8
+  picture: beers/kirin-ichiban.jpg
+  upload_date: 2010-05-16 01:59:59
+
+id_175:
+  id: 175
+  credits: Light but Strong, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/1060759093/
+  beer_id: 155
+  picture: beers/duvel.jpg
+  upload_date: 2010-05-16 01:59:59
+
+id_176:
+  id: 176
+  credits: Stunning, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/1061619324/
+  beer_id: 122
+  picture: beers/chimay-3.jpg
+  upload_date: 2010-05-16 01:59:59
+
+id_177:
+  id: 177
+  credits: Strong but easy going, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/1061610106/
+  beer_id: 156
+  picture: beers/marstons.jpg
+  upload_date: 2010-05-16 01:59:59
+
+id_178:
+  id: 178
+  credits: Germans!, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/556389612/
+  beer_id: 157
+  picture: beers/duckstein.jpg
+  upload_date: 2010-05-16 01:59:59
+
+id_179:
+  id: 179
+  credits: Germans!, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/556642365/
+  beer_id: 87
+  picture: beers/warsteiner-2.jpg
+  upload_date: 2010-05-16 01:59:59
+
+id_180:
+  id: 180
+  credits: The Vikings have sacked us., by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/556641325/
+  beer_id: 158
+  picture: beers/faxe.jpg
+  upload_date: 2010-05-16 01:59:59
+
+id_181:
+  id: 181
+  credits: The Czechs, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/556371054/
+  beer_id: 159
+  picture: beers/zubr.jpg
+  upload_date: 2010-05-16 01:59:59
+
+id_182:
+  id: 182
+  credits: Westmalle Tripel-17/52, by nagzi (CC-BY-NC-SA) - http://www.flickr.com/photos/nagzi/4550838113/
+  beer_id: 160
+  picture: beers/westmalle-tripel.jpg
+  upload_date: 2010-05-16 01:59:59
+
+id_183:
+  id: 183
+  credits: Blanche de Ré, by Eric Veiras Galisson - Creative Commons Licensed BY-SA
+  beer_id: 161
+  picture: beers/blanche-de-re.jpg
+  upload_date: 2010-05-26 22:33:00
+
+id_184:
+  id: 184
+  credits: Blanche de Ré, by Eric Veiras Galisson - Creative Commons Licensed BY-SA
+  beer_id: 161
+  picture: beers/blanche-de-re-2.jpg
+  upload_date: 2010-05-26 22:35:00
+
+id_185:
+  id: 185
+  credits: Blanche Amb'Ré, by Eric Veiras Galisson - Creative Commons Licensed BY-SA
+  beer_id: 162
+  picture: beers/blanche-amb-re.jpg
+  upload_date: 2010-05-26 22:39:00
+
+id_186:
+  id: 186
+  credits: Blanche Amb'Ré, by Eric Veiras Galisson - Creative Commons Licensed BY-SA
+  beer_id: 162
+  picture: beers/blanche-amb-re-2.jpg
+  upload_date: 2010-05-26 22:39:00
+
+id_187:
+  id: 187
+  credits: Berliner Pilsner, by Benoît Chesneau - Public Domain
+  beer_id: 163
+  picture: beers/berliner-pilsner.jpg
+  upload_date: 2010-05-26 22:51:00
+
+id_188:
+  id: 188
+  credits: Duvel, by Benoît Chesneau - Public Domain
+  beer_id: 155
+  picture: beers/duvel-2.jpg
+  upload_date: 2010-05-26 22:59:00
+
+id_189:
+  id: 189
+  credits: Triple Moine, by Benoît Chesneau - Public Domain
+  beer_id: 164
+  picture: beers/triple-moine.jpg
+  upload_date: 2010-05-26 23:05:00
+
+id_190:
+  id: 190
+  credits: Barbar, by Benoît Chesneau - Public Domain
+  beer_id: 10
+  picture: beers/barbar-2.jpg
+  upload_date: 2010-05-26 23:12:00
+
+id_191:
+  id: 191
+  credits: Old Speckled Hen, by Bruno Renié - Creative Commons Licensed - CC-BY
+  beer_id: 42
+  picture: beers/old-speckled-hen-2.jpg
+  upload_date: 2010-05-26 23:29:00
+
+id_192:
+  id: 192
+  credits: Rothaus, by Benoît Chesneau - Public Domain
+  beer_id: 165
+  picture: beers/rothaus.jpg
+  upload_date: 2010-05-29 12:22:00
+
+id_193:
+  id: 193
+  credits: Franzishkaner, by Benoît Chesneau - Public Domain
+  beer_id: 166
+  picture: beers/franzishkaner.jpg
+  upload_date: 2010-05-29 12:23:00
+
+id_194:
+  id: 194
+  credits: Brewdog 77 Lager, by Chris Nicolson - CC-BY-NC
+  beer_id: 167
+  picture: beers/brewdog_lager.jpg
+  upload_date: 2010-06-14 22:13:00
+
+id_195:
+  id: 195
+  credits: Carolus, by Bruno Bord - CC-BY-SA
+  beer_id: 168
+  picture: beers/carolus.jpg
+  upload_date: 2010-06-14 22:40:00
