@@ -7,28 +7,28 @@ class String
     raw inspect 
   end    
 end
+  
+class Store  
+              
+  def initialize (cookies)  
+    @cookies = cookies  
+  end  
+    
+  def [] (k)  
+    @cookies[k]  
+  end  
+  
+  def []= (k,v)  
+    @cookies.permanent[k] = v  
+  end  
+  
+end    
 
 module ApplicationHelper
-  
-  class Store
-            
-    def initialize (cookies)
-      @cookies = cookies
-    end
     
-    def [] (k)
-      @cookies[k]
-    end
-  
-    def []= (k,v)
-      @cookies.permanent[k] = v
-    end  
-
-  end    
-   	
-  def store
-    Store.new(cookies)
-  end  
+  def store 
+     @store ||= Store.new(cookies)
+  end
 
   def choose(choices)
     arr = choices.split(' ')
