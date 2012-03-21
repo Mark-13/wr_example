@@ -25,12 +25,10 @@ module ApplicationHelper
     end  
 
   end    
-  
-  @store = nil
-  
+   	
   def store
-     @store ||= Store.new(cookies)
-  end
+    Store.new(cookies)
+  end  
 
   def choose(choices)
     arr = choices.split(' ')
