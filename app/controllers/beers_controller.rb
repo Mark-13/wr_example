@@ -2,6 +2,10 @@ class BeersController < ApplicationController
     
   def show	 	
       
+    if not store[:time]
+      store[:time] = Time.new
+    end  
+        
     params[:drink]  ||= "beer"
     params[:target] ||= "default~"    
     params[:format] ||= "html" 

@@ -1,5 +1,5 @@
 #First convert unicode sequences in the file from \u0045 ri \u{0045}
-#Then run this to convert file from to take out those sequences and
+#Then run this to convert file to take out those sequences and
 #replace them with utf=8 (or whatever it is)
 
 

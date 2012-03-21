@@ -1,13 +1,7 @@
-include ActionView::Helpers::OutputSafetyHelper
-
-class String
-  def dq
-    raw inspect 
-  end    
-end
-
 module BeersHelper
 
+  include ApplicationHelper
+  
   def p
    "/website/wr_view1/"
   end
@@ -22,11 +16,6 @@ module BeersHelper
 
   def path(drink, page=false)
     "/#{drink.class.name.downcase}/#{page ? page : drink.slug}~"
-  end
-
-  def choose(choices)
-    arr = choices.split(' ')
-    arr[rand arr.length];
   end
 
   ThemeMax = 4  
