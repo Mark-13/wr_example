@@ -35,7 +35,18 @@
       var src:Array;
       var s_crnt=0;
       
-      private function Init() {	       
+      var timer:Timer = new Timer(1000,1);	
+
+      private function Init() {
+
+        timer.addEventListener(TimerEvent.TIMER,Init_timr);
+        timer.start();		
+
+      }
+
+      private function Init_timr(e:Event) {
+             
+        timer.stop();
 		              
 	src = parameters.src.split(";");
         src.pop();
@@ -49,8 +60,6 @@
 
 	timer.addEventListener("timer",timer_handlr);
                       
-        Dumper.info("wr_sound " + parameters.lc_id);
-
         myBridge = new SWFBridgeAS3(parameters.lc_id, clientObj)
                                
         s = new SoundEffect();	

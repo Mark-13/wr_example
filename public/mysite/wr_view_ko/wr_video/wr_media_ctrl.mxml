@@ -26,9 +26,6 @@
 
       private function Init() {
              
-        
-        Dumper.info("media_ctrl " + parameters.lc_id);
-        
         myBridge = new SWFBridgeAS3(parameters.lc_id, clientObj)
 
         try {       
