@@ -26,9 +26,7 @@
 
       private function Init() {
              
-        while (!(myBridge = new SWFBridgeAS3(parameters.lc_id, clientObj)));
-
-	//Dumper.info("media_ctrl" + myBridge.toString());
+        myBridge = new SWFBridgeAS3(parameters.lc_id, clientObj)
 
         try {       
           var s_o:SharedObject = 
