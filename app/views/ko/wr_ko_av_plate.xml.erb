@@ -3,23 +3,23 @@
 <% content_sub :img_content do %>
 
   <% q = plate.get_display %>
-
-  <%= raw "<img n='#{@i_n+=1}' source='rad_#{r}xf.swf?embed_td=true&cfg=#{plate_path("#{plate.name}_td1.xml")}' width='#{wc[:x]*250}' height='#{q.height}' offset='175' blendMode='NORMAL' type='APP' />" %> 
   
   <% if av_type == 'mp3'  %>
-    <img n=<%="'#{@i_n+=1}'"%> 
+    <img n=<%="'#{@i_n+=2}'"%> 
       <%=  "source='wr_video/wr_sound#{r}.swf?src="%><% av_part.each {|s| concat (pi+s.content+';')}%><%= raw "&lc_id=#{lc_ids[1]} '"%> 
       <%=  raw "width='#{q.width}' height='#{q.height}' blendMode='NORMAL' type='APP' />" %>  
     <%=  raw "<img n='#{i_n}' source='#{pi+q.content}' width='#{q.width}' height='#{q.height}' blendMode='#{blendMode q.name}' wyswyg='true' />" %>
   
   <% elsif av_type == 'flv'  %>
-    <img n=<%="'#{@i_n+=1}'"%> 
+    <img n=<%="'#{@i_n+=2}'"%> 
       source=<%="'wr_video/wr_video#{r}.swf?src="%><% av_part.each {|s| concat (pi+s.content+';')}%><%= raw "&lc_id=#{lc_ids[1]}&w=#{q.width}&h=#{q.height} '"%> 
       <%= raw "width='#{q.width}' height='#{q.height}' blendMode='ALPHA' type='APP' e_wyswyg='true'/>"  %>  
 
   <% elsif av_type == 'swf' %>           
-    <%= raw "<img n='#{@i_n+=1}' source='#{pi+av_part[0].content+qstr}' width='#{q.width}' height='#{q.height}' blendMode='ALPHA' e_wyswyg='true' type='APP' />" %>
+    <%= raw "<img n='#{@i_n+=2}' source='#{pi+av_part[0].content+qstr}' width='#{q.width}' height='#{q.height}' blendMode='ALPHA' e_wyswyg='true' type='APP' />" %>
   <% end %>
+
+  <%= raw "<img n='#{@i_n-1}' source='rad_#{r}xf.swf?embed_td=true&cfg=#{plate_path("#{plate.name}_td1.xml")}' width='#{wc[:x]*250}' height='#{q.height}' offset='175' blendMode='NORMAL' type='APP' />" %> 
 
 <% end %>
 

@@ -49,8 +49,6 @@
 
 	timer.addEventListener("timer",timer_handlr);
                       
-	Dumper.info("wr_sound");
-
         myBridge = new SWFBridgeAS3(parameters.lc_id, clientObj)
                                
         s = new SoundEffect();	
