@@ -26,7 +26,7 @@
 
       private function Init() {
              
-        myBridge = new SWFBridgeAS3(parameters.lc_id, clientObj, true)
+        myBridge = new SWFBridgeAS3(parameters.lc_id, clientObj, false)
 
         try {       
           var s_o:SharedObject = 
