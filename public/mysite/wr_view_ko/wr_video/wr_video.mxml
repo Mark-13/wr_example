@@ -53,7 +53,7 @@
         if (s_o) session = s_o.data;  	
         else session = new Object();  	
                       	
-        myBridge = new SWFBridgeAS3(parameters.lc_id, clientObj, "wr_video ")
+        myBridge = new SWFBridgeAS3(parameters.lc_id, clientObj, "wr_video ",true)
                                
         if (!session.play || ((v_crnt=src.indexOf(session.source)) == -1)) {
 
