@@ -17,16 +17,17 @@
     <![CDATA[    
 
       import flextrace.Dumper;
-      import com.gskinner.utils.SWFBridgeAS3;	
+      import net.teratechnologies.common.BiDirLocalConnection;
       import my_components.wr;
       
       var clientObj:Object = new Object();
       
-      var myBridge:SWFBridgeAS3;
+      var myBridge:BiDirLocalConnection;
 
       private function Init() {
              
-        myBridge = new SWFBridgeAS3(parameters.lc_id, clientObj,"media_ctrl ",false)
+        myBridge = new BiDirLocalConnection(BiDirLocalConnection.ROLE_MASTER,this,parameters.lc_id);
+        myBridge.connect(); 
 
         try {       
           var s_o:SharedObject = 
@@ -57,7 +58,7 @@
       <![CDATA[    
 
 	private function click(e:Event) {
-	
+		  
 	  myBridge.send("play",t_buttons.selectedIndex);
 				  	  
 	}

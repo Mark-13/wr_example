@@ -17,7 +17,7 @@
     <![CDATA[    
 
       import flextrace.Dumper;
-      import com.gskinner.utils.SWFBridgeAS3;	
+      import net.teratechnologies.common.BiDirLocalConnection;
       import my_components.wr;	
       import mx.core.UIComponent;		
 	
@@ -26,7 +26,7 @@
       var session:Object;  	
       var s_o:SharedObject=null;
 
-      var myBridge:SWFBridgeAS3;
+      var myBridge:BiDirLocalConnection;
                  
       var src:Array;
       var v_crnt=0;
@@ -53,8 +53,9 @@
         if (s_o) session = s_o.data;  	
         else session = new Object();  	
                       	
-        myBridge = new SWFBridgeAS3(parameters.lc_id, clientObj, "wr_video ",true)
-                               
+        myBridge = new BiDirLocalConnection(BiDirLocalConnection.ROLE_SLAVE,this,parameters.lc_id);
+        myBridge.connect(); 
+         
         if (!session.play || ((v_crnt=src.indexOf(session.source)) == -1)) {
 
 	  session.startTime = 0;
@@ -104,7 +105,7 @@
 		
       }
       
-      private function play(bPlay:Boolean = true) {
+      public function play(bPlay:Boolean = true) {
                 
         session.play = bPlay;
 

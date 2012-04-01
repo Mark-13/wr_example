@@ -16,7 +16,7 @@
 
       import flextrace.Dumper;
       import mx.effects.SoundEffect;	
-      import com.gskinner.utils.SWFBridgeAS3;	
+      import net.teratechnologies.common.BiDirLocalConnection;
       import my_components.wr;	
 
       var timer:Timer = new Timer(500,0);
@@ -26,7 +26,7 @@
       var session:Object;  	
       var s_o:SharedObject=null;
 
-      var myBridge:SWFBridgeAS3;
+      var myBridge:BiDirLocalConnection;
       
       var s:SoundEffect;
             
@@ -49,8 +49,9 @@
 
 	timer.addEventListener("timer",timer_handlr);
                       
-        myBridge = new SWFBridgeAS3(parameters.lc_id, clientObj,"wr_sound ",true)
-                               
+        myBridge = new BiDirLocalConnection(BiDirLocalConnection.ROLE_SLAVE,this,parameters.lc_id);
+        myBridge.connect(); 
+                                      
         s = new SoundEffect();	
         s.useDuration=false
 	s.addEventListener("effectEnd",play_end);
@@ -70,7 +71,8 @@
         play(session.play || parameters.play)
       }
       
-      private function play(bPlay:Boolean = true) {
+      public function play(bPlay:Boolean = true) {
+
         if (bPlay) {                        
           session.play = true;
           s.play([s]); 
