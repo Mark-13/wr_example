@@ -35,18 +35,7 @@
       var src:Array;
       var s_crnt=0;
       
-      var timer:Timer = new Timer(1000,1);	
-
-      private function Init() {
-
-        timer.addEventListener(TimerEvent.TIMER,Init_timr);
-        timer.start();		
-
-      }
-
-      private function Init_timr(e:Event) {
-             
-        timer.stop();
+      private function Init() {	       
 		              
 	src = parameters.src.split(";");
         src.pop();
