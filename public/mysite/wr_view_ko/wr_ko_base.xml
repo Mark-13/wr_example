@@ -1,0 +1,40 @@
+{% extends 'wr_ko_template.xml' %}
+{% load counter %}
+{% load wr_ko_filters %}
+{% block img_base %}
+    <img n="{% counter %}" source="img_dee34b8c9.jpg" width="162" height="171" offset="1" blendMode="ALPHA" wyswyg="true" />
+    <img n="{% counter %}" source="img_df9915c4f.jpg" width="33" height="171" offset="2" blendMode="MASK" />
+    <img n="{% counter %}" source="wr_webcube/wr_webcube{{r}}.swf" width="588" height="171" offset="3" blendMode="" type="APP" />
+    <img n="{% counter %}" source="img_blackline.jpg" width="1121" height="6" offset="38"  wyswyg="true" blendMode="ALPHA" />
+    {% block img_content %}
+    <img n="{% counter %}" source="img_92f9ab556d.jpg" width="450" height="568" offset="48" blendMode="ALPHA" />
+    {% endblock %}
+    <img n="{% counter %}" source="img_blackline.jpg" width="1121" height="6" offset="54"  wyswyg="true" blendMode="ALPHA" />
+{% endblock %}
+{% block text_width %}
+<text_width val="0" />
+{% endblock %}
+{% block html_base %}
+    <font size="10"><br>
+    <textformat rightmargin="-1000">
+    <font face="imgfont0"><font size="160.067596">&#x69;</font></font>
+    <font face="imgfont0"><font size="160.067596">&#x2B;</font></font>
+    <font face="imgfont2"><font size="160.067596">&#x43;</font></font><br>
+    </textformat>
+    <p align="right"><font size="{{wc.x|mult:24}}">
+    root[at]konstantin[dot]co[dot]uk<br>
+    <p align="left"><font size="20"><font face="imgfont2"><font size="5.616407">&#x54;</font></font>
+    <font size="9"><br>
+    <font size="{{wc.x|mult:20}}">
+    {% block menu %}
+      <a href="{% url mysite.ko.views.wr_view name='index'  xml='.xml' %}">home</a>    
+    {% endblock %}
+    {% if user.is_authenticated %}<a href="{% url django.contrib.auth.views.logout %}">logout</a>{% endif %}
+    <font size="15"><br><font size="9"><br><br><br>
+    {% block html_content %}<p align="center"><font face="imgfont0"><font size="531.686523">&#x5C;</font></font>{% endblock %}
+    <br><font size="10"><br><br><br><br><p align="left">
+    <font face="imgfont2"><font size="5.616407">&#x54;</font></font>
+    <font size="9"><br>
+    <font size="{{wc.x|mult:16}}">copyright © konstantin.co.uk. all rights reserved.
+    <font size="20"><br><textformat tabstops=""><font size="10">
+{% endblock %}

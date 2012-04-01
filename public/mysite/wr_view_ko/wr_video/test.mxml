@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+  xmlns:s="library://ns.adobe.com/flex/spark" 
+  verticalScrollPolicy="off"  
+  horizontalScrollPolicy="off" 
+  creationComplete="{Init()}"  
+
+>
+
+  <mx:Style>    	     
+
+  </mx:Style>    	     
+
+
+  <mx:Script>  
+    <![CDATA[    
+
+      import flextrace.Dumper;
+      import com.gskinner.utils.SWFBridgeAS3;	
+      import my_components.wr;	
+
+      import org.osmf.events.TimeEvent;      
+      import org.osmf.events.LoadEvent;      
+      import org.osmf.media.URLResource;
+      import org.osmf.media.MediaPlayerSprite;
+      import org.osmf.media.MediaElement;	
+      import mx.core.UIComponent;	
+	
+	
+      var sprite:HelloWorld = new HelloWorld();	
+
+      var uic:UIComponent = new UIComponent(); 	
+	
+      public function Init():void {
+    
+        addChild(uic);
+        uic.addChild(sprite);
+	
+	
+        
+        
+      
+      }
+
+
+    ]]>    
+
+  </mx:Script>  
+
+
+
+       
+</mx:Application>

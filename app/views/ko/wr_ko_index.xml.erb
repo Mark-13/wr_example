@@ -1,0 +1,35 @@
+<% inheriting_view 'ko/wr_ko_base' do %>
+
+<% content_sub :img_content do %>
+  <% plates.each do |plate| %>
+     <img n=<%="'#{@i_n+=1}'"%> source="img_blackln.jpg" width="500" height="4" wyswyg="true" blendMode="ALPHA" />
+     <%= render inline: (f_p_blog_img plate) %>
+  <% end %>
+<% end %>
+
+<% content_sub :menu do %>
+  <a href="#">admin</a>    
+<% end %>
+
+<% content_sub :html_content do %>
+  <textformat leftmargin="200" rightmargin="50">
+    <% plates.each do |plate| %>
+      <font size=<%="'#{wc[:x]*20}'"%>><%=plate.datetime_display%><br></font>
+      <font face="imgfont2"><font size="5.616407">&#x54;</font></font>
+      <font size=<%="'#{wc[:x]*13}'"%>><br><br>
+      <%= render inline: (f_p_blog_html plate) %>
+      <br><br><br></font>
+    <% end %>
+    <font size=<%="'#{wc[:x]*17}'"%>><%= will_paginate @plates  %></font>
+  </textformat>  
+  <% tags = %w(drawings etching flash illuminations paintings photos) %>
+  <font size=<%="'#{wc[:x]*20}'"%>><br><br>tags = [
+    <% tags.each do |tag| %>
+      <a href=<%="'#{tag_path(tag+".xml")}'"%>><%=tag%></a>  &#0;
+    <% end %>
+  <a href="/beer/random~4.xml">diversion</a>
+  ]
+<% end %>
+
+
+<%end %>

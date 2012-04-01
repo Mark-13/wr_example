@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 gem 'thin'
 
+gem 'will_paginate'
+
 group :production do
   gem 'pg'
  
@@ -17,7 +19,6 @@ gem 'rails', '3.2.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 
 
 # Gems used only for assets and not required

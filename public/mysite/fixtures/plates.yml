@@ -1,0 +1,1392 @@
+id_45:
+  id: 45 
+  tags:  
+  plate_id:  
+  name: blog090822 
+  precision: 3 
+  datetime: 2009-08-22 00:00:00
+  
+id_58:
+  id: 58 
+  tags: paintings 
+  plate_id: 45 
+  name: 090818 
+  precision: 3 
+  datetime: 2009-08-18 00:00:00
+  
+id_59:
+  id: 59 
+  tags: paintings 
+  plate_id: 45 
+  name: 090810 
+  precision: 3 
+  datetime: 2009-08-10 00:00:00
+  
+id_46:
+  id: 46 
+  tags:  
+  plate_id:  
+  name: blog090806 
+  precision: 3 
+  datetime: 2009-08-06 00:00:00
+  
+id_60:
+  id: 60 
+  tags: paintings 
+  plate_id: 46 
+  name: 090805 
+  precision: 3 
+  datetime: 2009-08-05 00:00:00
+  
+id_61:
+  id: 61 
+  tags: paintings 
+  plate_id: 46 
+  name: 0809 
+  precision: 3 
+  datetime: 2009-08-01 00:00:00
+  
+id_47:
+  id: 47 
+  tags:  
+  plate_id:  
+  name: blog090714 
+  precision: 3 
+  datetime: 2009-07-14 00:00:00
+  
+id_1:
+  id: 1 
+  tags:  
+  plate_id: 47 
+  name: 100watercolors130709 
+  precision: 3 
+  datetime: 2009-07-13 00:00:00
+  
+id_2:
+  id: 2 
+  tags:  
+  plate_id: 48 
+  name: 100watercolors290609 
+  precision: 3 
+  datetime: 2009-06-29 00:00:00
+  
+id_48:
+  id: 48 
+  tags:  
+  plate_id:  
+  name: blog090629 
+  precision: 3 
+  datetime: 2009-06-29 00:00:00
+  
+id_49:
+  id: 49 
+  tags:  
+  plate_id:  
+  name: blog090516 
+  precision: 3 
+  datetime: 2009-05-16 00:00:00
+  
+id_62:
+  id: 62 
+  tags:  
+  plate_id: 49 
+  name: collective-farmers-090512 
+  precision: 3 
+  datetime: 2009-05-12 00:00:00
+  
+id_50:
+  id: 50 
+  tags:  
+  plate_id:  
+  name: blog090427 
+  precision: 3 
+  datetime: 2009-04-27 00:00:00
+  
+id_51:
+  id: 51 
+  tags:  
+  plate_id:  
+  name: blog090412 
+  precision: 3 
+  datetime: 2009-04-12 00:00:00
+  
+id_63:
+  id: 63 
+  tags: paintings 
+  plate_id: 50 
+  name: 0409 
+  precision: 3 
+  datetime: 2009-04-01 00:00:00
+  
+id_55:
+  id: 55 
+  tags:  
+  plate_id:  
+  name: blog090329 
+  precision: 3 
+  datetime: 2009-03-29 00:00:00
+  
+id_52:
+  id: 52 
+  tags:  
+  plate_id:  
+  name: blog090327 
+  precision: 3 
+  datetime: 2009-03-27 00:00:00
+  
+id_53:
+  id: 53 
+  tags:  
+  plate_id:  
+  name: blog090326 
+  precision: 3 
+  datetime: 2009-03-26 00:00:00
+  
+id_67:
+  id: 67 
+  tags:  
+  plate_id: 53 
+  name: lady-with-little-dog-090324 
+  precision: 3 
+  datetime: 2009-03-24 00:00:00
+  
+id_54:
+  id: 54 
+  tags:  
+  plate_id:  
+  name: blog090323 
+  precision: 3 
+  datetime: 2009-03-23 00:00:00
+  
+id_56:
+  id: 56 
+  tags:  
+  plate_id:  
+  name: blog090308 
+  precision: 3 
+  datetime: 2009-03-08 00:00:00
+  
+id_38:
+  id: 38 
+  tags:  
+  plate_id: 56 
+  name: unfocused090308 
+  precision: 3 
+  datetime: 2009-03-08 00:00:00
+  
+id_64:
+  id: 64 
+  tags: paintings 
+  plate_id: 51 
+  name: gamayun 
+  precision: 3 
+  datetime: 2009-03-01 00:00:00
+  
+id_57:
+  id: 57 
+  tags:  
+  plate_id:  
+  name: blog090217 
+  precision: 3 
+  datetime: 2009-02-17 00:00:00
+  
+id_37:
+  id: 37 
+  tags:  
+  plate_id: 55 
+  name: unfocused0209 
+  precision: 3 
+  datetime: 2009-02-01 00:00:00
+  
+id_65:
+  id: 65 
+  tags: paintings 
+  plate_id: 52 
+  name: 0109 
+  precision: 3 
+  datetime: 2009-01-01 00:00:00
+  
+id_18:
+  id: 18 
+  tags:  
+  plate_id:  
+  name: blog081231 
+  precision: 3 
+  datetime: 2008-12-31 00:00:00
+  
+id_19:
+  id: 19 
+  tags:  
+  plate_id:  
+  name: blog081216 
+  precision: 3 
+  datetime: 2008-12-16 00:00:00
+  
+id_39:
+  id: 39 
+  tags:  
+  plate_id: 19 
+  name: unfocused081216 
+  precision: 3 
+  datetime: 2008-12-16 00:00:00
+  
+id_20:
+  id: 20 
+  tags:  
+  plate_id:  
+  name: blog081215 
+  precision: 3 
+  datetime: 2008-12-15 00:00:00
+  
+id_41:
+  id: 41 
+  tags:  
+  plate_id: 20 
+  name: unfocused081215 
+  precision: 3 
+  datetime: 2008-12-15 00:00:00
+  
+id_42:
+  id: 42 
+  tags:  
+  plate_id: 20 
+  name: unfocused081213 
+  precision: 3 
+  datetime: 2008-12-13 00:00:00
+  
+id_66:
+  id: 66 
+  tags:  
+  plate_id: 65 
+  name: 0109-081203 
+  precision: 3 
+  datetime: 2008-12-03 00:00:00
+  
+id_68:
+  id: 68 
+  tags: paintings 
+  plate_id: 18 
+  name: 1208 
+  precision: 3 
+  datetime: 2008-12-01 00:00:00
+  
+id_69:
+  id: 69 
+  tags: paintings 
+  plate_id: 54 
+  name: 1108 
+  precision: 3 
+  datetime: 2008-11-01 00:00:00
+  
+id_21:
+  id: 21 
+  tags:  
+  plate_id:  
+  name: blog081030 
+  precision: 3 
+  datetime: 2008-10-30 00:00:00
+  
+id_79:
+  id: 79 
+  tags: paintings 
+  plate_id: 21 
+  name: 1008 
+  precision: 3 
+  datetime: 2008-10-01 00:00:00
+  
+id_70:
+  id: 70 
+  tags:  
+  plate_id: 69 
+  name: 1108-080919 
+  precision: 3 
+  datetime: 2008-09-19 00:00:00
+  
+id_22:
+  id: 22 
+  tags:  
+  plate_id:  
+  name: blog080915 
+  precision: 3 
+  datetime: 2008-09-15 00:00:00
+  
+id_40:
+  id: 40 
+  tags:  
+  plate_id: 22 
+  name: unfocused080816 
+  precision: 3 
+  datetime: 2008-08-16 00:00:00
+  
+id_23:
+  id: 23 
+  tags:  
+  plate_id:  
+  name: blog0807280 
+  precision: 3 
+  datetime: 2008-07-28 00:00:00
+  
+id_24:
+  id: 24 
+  tags:  
+  plate_id:  
+  name: blog0807281 
+  precision: 3 
+  datetime: 2008-07-28 00:00:00
+  
+id_43:
+  id: 43 
+  tags:  
+  plate_id: 23 
+  name: unfocused080719 
+  precision: 3 
+  datetime: 2008-07-19 00:00:00
+  
+id_44:
+  id: 44 
+  tags:  
+  plate_id: 23 
+  name: unfocused080717 
+  precision: 3 
+  datetime: 2008-07-17 00:00:00
+  
+id_100:
+  id: 100 
+  tags: photos 
+  plate_id: 24 
+  name: 0807140 
+  precision: 3 
+  datetime: 2008-07-14 00:00:00
+  
+id_101:
+  id: 101 
+  tags: photos 
+  plate_id: 24 
+  name: 0807141 
+  precision: 3 
+  datetime: 2008-07-14 00:00:00
+  
+id_149:
+  id: 149 
+  tags: photos 
+  plate_id: 24 
+  name: komposition080714 
+  precision: 3 
+  datetime: 2008-07-14 00:00:00
+  
+id_25:
+  id: 25 
+  tags:  
+  plate_id:  
+  name: blog080705 
+  precision: 3 
+  datetime: 2008-07-05 00:00:00
+  
+id_78:
+  id: 78 
+  tags: paintings 
+  plate_id: 25 
+  name: 07080 
+  precision: 3 
+  datetime: 2008-07-01 00:00:00
+  
+id_26:
+  id: 26 
+  tags:  
+  plate_id:  
+  name: blog0807010 
+  precision: 3 
+  datetime: 2008-07-01 00:00:00
+  
+id_27:
+  id: 27 
+  tags:  
+  plate_id:  
+  name: blog0807011 
+  precision: 3 
+  datetime: 2008-07-01 00:00:00
+  
+id_96:
+  id: 96 
+  tags: photos 
+  plate_id: 27 
+  name: 0806290 
+  precision: 3 
+  datetime: 2008-06-29 00:00:00
+  
+id_97:
+  id: 97 
+  tags: photos 
+  plate_id: 27 
+  name: 0806291 
+  precision: 3 
+  datetime: 2008-06-29 00:00:00
+  
+id_98:
+  id: 98 
+  tags: photos 
+  plate_id: 27 
+  name: 0806292 
+  precision: 3 
+  datetime: 2008-06-29 00:00:00
+  
+id_99:
+  id: 99 
+  tags: photos 
+  plate_id: 27 
+  name: 0806293 
+  precision: 3 
+  datetime: 2008-06-29 00:00:00
+  
+id_77:
+  id: 77 
+  tags: paintings 
+  plate_id: 26 
+  name: 06081 
+  precision: 3 
+  datetime: 2008-06-15 00:00:00
+  
+id_147:
+  id: 147 
+  tags: photos 
+  plate_id: 27 
+  name: 080615 
+  precision: 3 
+  datetime: 2008-06-15 00:00:00
+  
+id_146:
+  id: 146 
+  tags: photos 
+  plate_id: 27 
+  name: 080606 
+  precision: 3 
+  datetime: 2008-06-06 00:00:00
+  
+id_28:
+  id: 28 
+  tags:  
+  plate_id:  
+  name: blog080606 
+  precision: 3 
+  datetime: 2008-06-06 00:00:00
+  
+id_29:
+  id: 29 
+  tags:  
+  plate_id:  
+  name: blog0806020 
+  precision: 3 
+  datetime: 2008-06-02 00:00:00
+  
+id_30:
+  id: 30 
+  tags:  
+  plate_id:  
+  name: blog0806021 
+  precision: 3 
+  datetime: 2008-06-02 00:00:00
+  
+id_76:
+  id: 76 
+  tags: paintings 
+  plate_id: 28 
+  name: 06080 
+  precision: 3 
+  datetime: 2008-06-01 00:00:00
+  
+id_145:
+  id: 145 
+  tags: photos 
+  plate_id: 27 
+  name: 080528 
+  precision: 3 
+  datetime: 2008-05-28 00:00:00
+  
+id_104:
+  id: 104 
+  tags: photos 
+  plate_id: 27 
+  name: 080526 
+  precision: 3 
+  datetime: 2008-05-26 00:00:00
+  
+id_94:
+  id: 94 
+  tags: photos 
+  plate_id: 27 
+  name: 0805250 
+  precision: 3 
+  datetime: 2008-05-25 00:00:00
+  
+id_95:
+  id: 95 
+  tags: photos 
+  plate_id: 27 
+  name: 0805251 
+  precision: 3 
+  datetime: 2008-05-25 00:00:00
+  
+id_144:
+  id: 144 
+  tags: photos 
+  plate_id: 27 
+  name: 080521 
+  precision: 3 
+  datetime: 2008-05-21 00:00:00
+  
+id_75:
+  id: 75 
+  tags: paintings 
+  plate_id: 30 
+  name: 05081 
+  precision: 3 
+  datetime: 2008-05-15 00:00:00
+  
+id_93:
+  id: 93 
+  tags: photos 
+  plate_id: 27 
+  name: 080510 
+  precision: 3 
+  datetime: 2008-05-10 00:00:00
+  
+id_92:
+  id: 92 
+  tags: photos 
+  plate_id: 27 
+  name: 080509 
+  precision: 3 
+  datetime: 2008-05-09 00:00:00
+  
+id_74:
+  id: 74 
+  tags: paintings 
+  plate_id: 29 
+  name: 05080 
+  precision: 3 
+  datetime: 2008-05-01 00:00:00
+  
+id_143:
+  id: 143 
+  tags: photos 
+  plate_id: 27 
+  name: 080416 
+  precision: 3 
+  datetime: 2008-04-16 00:00:00
+  
+id_73:
+  id: 73 
+  tags: paintings 
+  plate_id: 29 
+  name: 04081 
+  precision: 3 
+  datetime: 2008-04-15 00:00:00
+  
+id_72:
+  id: 72 
+  tags: paintings 
+  plate_id: 29 
+  name: 04080 
+  precision: 3 
+  datetime: 2008-04-01 00:00:00
+  
+id_36:
+  id: 36 
+  tags:  
+  plate_id:  
+  name: blog28032008 
+  precision: 3 
+  datetime: 2008-03-28 00:00:00
+  
+id_12:
+  id: 12 
+  tags:  
+  plate_id: 36 
+  name: geranium28032008 
+  precision: 3 
+  datetime: 2008-03-28 00:00:00
+  
+id_35:
+  id: 35 
+  tags:  
+  plate_id:  
+  name: blog24032008 
+  precision: 3 
+  datetime: 2008-03-24 00:00:00
+  
+id_11:
+  id: 11 
+  tags:  
+  plate_id: 35 
+  name: geranium24032008 
+  precision: 3 
+  datetime: 2008-03-24 00:00:00
+  
+id_34:
+  id: 34 
+  tags:  
+  plate_id:  
+  name: blog20032008 
+  precision: 3 
+  datetime: 2008-03-20 00:00:00
+  
+id_10:
+  id: 10 
+  tags:  
+  plate_id: 34 
+  name: geranium20032008 
+  precision: 3 
+  datetime: 2008-03-20 00:00:00
+  
+id_33:
+  id: 33 
+  tags:  
+  plate_id:  
+  name: blog15032008 
+  precision: 3 
+  datetime: 2008-03-15 00:00:00
+  
+id_9:
+  id: 9 
+  tags:  
+  plate_id: 33 
+  name: geranium15032008 
+  precision: 3 
+  datetime: 2008-03-15 00:00:00
+  
+id_126:
+  id: 126 
+  tags: photos 
+  plate_id:  
+  name: 140320080 
+  precision: 3 
+  datetime: 2008-03-14 00:00:00
+  
+id_127:
+  id: 127 
+  tags: photos 
+  plate_id:  
+  name: 140320081 
+  precision: 3 
+  datetime: 2008-03-14 00:00:00
+  
+id_124:
+  id: 124 
+  tags: photos 
+  plate_id:  
+  name: 090320080 
+  precision: 3 
+  datetime: 2008-03-09 00:00:00
+  
+id_125:
+  id: 125 
+  tags: photos 
+  plate_id:  
+  name: 090320081 
+  precision: 3 
+  datetime: 2008-03-09 00:00:00
+  
+id_32:
+  id: 32 
+  tags:  
+  plate_id:  
+  name: blog09032008 
+  precision: 3 
+  datetime: 2008-03-09 00:00:00
+  
+id_8:
+  id: 8 
+  tags:  
+  plate_id: 32 
+  name: geranium09032008 
+  precision: 3 
+  datetime: 2008-03-09 00:00:00
+  
+id_31:
+  id: 31 
+  tags:  
+  plate_id:  
+  name: blog08032008 
+  precision: 3 
+  datetime: 2008-03-08 00:00:00
+  
+id_7:
+  id: 7 
+  tags:  
+  plate_id: 31 
+  name: geranium08032008 
+  precision: 3 
+  datetime: 2008-03-08 00:00:00
+  
+id_122:
+  id: 122 
+  tags: photos 
+  plate_id:  
+  name: 06032008 
+  precision: 3 
+  datetime: 2008-03-06 00:00:00
+  
+id_121:
+  id: 121 
+  tags: photos 
+  plate_id:  
+  name: 04032008 
+  precision: 3 
+  datetime: 2008-03-04 00:00:00
+  
+id_141:
+  id: 141 
+  tags: photos 
+  plate_id:  
+  name: 280220080 
+  precision: 3 
+  datetime: 2008-02-28 00:00:00
+  
+id_142:
+  id: 142 
+  tags: photos 
+  plate_id:  
+  name: 280220081 
+  precision: 3 
+  datetime: 2008-02-28 00:00:00
+  
+id_137:
+  id: 137 
+  tags: photos 
+  plate_id:  
+  name: 260220080 
+  precision: 3 
+  datetime: 2008-02-26 00:00:00
+  
+id_138:
+  id: 138 
+  tags: photos 
+  plate_id:  
+  name: 260220081 
+  precision: 3 
+  datetime: 2008-02-26 00:00:00
+  
+id_139:
+  id: 139 
+  tags: photos 
+  plate_id:  
+  name: 260220082 
+  precision: 3 
+  datetime: 2008-02-26 00:00:00
+  
+id_140:
+  id: 140 
+  tags: photos 
+  plate_id:  
+  name: 260220083 
+  precision: 3 
+  datetime: 2008-02-26 00:00:00
+  
+id_132:
+  id: 132 
+  tags: photos 
+  plate_id:  
+  name: 210220080 
+  precision: 3 
+  datetime: 2008-02-21 00:00:00
+  
+id_133:
+  id: 133 
+  tags: photos 
+  plate_id:  
+  name: 210220081 
+  precision: 3 
+  datetime: 2008-02-21 00:00:00
+  
+id_134:
+  id: 134 
+  tags: photos 
+  plate_id:  
+  name: 210220082 
+  precision: 3 
+  datetime: 2008-02-21 00:00:00
+  
+id_135:
+  id: 135 
+  tags: photos 
+  plate_id:  
+  name: 210220083 
+  precision: 3 
+  datetime: 2008-02-21 00:00:00
+  
+id_130:
+  id: 130 
+  tags: photos 
+  plate_id:  
+  name: 150220080 
+  precision: 3 
+  datetime: 2008-02-15 00:00:00
+  
+id_131:
+  id: 131 
+  tags: photos 
+  plate_id:  
+  name: 150220081 
+  precision: 3 
+  datetime: 2008-02-15 00:00:00
+  
+id_151:
+  id: 151 
+  tags: photos 
+  plate_id:  
+  name: komposition150220080 
+  precision: 3 
+  datetime: 2008-02-15 00:00:00
+  
+id_152:
+  id: 152 
+  tags: photos 
+  plate_id:  
+  name: komposition150220081 
+  precision: 3 
+  datetime: 2008-02-15 00:00:00
+  
+id_102:
+  id: 102 
+  tags: photos 
+  plate_id:  
+  name: 04022008 
+  precision: 3 
+  datetime: 2008-02-04 00:00:00
+  
+id_71:
+  id: 71 
+  tags: paintings 
+  plate_id:  
+  name: 0208 
+  precision: 3 
+  datetime: 2008-02-01 00:00:00
+  
+id_13:
+  id: 13 
+  tags: flash 
+  plate_id:  
+  name: daemon-alcohol 
+  precision: 3 
+  datetime: 2008-01-01 00:00:00
+  
+id_5:
+  id: 5 
+  tags: illuminations 
+  plate_id:  
+  name: illumination281220070 
+  precision: 3 
+  datetime: 2007-12-28 00:00:00
+  
+id_6:
+  id: 6 
+  tags: illuminations 
+  plate_id:  
+  name: illumination281220071 
+  precision: 3 
+  datetime: 2007-12-28 00:00:00
+  
+id_136:
+  id: 136 
+  tags: photos 
+  plate_id:  
+  name: 21dec2007 
+  precision: 3 
+  datetime: 2007-12-21 00:00:00
+  
+id_103:
+  id: 103 
+  tags: photos 
+  plate_id:  
+  name: 08122007 
+  precision: 3 
+  datetime: 2007-12-08 00:00:00
+  
+id_105:
+  id: 105 
+  tags: photos 
+  plate_id:  
+  name: ducks 
+  precision: 3 
+  datetime: 2007-12-08 00:00:00
+  
+id_123:
+  id: 123 
+  tags: photos 
+  plate_id:  
+  name: 07dec2007 
+  precision: 3 
+  datetime: 2007-12-07 00:00:00
+  
+id_86:
+  id: 86 
+  tags: paintings 
+  plate_id:  
+  name: dying-slave 
+  precision: 3 
+  datetime: 2007-12-01 00:00:00
+  
+id_150:
+  id: 150 
+  tags: photos 
+  plate_id:  
+  name: komposition19112007 
+  precision: 3 
+  datetime: 2007-11-19 00:00:00
+  
+id_3:
+  id: 3 
+  tags: illuminations 
+  plate_id:  
+  name: illumination151120070 
+  precision: 3 
+  datetime: 2007-11-15 00:00:00
+  
+id_4:
+  id: 4 
+  tags: illuminations 
+  plate_id:  
+  name: illumination151120071 
+  precision: 3 
+  datetime: 2007-11-15 00:00:00
+  
+id_128:
+  id: 128 
+  tags: photos 
+  plate_id:  
+  name: 141120070 
+  precision: 3 
+  datetime: 2007-11-14 00:00:00
+  
+id_129:
+  id: 129 
+  tags: photos 
+  plate_id:  
+  name: 141120071 
+  precision: 3 
+  datetime: 2007-11-14 00:00:00
+  
+id_172:
+  id: 172 
+  tags: drawings 
+  plate_id: 54 
+  name: masha-and-the-bear 
+  precision: 3 
+  datetime: 2007-09-07 00:00:00
+  
+id_84:
+  id: 84 
+  tags: paintings 
+  plate_id:  
+  name: aug2007 
+  precision: 3 
+  datetime: 2007-08-01 00:00:00
+  
+id_88:
+  id: 88 
+  tags: paintings 
+  plate_id:  
+  name: tea-drinker 
+  precision: 3 
+  datetime: 2007-08-01 00:00:00
+  
+id_91:
+  id: 91 
+  tags:  
+  plate_id: 88 
+  name: tea-drinker-28jun2007 
+  precision: 3 
+  datetime: 2007-06-28 00:00:00
+  
+id_90:
+  id: 90 
+  tags:  
+  plate_id: 88 
+  name: tea-drinker-13jun2007 
+  precision: 3 
+  datetime: 2007-06-13 00:00:00
+  
+id_117:
+  id: 117 
+  tags: photos 
+  plate_id:  
+  name: 200706120 
+  precision: 3 
+  datetime: 2007-06-12 00:00:00
+  
+id_118:
+  id: 118 
+  tags: photos 
+  plate_id:  
+  name: 200706121 
+  precision: 3 
+  datetime: 2007-06-12 00:00:00
+  
+id_108:
+  id: 108 
+  tags: photos 
+  plate_id:  
+  name: 10jun2007a 
+  precision: 3 
+  datetime: 2007-06-10 00:00:00
+  
+id_109:
+  id: 109 
+  tags: photos 
+  plate_id:  
+  name: 10jun2007b 
+  precision: 3 
+  datetime: 2007-06-10 00:00:00
+  
+id_107:
+  id: 107 
+  tags: photos 
+  plate_id:  
+  name: 09jun2007 
+  precision: 3 
+  datetime: 2007-06-09 00:00:00
+  
+id_116:
+  id: 116 
+  tags: photos 
+  plate_id:  
+  name: 20070606 
+  precision: 3 
+  datetime: 2007-06-06 00:00:00
+  
+id_89:
+  id: 89 
+  tags:  
+  plate_id: 88 
+  name: tea-drinker-25may2007 
+  precision: 3 
+  datetime: 2007-05-25 00:00:00
+  
+id_114:
+  id: 114 
+  tags: photos 
+  plate_id:  
+  name: 200705230 
+  precision: 3 
+  datetime: 2007-05-23 00:00:00
+  
+id_115:
+  id: 115 
+  tags: photos 
+  plate_id:  
+  name: 200705231 
+  precision: 3 
+  datetime: 2007-05-23 00:00:00
+  
+id_112:
+  id: 112 
+  tags: photos 
+  plate_id:  
+  name: 200705220 
+  precision: 3 
+  datetime: 2007-05-22 00:00:00
+  
+id_113:
+  id: 113 
+  tags: photos 
+  plate_id:  
+  name: 200705221 
+  precision: 3 
+  datetime: 2007-05-22 00:00:00
+  
+id_111:
+  id: 111 
+  tags: photos 
+  plate_id:  
+  name: 20070518 
+  precision: 3 
+  datetime: 2007-05-18 00:00:00
+  
+id_171:
+  id: 171 
+  tags: drawings 
+  plate_id:  
+  name: 16may2007 
+  precision: 3 
+  datetime: 2007-05-16 00:00:00
+  
+id_106:
+  id: 106 
+  tags: photos 
+  plate_id:  
+  name: 20070507 
+  precision: 3 
+  datetime: 2007-05-07 00:00:00
+  
+id_153:
+  id: 153 
+  tags: photos 
+  plate_id:  
+  name: 20070430 
+  precision: 3 
+  datetime: 2007-04-30 00:00:00
+  
+id_119:
+  id: 119 
+  tags: photos 
+  plate_id:  
+  name: 26apr2007 
+  precision: 3 
+  datetime: 2007-04-26 00:00:00
+  
+id_110:
+  id: 110 
+  tags: photos 
+  plate_id:  
+  name: 12apr2007 
+  precision: 3 
+  datetime: 2007-04-12 00:00:00
+  
+id_85:
+  id: 85 
+  tags: paintings 
+  plate_id:  
+  name: construction-worker 
+  precision: 3 
+  datetime: 2007-04-01 00:00:00
+  
+id_148:
+  id: 148 
+  tags: photos 
+  plate_id:  
+  name: british-petroleum 
+  precision: 3 
+  datetime: 2007-03-22 00:00:00
+  
+id_14:
+  id: 14 
+  tags: flash 
+  plate_id:  
+  name: fadeaway 
+  precision: 3 
+  datetime: 2007-03-22 00:00:00
+  
+id_15:
+  id: 15 
+  tags: etching 
+  plate_id:  
+  name: le-samourai 
+  precision: 3 
+  datetime: 2007-03-22 00:00:00
+  
+id_16:
+  id: 16 
+  tags: flash 
+  plate_id:  
+  name: metro 
+  precision: 3 
+  datetime: 2007-03-22 00:00:00
+  
+id_17:
+  id: 17 
+  tags: flash 
+  plate_id:  
+  name: the-farm 
+  precision: 3 
+  datetime: 2007-03-22 00:00:00
+  
+id_80:
+  id: 80 
+  tags: paintings 
+  plate_id:  
+  name: 06mar2007 
+  precision: 3 
+  datetime: 2007-03-06 00:00:00
+  
+id_81:
+  id: 81 
+  tags:  
+  plate_id: 80 
+  name: 06mar2007-detail 
+  precision: 3 
+  datetime: 2007-03-06 00:00:00
+  
+id_154:
+  id: 154 
+  tags: photos 
+  plate_id:  
+  name: wheel 
+  precision: 3 
+  datetime: 2007-02-01 00:00:00
+  
+id_159:
+  id: 159 
+  tags: drawings 
+  plate_id:  
+  name: dec2006 
+  precision: 3 
+  datetime: 2006-12-01 00:00:00
+  
+id_120:
+  id: 120 
+  tags: photos 
+  plate_id:  
+  name: state-of-vegetation 
+  precision: 3 
+  datetime: 2006-12-01 00:00:00
+  
+id_166:
+  id: 166 
+  tags: drawings 
+  plate_id:  
+  name: 13nov2006 
+  precision: 3 
+  datetime: 2006-11-13 00:00:00
+  
+id_160:
+  id: 160 
+  tags: drawings 
+  plate_id:  
+  name: 05nov2006 
+  precision: 3 
+  datetime: 2006-11-05 00:00:00
+  
+id_174:
+  id: 174 
+  tags: drawings 
+  plate_id:  
+  name: pierrot 
+  precision: 3 
+  datetime: 2006-09-01 00:00:00
+  
+id_167:
+  id: 167 
+  tags: drawings 
+  plate_id:  
+  name: 21aug2006a 
+  precision: 3 
+  datetime: 2006-08-21 00:00:00
+  
+id_168:
+  id: 168 
+  tags: drawings 
+  plate_id:  
+  name: 21aug2006b 
+  precision: 3 
+  datetime: 2006-08-21 00:00:00
+  
+id_169:
+  id: 169 
+  tags: drawings 
+  plate_id:  
+  name: 10jul2006 
+  precision: 3 
+  datetime: 2006-07-10 00:00:00
+  
+id_161:
+  id: 161 
+  tags: drawings 
+  plate_id:  
+  name: 11jun2006 
+  precision: 3 
+  datetime: 2006-06-11 00:00:00
+  
+id_162:
+  id: 162 
+  tags: drawings 
+  plate_id:  
+  name: 03jun2006 
+  precision: 3 
+  datetime: 2006-06-03 00:00:00
+  
+id_87:
+  id: 87 
+  tags: paintings 
+  plate_id:  
+  name: jun2006 
+  precision: 3 
+  datetime: 2006-06-01 00:00:00
+  
+id_82:
+  id: 82 
+  tags: paintings 
+  plate_id:  
+  name: 08may2006 
+  precision: 3 
+  datetime: 2006-05-08 00:00:00
+  
+id_83:
+  id: 83 
+  tags: paintings 
+  plate_id:  
+  name: 10apr2006 
+  precision: 3 
+  datetime: 2006-04-10 00:00:00
+  
+id_163:
+  id: 163 
+  tags: drawings 
+  plate_id:  
+  name: apr2006 
+  precision: 3 
+  datetime: 2006-04-01 00:00:00
+  
+id_164:
+  id: 164 
+  tags: drawings 
+  plate_id:  
+  name: 22mar2006 
+  precision: 3 
+  datetime: 2006-03-22 00:00:00
+  
+id_165:
+  id: 165 
+  tags: drawings 
+  plate_id:  
+  name: 17mar2006 
+  precision: 3 
+  datetime: 2006-03-17 00:00:00
+  
+id_170:
+  id: 170 
+  tags: drawings 
+  plate_id:  
+  name: 19dec2005 
+  precision: 3 
+  datetime: 2005-12-19 00:00:00
+  
+id_155:
+  id: 155 
+  tags: drawings 
+  plate_id:  
+  name: 20nov2005 
+  precision: 3 
+  datetime: 2005-11-20 00:00:00
+  
+id_156:
+  id: 156 
+  tags: drawings 
+  plate_id:  
+  name: 14nov2005 
+  precision: 3 
+  datetime: 2005-11-14 00:00:00
+  
+id_157:
+  id: 157 
+  tags: drawings 
+  plate_id:  
+  name: 30oct2005 
+  precision: 3 
+  datetime: 2005-10-30 00:00:00
+  
+id_158:
+  id: 158 
+  tags: drawings 
+  plate_id:  
+  name: 02oct2005 
+  precision: 3 
+  datetime: 2005-10-02 00:00:00
+  
+id_173:
+  id: 173 
+  tags: drawings 
+  plate_id:  
+  name: no-bottle 
+  precision: 3 
+  datetime: 2005-06-02 00:00:00
+  

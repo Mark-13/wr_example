@@ -1,0 +1,21 @@
+<% inheriting_view 'ko/wr_ko_base' do %>
+
+<% content_sub :img_content do %>
+  <% q = plate.content_parts[0]  %>
+  <%= raw "<img n='#{@i_n+=1}' source='rad_#{r}xf.swf?embed_td=true&cfg=#{plate_path("#{plate.name}_td1.xml")}' width='#{wc[:x]*250}' height='#{q.height}' offset='175' blendMode='NORMAL' type='APP' />" %>   
+  <%= raw "<img n='#{@i_n+=1}' source='#{pi}#{q.content}' width='#{q.width}' height='#{q.height}' offset='176'  blendMode='#{blendMode q.name}' wyswyg='true' />" %> 
+<% end %>
+
+<% content_sub :text_width do %>
+  <text_width val="table" />
+<% end %>
+
+<% content_sub :html_content do %>
+  <font face="imgfont0"><font size="531.686523">&#x5C;</font></font>
+  <font face="imgfont0"><font size="531.686523">&#x5C;</font></font>
+<% end %>
+
+<% end %>
+
+
+

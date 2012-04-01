@@ -1,0 +1,7 @@
+{% extends 'webcube.xml' %}
+
+
+{% block crnt_sel %}
+<crnt_sel dir="{{wc.dir}}" img="{{wc.img}}" altw="{{wc.altw}}" font="{{wc.font}}" x="{{wc.x}}" b="{{wc.b}}" />
+{% endblock %} 
+

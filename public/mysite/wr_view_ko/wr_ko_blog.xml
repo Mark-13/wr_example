@@ -1,0 +1,19 @@
+{% extends 'wr_ko_base.xml' %}
+{% load counter %}
+{% load wr_ko_filters %}
+{% load customtags %}
+
+
+
+{% block img_content %}
+{% plate plate f_p.f_p_blog_img %}
+{% endblock %}
+
+
+{% block html_content %}
+<textformat leftmargin="150" >
+<font size="{{wc.x|mult:18}}">
+{% plate plate f_p.f_p_blog_html %}
+</font>
+</textformat>
+{% endblock %}

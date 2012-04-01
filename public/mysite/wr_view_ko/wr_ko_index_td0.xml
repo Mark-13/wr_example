@@ -1,0 +1,24 @@
+{% extends 'wr_ko_template.xml' %}
+{% load counter %}
+{% load wr_ko_filters %}
+{% load assign %}
+{% load customtags %}
+
+
+{% block img_base %}
+  {% for plate in object_list %}
+    <img n="{% counter %}" source="img_blackln.jpg" width="500" height="4" wyswyg="true" blendMode="ALPHA" /> 
+    {% plate plate f_p.f_p_blog_img %}
+  {% endfor %}
+{% endblock %}
+
+
+{% block html_base %}
+    {% for plate in object_list %}
+      <font size="{{wc.x|mult:16}}">{{plate.datetime_display}}<br></font>
+      <font face="imgfont2"><font size="5.616407">&#x54;</font></font>
+      <font size="{{wc.x|mult:13}}"><br><br>
+      {% plate plate f_p.f_p_blog_html %}
+      <br><br><br></font>
+    {% endfor %}
+{% endblock %}

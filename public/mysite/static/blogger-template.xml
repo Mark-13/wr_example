@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <b:if cond='data:blog.pageType == &quot;index&quot;'>
+      <title>
+        <data:blog.title/>
+      </title>
+      <b:else/>
+      <title>
+        <data:blog.pageName/> | <data:blog.title/>
+      </title>
+    </b:if>
+    <b:skin>
+      <![CDATA[
+*
+{
+margin:0;
+padding:0;
+}
+body
+{
+color: #000;
+font-family:courier new,courier,mono;
+font-size:12px;
+line-height: 1.5em;
+margin: 0;
+padding: 10px;
+voice-family: "\"}\"";
+voice-family: inherit;
+}
+
+/*----------------------------------------------------
+BASIC HTML ELEMENTS STYLES
+------------------------------------------------------*/
+
+a:link, a:visited {
+color: #000;
+text-decoration:none;
+}
+
+a:hover,a:active
+{
+color:#ef0050;
+text-decoration:none;
+}
+
+a img {
+border-width:0;
+}
+.logo {
+font-size:150%;
+font-weight:bold;
+}
+/* -------------------------------
+HEADER
+----------------------------------*/
+
+#header-wrapper {
+width:732px;
+height:100px;
+margin:0 auto 0px;
+}
+
+#header-inner {
+background-position: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+#header {
+font-family: arial;
+width:500px;
+text-align:center;
+float: left;
+height:100px;
+border-bottom:4px solid #F5F5F5;
+}
+
+#header h1 {
+font-style:italic;
+padding:30px 0px 5px 0px;
+font-family: Georgia, serif;
+color:#999;
+}
+
+#header a {
+text-decoration: none;
+color:#999;
+border:0;
+}
+
+#header a:hover {
+color:#666666;
+}
+
+#header .description {
+font-size: 1em;
+color:#aaa;
+}
+
+#header img {
+margin-left: auto;
+margin-right: auto;
+}
+.content
+{
+  width: 723px;
+  margin: 0 auto;
+  padding-left: 170px;
+  background:#fff;
+  border:#eee 0px solid;
+}
+#main-wrapper {
+float: left;
+width: 480px;
+padding:30px;
+padding-top:50px;
+padding-bottom:0;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#footer-wrapper {
+width:520px;
+padding-bottom:40px;
+border:solid 0px #f5f5f5;
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;
+
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+}
+
+/* -------------------------------
+POSTS
+----------------------------------*/
+
+h2.date-header {
+line-height:1em;
+font:normal normal 70% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#999999;
+}
+.post{
+margin-bottom:32px;
+}
+.post h3 {
+padding:0px 0px 10px 0px;
+font-size:18px;
+font-weight:normal;
+line-height:1.4em;
+color:#cc6600;
+}
+.post h3 a, .post h3 a:visited, .post h3 strong {
+display:block;
+text-decoration:none;
+color:#969696;
+font-weight:normal;
+}
+.post h3 strong, .post h3 a:hover {
+color:#333333;
+}
+.post-body {
+padding:0px 0px 10px 0px;
+line-height:1.6em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+color:#999999;
+text-transform:uppercase;
+font-size:10px;
+}
+.comment-link {
+margin-left:.6em;
+}
+.post img {
+padding:4px;
+background:#E1E1E1;
+border:1px solid #CCC;
+}
+.post blockquote {
+font-style:italic;
+margin:10px;
+border-left:4px solid #CCC;
+padding-left:15px;
+}
+.post blockquote p {
+}
+.jump-link{
+-moz-border-radius: 5px;
+-khtml-border-radius: 5px;
+-webkit-border-radius: 5px;
+width:100px;
+text-align:center;
+background:#E1E1E1;
+font-size:11px;
+margin-bottom:20px;
+}
+.jump-link a{color:#333;}
+.post-body li{margin-left:10px;}
+
+/* -------------------------------
+COMMENTS
+----------------------------------*/
+
+#comments h4 {
+margin:1em 0;
+font-weight: bold;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color: #999999;
+}
+#comments-block {
+margin:1em 0 1.5em;
+line-height:1.6em;
+}
+#comments-block .comment-author {
+margin:.5em 0;
+}
+#comments-block .comment-body {
+margin:.25em 0 0;
+}
+#comments-block .comment-footer {
+margin:-.25em 0 2em;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.1em;
+}
+#comments-block .comment-body p {
+margin:0 0 .75em;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+#blog-pager-newer-link {
+float: left;
+}
+#blog-pager-older-link {
+float: right;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+}
+
+/* -------------------------------
+FOOTER
+----------------------------------*/
+
+#footer-l {
+float: left;
+width: 210px;
+padding: 5px 20px;
+font-size:0.9em;
+margin:5px;
+margin-right:-1px;
+border-right:#eee 1px solid;
+}
+#footer-r{
+float: left;
+width: 210px;
+padding: 5px 20px;
+font-size:0.9em;
+margin:5px;
+margin-left:0px;
+border-left:#ee 1px solid;
+}
+.footer2 ul {
+list-style:none;
+margin:0 0 0;
+padding:0 0 0;
+}
+.footer2 li {
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:.25em;
+padding-left:15px;
+text-indent:-10px;
+line-height:1.5em;
+}
+.footer2 .widget{
+margin:0px 0px 20px 0px;
+}
+.footer2 .widget-content{
+margin:10px 0px 20px 0px;
+}
+#footer-wrapper h2
+{
+font-weight: bold;
+padding: 3px 10px;
+font-size:1em;
+background-color:#f5f5f5;
+-webkit-border-radius:4px;
+-moz-border-radius:4px;
+color:#878787;
+border-radius:4px;
+}
+.main .Blog {
+border-bottom-width: 0;
+}
+
+/* -------------------------------
+PROFILE
+----------------------------------*/
+
+.profile-img {
+float: left;
+margin-top: 0;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+padding: 4px;
+border: 1px solid #cccccc;
+}
+.profile-data {
+margin:0;
+text-transform:uppercase;
+letter-spacing:.1em;
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+color: #999999;
+font-weight: bold;
+line-height: 1.6em;
+}
+.profile-datablock {
+margin:.5em 0 .5em;
+}
+.profile-textblock {
+margin: 0.5em 0;
+line-height: 1.6em;
+}
+.profile-link {
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+text-transform: uppercase;
+letter-spacing: .1em;
+}
+.credits
+{
+border-top:1px solid #b6b6b6;
+padding-top:5px;
+white-space:nowrap;
+}
+    ]]>
+    </b:skin>
+    <link href='http://static.konstantin.co.uk/icons/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+    <link href="http://static.konstantin.co.uk/css/blogger.css" rel="stylesheet" type="text/css" />
+    <script type='text/javascript'>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-9811055-3']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id='content'>
+      <div id='wrap2'>
+
+        <!-- skip links for text browsers -->
+        <span id='skiplinks' style='display:none;'>
+          <a href='#main'>skip to main </a> |
+          <a href='#sidebar'>skip to sidebar</a>
+        </span>
+
+        <!--<div id='header-wrapper'>
+          <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
+            <b:widget id='Header1' locked='true' title='konstantin.co.uk (Header)' type='Header'/>
+          </b:section>
+        </div>-->
+        <div style="border-bottom: 1px solid rgb(182, 182, 182); min-width:1100px;">
+          <img style="display: block; height: 150px; width: 150px;" src="http://static.konstantin.co.uk/icons/ko.jpg" alt="" />
+          <div style="position: relative;">
+            <div style="bottom: 0pt; position: absolute; right: 0pt;" class="logo nobr">root[at]konstantin[dot]co[dot]uk</div>
+          </div>
+        </div>
+
+        <div id='content-wrapper'>
+
+          <div id='crosscol-wrapper' style='text-align:center'>
+            <b:section class='crosscol' id='crosscol'/>
+          </div>
+
+          <div id='main-wrapper'>
+            <b:section class='main' id='main' showaddelement='no'>
+              <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' />
+            </b:section>
+          </div>
+
+          <!-- spacer for skins that want sidebar and main to be the same height-->
+          <div class='clear'>&#160;</div>
+
+        </div>
+        <!-- end content-wrapper -->
+        <div class='clear'>&#160;</div>
+        <div id='footer-wrapper'>
+
+          <div id='footer-left'>
+            <b:section class='footer2' id='footer-l' preferred='yes'>
+              <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'/>
+            </b:section>
+          </div>
+
+          <div id='footer-right'>
+            <b:section class='footer2' id='footer-r' preferred='yes'>
+              <b:widget id='Label1' locked='false' title='Labels' type='Label'/>
+            </b:section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="credits">
+      copyright <span style="font-family: arial,sans-serif;">&amp;copy;</span>&amp;nbsp;<data:blog.title/>. all rights reserved.
+    </div>
+  </body>
+</html>

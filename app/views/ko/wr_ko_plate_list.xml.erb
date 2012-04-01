@@ -1,0 +1,38 @@
+<% inheriting_view 'ko/wr_ko_base' do %>
+
+<% content_sub :img_content do %>
+  <% plates.each do |plate| %>
+    <% t = plate.get_thumbnail %>
+    <%= raw "<img n='#{@i_n+=1}' source='#{pi + t.content}' width='#{t.width}' height='#{t.height}'  blendMode='NORMAL' />" %>
+  <% end %>
+<% end %>
+
+<% content_sub :text_width do %>
+  <text_width val="table" />
+<% end %>
+
+
+<% content_sub :html_content do %>
+  <textformat leftmargin="120" >
+    <font size=<%="'#{wc[:x]*18}'"%>>
+      tag = <%=params[:id]%>
+    </font>
+    <font size="12">
+      <br><br>
+    </font>
+    <% plates.each_index do |i| %>
+      <% plate = plates[i] %>
+      <a href=<%="'#{plate_path(plate.name + ".xml")}'"%>>
+        <font face="imgfont0"><font size="100">Z</font></font>
+      </a>
+      <% if (i < plates.count-1) and ((i+1) % 6 == 0) then %><br /><% end %>
+    <% end %>
+    <font size=<%="'#{wc[:x]*12}'"%>>
+      <br><br>
+    <font size=<%="'#{wc[:x]*14}'"%>>
+    <%= will_paginate @plates  %>
+    </font></font>
+  </textformat>
+<% end %>
+
+<% end %>

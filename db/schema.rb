@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120313203033) do
+ActiveRecord::Schema.define(:version => 20120325224526) do
 
   create_table "beer_images", :force => true do |t|
     t.string   "credits"
@@ -48,5 +48,44 @@ ActiveRecord::Schema.define(:version => 20120313203033) do
   end
 
   add_index "drinks", ["slug"], :name => "index_drinks_on_slug", :unique => true
+
+  create_table "parts", :force => true do |t|
+    t.string   "name"
+    t.string   "content"
+    t.integer  "height"
+    t.integer  "width"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "plate_parts", :force => true do |t|
+    t.string   "name"
+    t.integer  "plate_id"
+    t.integer  "part_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "plate_parts", ["part_id"], :name => "index_plate_parts_on_part_id"
+  add_index "plate_parts", ["plate_id", "part_id"], :name => "index_plate_parts_on_plate_id_and_part_id"
+  add_index "plate_parts", ["plate_id"], :name => "index_plate_parts_on_plate_id"
+
+  create_table "plates", :force => true do |t|
+    t.string   "name"
+    t.datetime "datetime"
+    t.integer  "precision"
+    t.string   "tags"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "plate_id"
+  end
+
+  create_table "templates", :force => true do |t|
+    t.string   "name"
+    t.integer  "plate_id"
+    t.text     "text"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
 end

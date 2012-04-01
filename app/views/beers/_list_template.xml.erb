@@ -11,16 +11,16 @@
   <% end %>     
     
   <htmlText><![CDATA[
-  <font face=<%="'#{font.gsub("_"," ")}'"%>><font size=<%="#{36*x}".dq%>>The <%= @drinks[0].class.name %> List<br><br>
+  <font face=<%="'#{font.gsub("_"," ")}'"%>><font size=<%="'#{36*x}'"%>>The <%= @drinks[0].class.name %> List<br><br>
   <% initial = "" %>
   <% @drinks.each do |drink| %>
     <% if initial != drink.name.first %>
       <% initial = drink.name.first %>
-      <font size=<%="#{30*x}".dq%>><%= initial %></font><br>
+      <font size=<%="'#{30*x}'"%>><%= initial %></font><br>   
     <% end %>
-    <textformat  leftmargin="50">
-    <font size=<%="#{20*x}".dq%> color="#8b008b"><li>
-    <a href=<%="#{path(drink)}#{@theme}.xml".dq%>><%=drink.name%></a></li>
+    <textformat  leftmargin="50">   
+    <font size=<%="'#{20*x}'"%> color="#8b008b"><li>   
+    <a href=<%="'#{path(drink)}#{@theme}.xml'"%>><%=drink.name%></a></li>  
     </font></textformat>
   <% end %>]]>
   </htmlText>

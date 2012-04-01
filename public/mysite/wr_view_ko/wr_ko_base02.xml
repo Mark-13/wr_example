@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<wordrad_cfg>
+    <title>konstantin.co.uk</title>
+    <main_swf source="rad_4xf.swf" />
+    <font_dir path="" />
+    <textr_dir path="" />
+    <img_dir path="" />
+    <textr_fg source="g_3a0270ad7.jpg" />
+    <textr_bg source="g_6fdd5346ca.jpg" />
+    <light val="textr_fg" />
+    <altw val="E2    SBFSxax" />
+    <img n="1" width="348" height="382" offset="57" blendMode="ALPHA" source="img_d3a6d7b97b.jpg" />
+    <text_width val="0" />
+    <font_swf source="AntsyPants.swf" />
+    <font_swf source="AntsyPants_A0.swf" />
+    <text_scale val="4.444000" scale0="1.333333" max_sz="357.587911" />
+    <textr_fgn source="g_6fdd5346ca.jpg" />
+    <htmlText><![CDATA[<textformat tabstops="54"><font color="#000000"><font face="AntsyPants"><font size="26">s    dfhdfhdfhfd root[at]konstantin[d<font size="24">ot]co[dot]<font size="26">uk<br><br>home <font size="36">d<font face="imgfont0"><font size="357.577911">&#x66;</font></font>ddddd kljsdfkj kjsfdkjh iusdf ihsdfkjh sdfkjg kjhsdfkjh ksjdf copyright konstantin.co.uk. all rights reserved.<font size="20"><br><textformat tabstops=""><font face="Arial"><font size="10">]]></htmlText>
+</wordrad_cfg>

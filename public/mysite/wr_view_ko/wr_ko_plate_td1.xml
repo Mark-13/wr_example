@@ -1,0 +1,62 @@
+{% extends 'wr_ko_template.xml' %}
+
+{% load wr_ko_filters %}
+{% load assign %}
+{% load tagging_tags %}
+{% load customtags %}
+{% load counter %}
+
+{% block img_base %}
+{% if mp3 or flv %}
+<img n="1" source="wr_video/wr_media_ctrl{{r}}.swf?src={{av_part.0.content.url}}&lc_id={{lc_ids.1}}" width="75" height="40" blendMode="NORMAL" type="APP" />
+{% endif %}
+{% endblock %}
+
+{% block html_base %}
+
+  <textformat leftmargin="0" rightmargin="9">
+
+  <font size="{{wc.x|mult:20}}">
+  {{plate.name}}<br>
+  <font size="{{wc.x|mult:18}}">
+  {% plate plate f_p.f_p_td2 %}<br>
+  
+  {% if mp3 or flv %}
+  <font face="imgfont0"><font size="60.686523">&#x5C;</font></font><br>
+  {% endif %}
+  
+  <br>
+
+  <font size="{{wc.x|mult:15}}">
+  {% assign name="fontA0" %}{{wc.font|wr_font_name_A0}}{% endassign %}
+
+  {% tags_for_object plate as tags %}
+  {% if tags %}
+    {% for tag in tags %}
+      {% if not forloop.first %}
+	<font face="{{fontA0}}">
+      {% else %}
+	<font face="{{wc.font}}">
+      {% endif %}
+      tags = [</font><a href="{% url mysite.ko.views.wr_view type='t' name=tag.name xml='.xml' %}">{{tag.name}}</a>,<br>
+      {% if forloop.last %}
+         <font face="{{fontA0}}">tags = </font>]<br>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if plate.parents %}
+    {% for p in plate.parents.all %}
+      {% if not forloop.first %}
+	<font face="{{fontA0}}">
+      {% else %}
+	<font face="{{wc.font}}">
+      {% endif %}
+      from = [</font><a href="{% url mysite.ko.views.wr_view type='p' name=p.name  xml='.xml' %}">{{p.name}}</a>,<br>
+      {% if forloop.last %}
+         <font face="{{fontA0}}">from = </font>]<br>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+{% endblock %}

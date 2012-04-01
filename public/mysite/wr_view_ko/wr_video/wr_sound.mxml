@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+  xmlns:s="library://ns.adobe.com/flex/spark" 
+  verticalScrollPolicy="off"  
+  horizontalScrollPolicy="off" 
+  creationComplete="{Init()}"  
+>
+
+  <mx:Style>    	     
+
+  </mx:Style>    	     
+
+
+  <mx:Script>  
+    <![CDATA[    
+
+      import flextrace.Dumper;
+      import mx.effects.SoundEffect;	
+      import com.gskinner.utils.SWFBridgeAS3;	
+      import my_components.wr;	
+
+      var timer:Timer = new Timer(500,0);
+
+      var clientObj:Object = {'play':play};      
+
+      var session:Object;  	
+      var s_o:SharedObject=null;
+
+      var myBridge:SWFBridgeAS3;
+      
+      var s:SoundEffect;
+            
+      var elapsed:int;
+
+      var src:Array;
+      var s_crnt=0;
+      
+      private function Init() {	       
+		              
+	src = parameters.src.split(";");
+        src.pop();
+
+        try {       
+          s_o= SharedObject.getLocal(wr.so_id(src[0]),"/");
+        } catch (e:*) {}                
+    	  	
+        if (s_o) session = s_o.data;  	
+        else session = new Object();  	
+
+	timer.addEventListener("timer",timer_handlr);
+                      
+        myBridge = new SWFBridgeAS3(parameters.lc_id, clientObj)
+                               
+        s = new SoundEffect();	
+        s.useDuration=false
+	s.addEventListener("effectEnd",play_end);
+	s.addEventListener("complete",S_Init);
+
+        if (!session.play || ((s_crnt=src.indexOf(session.source)) == -1)) {
+	  session.startTime = 0;
+	  session.source = src[s_crnt=0];   
+	}        
+	s.source = session.source
+	s.startTime = session.startTime
+                
+      }
+
+      private function S_Init(e:Event) {	       
+	
+        play(session.play || parameters.play)
+      }
+      
+      private function play(bPlay:Boolean = true) {
+        if (bPlay) {                        
+          session.play = true;
+          s.play([s]); 
+          elapsed = getTimer();
+          timer.start();
+        }
+        else {
+          session.play = false;
+          timer.stop();
+          s.end(); 
+	}
+      }
+      
+      private function timer_handlr(e:Event) {	
+
+	s.startTime = (session.startTime += (getTimer()-elapsed));
+        elapsed = getTimer();
+		
+      }
+
+      private function play_end(e:Event) {
+        if (s.startTime && (s.startTime + timer.delay > s.sound.length)) {
+          s.startTime = session.startTime = 0;  	  
+	  if (++s_crnt >= src.length) s_crnt=0
+	  s.source = session.source = src[s_crnt];	        	
+      	}      
+      }
+
+
+	               
+    ]]>    
+  
+  </mx:Script>  
+  
+       
+</mx:Application>

@@ -1,6 +1,4 @@
 module BeersHelper
-
-  include ApplicationHelper
   
   def p
    "/website/wr_view1/"

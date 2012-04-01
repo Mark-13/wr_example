@@ -17,3 +17,12 @@ ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/public/website/fixtures", 
 
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/public/website/fixtures", "drink_images")
 
+
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/public/mysite/fixtures", "plates")
+
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/public/mysite/fixtures", "parts")
+
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/public/mysite/fixtures", "templates")
+
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/public/mysite/fixtures", "plate_parts")
+

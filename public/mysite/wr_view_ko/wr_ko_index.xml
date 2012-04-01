@@ -1,0 +1,38 @@
+{% extends 'wr_ko_base.xml' %}
+{% load counter %}
+{% load wr_ko_filters %}
+{% load assign %}
+{% load customtags %}
+{% load tagging_tags %}
+
+
+{% block img_content %}
+  {% for plate in object_list %}
+     <img n="{% counter %}" source="img_blackln.jpg" width="500" height="4" wyswyg="true" blendMode="ALPHA" />
+     {% plate plate f_p.f_p_blog_img %}
+  {% endfor %}
+{% endblock %}
+
+{% block menu %}
+  <a href="{% url admin '' %}">admin</a>    
+{% endblock %}
+
+{% block html_content %}
+    <textformat leftmargin="200" rightmargin="50">
+      {% for plate in object_list %}
+        <font size="{{wc.x|mult:20}}">{{plate.datetime_display}}<br></font>
+        <font face="imgfont2"><font size="5.616407">&#x54;</font></font>
+        <font size="{{wc.x|mult:13}}"><br><br>
+        {% plate plate f_p.f_p_blog_html %}
+        <br><br><br></font>
+      {% endfor %}
+      <font size="{{wc.x|mult:17}}">{% wr_pages %}</font>
+    </textformat>
+    <font size="{{wc.x|mult:20}}"><br><br>tags = [
+    {% tags_for_model ko.Plate as tags with counts %}
+    {% for tag in tags %}
+       <a href="{% url mysite.ko.views.wr_view type='t' name=tag.name xml='.xml' %}">{{tag.name}}</a>  
+    {% endfor %}
+    <a href="/website_wr1/random~4.xml">diversion</a>
+    ]
+{% endblock %}

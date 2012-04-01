@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<wordrad_cfg>
+    <title>{% load counter %}{% load wr_ko_filters %}konstantin.co.uk</title>
+    <main_swf source="rad_{{r}}xf.swf" />
+    <font_dir path="{{P}}" />
+    <textr_dir path="{{P}}" />
+    <img_dir path="{{P}}" />
+    {% block textr_g %}
+      <textr_fg source="{{wc.dir}}/textures/{{wc.fgnd}}.jpg" />    
+      <textr_bg source="{{wc.dir}}/textures/{{wc.bgnd}}.jpg" />
+    {% endblock %}
+    <light val="{{wc.light}}" />
+    <altw val="{{wc.altw}}" />
+    {% counter silent=1 %}
+    {% block img_base %}{% endblock %}
+    {% block text_width %}
+    <text_width val="0" />
+    {% endblock %}
+    <font_swf source="{{wc.dir}}/fonts/{{wc.font_fn}}{% if wc.b == "true" %}_B{% endif %}.swf" />
+    <font_swf source="{{wc.dir}}/fonts/{{wc.font_fn}}{% if wc.b == "true" %}_B{% endif %}_A0.swf" />
+    <text_scale val="6.667000" scale0="1.333333" max_sz="531.696523" />
+    <textr_fgn source="g_fbafaf3ae4.jpg" />
+    <textr_fgn source="fgn_54cc0f31c8.jpg" color="#010000" />
+    <xml_ttl val="4000" />
+    <htmlText><![CDATA[
+    <font face="{{wc.font}}">
+    {% block html_base %}{% endblock %}
+    ]]>
+    </htmlText>
+</wordrad_cfg>

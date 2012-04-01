@@ -1,13 +1,6 @@
 include ActionView::Helpers::OutputSafetyHelper
+   
 
-require 'action_dispatch'
-
-class String
-  def dq
-    raw inspect 
-  end    
-end
-  
 class Store  
               
   def initialize (cookies)  
@@ -26,6 +19,8 @@ end
 
 module ApplicationHelper
     
+  include InventiveLabs
+
   def store 
      @store ||= Store.new(cookies)
   end

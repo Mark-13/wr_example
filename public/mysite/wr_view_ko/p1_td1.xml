@@ -1,0 +1,9 @@
+{% if not forloop.first %}     
+<font face="{{fontA0}}">	
+{% else %}     
+<font face="{{wc.font}}">	
+{% endif %}     
+{{label}} = [</font><a href="{% url mysite.ko.views.wr_view type=t name=p.name xml='.xml' %}">{{p.name}}</a>,<br>     
+{% if forloop.last %}     
+<font face="{{fontA0}}">{{label}} = </font>]<br>     
+{% endif %}     

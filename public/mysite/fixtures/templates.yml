@@ -1,0 +1,1104 @@
+id_1:
+  id: 1
+  plate_id: 1
+  name: default
+  text: "\n    \n    <table cellpadding=\"0\" cellspacing=\"0\">\n      <tr>\n        <td>\n          {% with self.content_parts.0 as p %}\n            <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n          {% endwith %}\n        </td>\n        <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n          <div class=\"plate-title\">{{self.name}}</div>\n          <div>{{self.date}}</div>\n          <div>watercolor on paper</div>\n          <div>23 x 29.5 cm</div>\n        </td>\n      </tr>\n    </table>\n    \n  "
+  
+id_2:
+  id: 2
+  plate_id: 1
+  name: blog
+  text: "\n    \n    another watercolor.\n    <br /><br />\n    <div>\n      {% with self.get_display as d %}\n        <a href=\"{% url mysite.ko.views.view_plate self.name %}\">\n          <img alt=\"{{self.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" /></a>\n      {% endwith %}\n    </div>\n    \n  "
+  
+id_3:
+  id: 3
+  plate_id: 1
+  name: summary
+  text: "\n    \n    another watercolor.\n    <br /><br />\n    <div>\n      {% with self.get_thumbnail as t %}\n        <a href=\"{% url mysite.ko.views.view_plate self.name %}\">\n          <img alt=\"{{self.name}}\" src=\"{{t.content.url}}\" style=\"border-width:0px;\" width=\"{{t.width}}px\" height=\"{{t.height}}px\" /></a>\n      {% endwith %}\n    </div>\n    \n  "
+  
+id_4:
+  id: 4
+  plate_id: 2
+  name: default
+  text: "\n    \n    <table cellpadding=\"0\" cellspacing=\"0\">\n      <tr>\n        <td>\n          {% with self.content_parts.0 as p %}\n            <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n          {% endwith %}\n        </td>\n        <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n          <div class=\"plate-title\">{{self.name}}</div>\n          <div>{{self.date}}</div>\n          <div>watercolor and gouache on paper</div>\n          <div>23 x 29.5 cm</div>\n        </td>\n      </tr>\n    </table>\n    \n  "
+  
+id_5:
+  id: 5
+  plate_id: 2
+  name: blog
+  text: "    one hundred watercolors. the first one.\r\n    <br /><br />\r\n    <div>\r\n     {% with self.get_display as d %}\r\n        <a href=\"{% url mysite.ko.views.view_plate self.name %}\">\r\n          <img alt=\"{{self.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" /></a>\r\n      {% endwith %}\r\n    </div>\r\n    "
+  
+id_6:
+  id: 6
+  plate_id: 2
+  name: summary
+  text: "\n    \n    the first work in the series of one hundred watercolors.\n    <br /><br />\n    <div>\n      {% with self.get_thumbnail as t %}\n        <a href=\"{% url mysite.ko.views.view_plate self.name %}\">\n          <img alt=\"{{self.name}}\" src=\"{{t.content.url}}\" style=\"border-width:0px;\" width=\"{{t.width}}px\" height=\"{{t.height}}px\" /></a>\n      {% endwith %}\n    </div>\n    \n  "
+  
+id_7:
+  id: 7
+  plate_id: 3
+  name: default
+  text: "{% with self.content_parts.0 as p %}\n  <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n{% endwith %}\n"
+  
+id_8:
+  id: 8
+  plate_id: 4
+  name: default
+  text: "{% with self.content_parts.0 as p %}\n  <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n{% endwith %}\n"
+  
+id_9:
+  id: 9
+  plate_id: 5
+  name: default
+  text: "{% with self.content_parts.0 as p %}\n  <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n{% endwith %}\n"
+  
+id_10:
+  id: 10
+  plate_id: 6
+  name: default
+  text: "{% with self.content_parts.0 as p %}\n  <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n{% endwith %}\n"
+  
+id_11:
+  id: 11
+  plate_id: 7
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_12:
+  id: 12
+  plate_id: 8
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>charcoal on canvas</div>\n      <div>40.6 x 50.8 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_13:
+  id: 13
+  plate_id: 9
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>oil on canvas</div>\n      <div>40.6 x 50.8 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_14:
+  id: 14
+  plate_id: 10
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>oil on canvas</div>\n      <div>40.6 x 50.8 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_15:
+  id: 15
+  plate_id: 11
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>oil on canvas</div>\n      <div>40.6 x 50.8 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_16:
+  id: 16
+  plate_id: 12
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>oil on canvas</div>\n      <div>40.6 x 50.8 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_17:
+  id: 17
+  plate_id: 13
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_dict.daemon_alcohol_jpg as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>painting with sound</div>\n      <p />\n      <div>acrylic and ink on paper</div>\n      <div>27.9 x 35.6 cm</div>\n      <p />\n      <div>\n        song \"Mama I Cannot Drink Anymore\" <a href=\"http://www.aquarium.ru/discography/brodyaga.html#@05\" target=\"_blank\">&gt;&gt;</a><br />\n        written by Boris Grebenshchikov and performed by Aquarium<br />\n        (c) 2006 BG<br />\n        published with the permission of the author\n      </div>\n      <p />\n      <div style=\"background-color:#b5edbc;padding:5px;\">\n        <div>right button plays sound</div>\n        <div>left button stops playback</div>\n        <object classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\"\n                codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0\"\n                id=\"{{self.name}}\"\n                width=\"100px\" height=\"40px\">\n          <param name=\"bgcolor\" value=\"#b5edbc\" />\n          <param name=\"flashvars\" value=\"url={{self.content_dict.micda_mp3.content.url}}\" />\n          <param name=\"movie\" value=\"{{self.content_dict.player_swf.content.url}}\" />\n          <param name=\"quality\" value=\"high\" />\n          <embed bgcolor=\"#b5edbc\"\n                 flashvars=\"url={{self.content_dict.micda_mp3.content.url}}\"\n                 name=\"{{self.name}}\"\n                 pluginspage=\"http://www.macromedia.com/go/getflashplayer\"\n                 quality=\"high\"\n                 src=\"{{self.content_dict.player_swf.content.url}}\"\n                 type=\"application/x-shockwave-flash\"\n                 width=\"100px\" height=\"40px\" />\n        </object>\n        <div align=\"right\"><a href=\"http://code.konstantin.co.uk/client/player/\">(code)</a></div>\n      </div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_18:
+  id: 18
+  plate_id: 14
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td valign=\"top\">\n      {% with self.content_dict.trees_jpg as p %}\n        <object classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\"\n                codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0\"\n                id=\"{{self.name}}\"\n                width=\"{{p.width}}px\" height=\"{{p.height}}px\">\n          <param name=\"bgcolor\" value=\"#ffffff\" />\n          <param name=\"flashvars\" value=\"c=0xcc9966&url={{p.content.url}}\" />\n          <param name=\"movie\" value=\"{{self.content_dict.fadeaway_swf.content.url}}\" />\n          <param name=\"quality\" value=\"high\" />\n          <embed bgcolor=\"#ffffff\"\n                 flashvars=\"c=0xcc9966&url={{p.content.url}}\"\n                 name=\"{{self.name}}\"\n                 pluginspage=\"http://www.macromedia.com/go/getflashplayer\"\n                 quality=\"high\"\n                 src=\"{{self.content_dict.fadeaway_swf.content.url}}\"\n                 type=\"application/x-shockwave-flash\"\n                 width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n        </object>\n      {% endwith %}\n    </td>\n    <td valign=\"top\" style=\"padding-left:50px;\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>feb 2007</div>\n      <div class=\"nobr\">actionscript 3.0 (<a href=\"http://code.konstantin.co.uk/client/fadeaway/\">code</a>)</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_19:
+  id: 19
+  plate_id: 15
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>dec 2006</div>\n      <div>etching</div>\n      <div>15 x 23 cm</div>\n      <div style=\"margin:25px 0 0 25px;\">\n        merit award<br />\n        2007 student art exhibit<br />\n        lansing community college<br />\n        lansing mi usa (<a alt=\"\" target=\"_blank\" href=\"http://www.lcc.edu\">lcc.edu</a>)\n      </div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_20:
+  id: 20
+  plate_id: 16
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td valign=\"top\">\n      <object classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\"\n              codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0\"\n              id=\"{{self.name}}\"\n              width=\"519px\" height=\"658px\">\n        <param name=\"bgcolor\" value=\"#ffffff\" />\n        <param name=\"flashvars\" value=\"urls={{self.content_dict.barselona_metro_mp3.content.url}}|{{self.content_dict.kiev_metro_mp3.content.url}}\" />\n        <param name=\"movie\" value=\"{{self.content_dict.metro_swf.content.url}}\" />\n        <param name=\"quality\" value=\"high\" />\n        <embed bgcolor=\"#ffffff\"\n               flashvars=\"urls={{self.content_dict.barselona_metro_mp3.content.url}}|{{self.content_dict.kiev_metro_mp3.content.url}}\"\n               name=\"{{self.name}}\"\n               pluginspage=\"http://www.macromedia.com/go/getflashplayer\"\n               quality=\"high\"\n               src=\"{{self.content_dict.metro_swf.content.url}}\"\n               type=\"application/x-shockwave-flash\"\n               width=\"519px\" height=\"658px\" />\n      </object>\n    </td>\n    <td valign=\"top\" style=\"padding-left:50px;\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>may 2007</div>\n      <div class=\"nobr\">actionscript 3.0 (<a href=\"http://code.konstantin.co.uk/client/metro/\">code</a>)</div>\n      <div style=\"margin:25px 0 0 25px;\">\n        {{self.name}} uses sounds taken from <a alt=\"\" target=\"_blank\" href=\"http://freesound.iua.upf.edu\">http://freesound.iua.upf.edu</a>:\n        <ul style=\"list-style-type:none;margin-left:0px;\">\n          <li>\n            <a alt=\"\" target=\"_blank\" href=\"http://freesound.iua.upf.edu/samplesViewSingle.php?id=11688\">07-kiev-metro.wav</a>\n            (by Bram)\n          </li>\n          <li>\n            <a alt=\"\" target=\"_blank\" href=\"http://freesound.iua.upf.edu/samplesViewSingle.php?id=369\">ComeAndGo-metro-BCN.wav</a>\n            (by TwistedLemon)\n          </li>\n        </ul>\n      </div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_21:
+  id: 21
+  plate_id: 17
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\r\n  <tr>\r\n    <td valign=\"top\">\r\n      <object classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\"\r\n              codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0\"\r\n              id=\"{{self.name}}\"\r\n              width=\"580px\" height=\"480px\">\r\n        <param name=\"bgcolor\" value=\"#ffffff\" />\r\n        <param name=\"flashvars\" value=\"file={{self.content_dict.the_farm_flv.content.url}}&showdigits=false&overstretch=false&showfsbutton=false&showicons=false&autostart=false&repeat=false\" />\r\n        <param name=\"menu\" value=\"false\" />\r\n        <param name=\"movie\" value=\"{{self.content_dict.flvplayer_swf.content.url}}\" />\r\n        <param name=\"quality\" value=\"high\" />\r\n        <embed bgcolor=\"#ffffff\"\r\n               flashvars=\"file={{self.content_dict.the_farm_flv.content.url}}&showdigits=false&overstretch=false&showfsbutton=false&showicons=false&autostart=false&repeat=false\"\r\n               menu=\"false\"\r\n               name=\"{{self.name}}\"\r\n               pluginspage=\"http://www.macromedia.com/go/getflashplayer\"\r\n               quality=\"high\"\r\n               src=\"{{self.content_dict.flvplayer_swf.content.url}}\"\r\n               type=\"application/x-shockwave-flash\"\r\n               width=\"580px\" height=\"480px\" />\r\n      </object>\r\n    </td>\r\n    <td class=\"nobr\" valign=\"top\" style=\"padding-left:50px;\">\r\n      <div class=\"plate-title\">{{self.name}}</div>\r\n      <div>mar 2007</div>\r\n      <div style=\"margin:25px 0 0 25px;\">\r\n        {{self.name}} uses sounds taken from <a alt=\"\" target=\"_blank\" href=\"http://freesound.iua.upf.edu\">http://freesound.iua.upf.edu</a>:\r\n        <ul style=\"list-style-type:none;margin-left:0px;\">\r\n          <li>\r\n            <a alt=\"\" target=\"_blank\" href=\"http://freesound.iua.upf.edu/samplesViewSingle.php?id=31964\">03 - Resodance.mp3</a>\r\n            (by marvman)\r\n          </li>\r\n          <li>\r\n            <a alt=\"\" target=\"_blank\" href=\"http://freesound.iua.upf.edu/samplesViewSingle.php?id=18074\">BerberFarmyard2.wav</a>\r\n            (by acclivity)\r\n          </li>\r\n          <li>\r\n            <a alt=\"\" target=\"_blank\" href=\"http://freesound.iua.upf.edu/samplesViewSingle.php?id=16568\">TwoCows.wav</a>\r\n            (by acclivity)\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </td>\r\n  </tr>\r\n</table>\r\n"
+  
+id_22:
+  id: 22
+  plate_id: 18
+  name: default
+  text: "figure with bouquet II. painted from imagination. apparently.\n<br /><br />\n<div>\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_23:
+  id: 23
+  plate_id: 19
+  name: default
+  text: "figure with bouquet. this is a digitally modified drawing. i did it\nwith a green pen in my sketchbook, then photographed it and colored it\nusing software.\n<br /><br />\n<div>\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_24:
+  id: 24
+  plate_id: 20
+  name: default
+  text: "two recent doodles. from left to right: \"bear\" and \"convex subspace closure of\nthe point shadow of an apartment of a spherical building\".\n<br /><br />\n<div>\n  {% for p in self.plates.all %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endfor %}\n</div>\n\n"
+  
+id_25:
+  id: 25
+  plate_id: 21
+  name: default
+  text: "flowers on a kitchen table.\n<br /><br />\n<div>\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_26:
+  id: 26
+  plate_id: 22
+  name: default
+  text: "first grade.\n<br /><br />\n<div>\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_27:
+  id: 27
+  plate_id: 23
+  name: default
+  text: "i call these (from left to right) \"labourer\" and \"stolen sun\".\n<br /><br />\n<div>\n  {% for p in self.plates.all %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endfor %}\n</div>\n\n"
+  
+id_28:
+  id: 28
+  plate_id: 24
+  name: default
+  text: "more photos.\n<br /><br />\n<div>\n  {% for p in self.plates.all %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_thumbnail as t %}\n        <img alt=\"{{p.name}}\" src=\"{{t.content.url}}\" width=\"{{t.width}}px\" height=\"{{t.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endfor %}\n</div>\n\n"
+  
+id_29:
+  id: 29
+  plate_id: 25
+  name: default
+  text: "thank you, comrade stalin! a quick sketch from imagination.\n<br /><br />\n<div>\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_30:
+  id: 30
+  plate_id: 26
+  name: default
+  text: "instant messaging. painted from imagination.\n<br /><br />\n<div>\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_31:
+  id: 31
+  plate_id: 27
+  name: default
+  text: "more photos.\n<br /><br />\n<div>\n  {% for p in self.plates.all %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_thumbnail as t %}\n        <img alt=\"{{p.name}}\" src=\"{{t.content.url}}\" width=\"{{t.width}}px\" height=\"{{t.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endfor %}\n</div>\n\n"
+  
+id_32:
+  id: 32
+  plate_id: 28
+  name: default
+  text: "a bather. painted from imagination.\n<br /><br />\n<div>\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_33:
+  id: 33
+  plate_id: 29
+  name: default
+  text: "sketches done in acrylic.\n<br /><br />\n<div>\n  {% for p in self.plates.all %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endfor %}\n</div>\n\n"
+  
+id_34:
+  id: 34
+  plate_id: 30
+  name: default
+  text: "Ivan and Danilo.\n<br /><br />\n<div>\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_35:
+  id: 35
+  plate_id: 31
+  name: default
+  text: "i decided i would paint a still life. in oil of course. and on canvas\nno less. a lot of people do it, and i am no better. i do have a\ngeranium on my window, which, many might think, is a very mundane\nsubject to paint, especially if it is placed against a uniform light\nbackground. i am going to try at least, and if i ever make it, we will\nsee what comes out. bear with me, dear reader. and one more thing, i could not resist putting up a quote from a song\nby Vladimir Vysotsky\n(see <a href=\"http://en.wikipedia.org/wiki/Vladimir_Vysotsky\" target=\"_blank\">wikipedia.org</a>).\nfor those who can read russian.\n\n<div style=\"padding-top:25px;\">\n  <table cellpadding=\"0\" cellspacing=\"0\">\n    <tr>\n      <td valign=\"top\">\n        {% with self.plates.all.0 as p %}\n          <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n            {% with p.get_display as d %}\n              <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n            {% endwith %}\n          </a>\n        {% endwith %}\n      </td>\n      <td class=\"nobr\" style=\"padding-left:25px;\" valign=\"top\">\n        \u0423 \u043d\u0435\u0435, \u0443 \u043d\u0435\u0435 \u043d\u0430 \u043e\u043a\u043e\u0448\u043a\u0435 \u0433\u0435\u0440\u0430\u043d\u044c,<br />\n        \u0423 \u043d\u0435\u0435, \u0443 \u043d\u0435\u0435 \u0437\u0430\u043d\u0430\u0432\u0435\u0441\u043a\u0438 \u0432 \u0440\u0430\u0437\u0432\u043e\u0434\u0430\u0445.<br />\n        \u0410 \u0443 \u043c\u0435\u043d\u044f, \u0443 \u043c\u0435\u043d\u044f \u043d\u0430 \u043e\u043a\u043d\u0435 \u043d\u0438 \u0445\u0435\u0440\u0430,<br />\n        \u0422\u043e\u043b\u044c\u043a\u043e \u043f\u044b\u043b\u044c, \u0442\u043e\u043b\u044c\u043a\u043e \u0441\u0442\u0430\u0440\u0430\u044f \u043f\u044b\u043b\u044c \u043d\u0430 \u043a\u043e\u043c\u043e\u0434\u0430\u0445.\n      </td>\n    </tr>\n  </table>\n</div>\n\n"
+  
+id_36:
+  id: 36
+  plate_id: 32
+  name: default
+  text: "i am still enthusiastic about it! i even have made a sketch! this is unstretched canvas. primed.\n<div style=\"padding-top:25px;\">\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_37:
+  id: 37
+  plate_id: 33
+  name: default
+  text: "first touches of paint. this is all wrong. zoomed in too much.\n<div style=\"padding-top:25px;\">\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_38:
+  id: 38
+  plate_id: 34
+  name: default
+  text: "i do not know what i am doing here...\n<div style=\"padding-top:25px;\">\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_39:
+  id: 39
+  plate_id: 35
+  name: default
+  text: "this is beginning to clear up me thinks. the lower right corner is\npromising. it might be a geranium after all. i do not know.\n<div style=\"padding-top:25px;\">\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_40:
+  id: 40
+  plate_id: 36
+  name: default
+  text: "i got rid of the formation in the middle. at least partially. it made\nthe geranium appear unwelcome. the overall color scheme is starting to\ndefine. am i on to something?\n<div style=\"padding-top:25px;\">\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n"
+  
+id_41:
+  id: 41
+  plate_id: 37
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>oil on canvas</div>\n      <div>46 x 61 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_42:
+  id: 42
+  plate_id: 38
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pen and marker on paper</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_43:
+  id: 43
+  plate_id: 39
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pen on paper. digitally retouched.</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_44:
+  id: 44
+  plate_id: 40
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil and crayon on paper. digitally retouched.</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_45:
+  id: 45
+  plate_id: 41
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>crayon on paper. digitally retouched.</div>\n    </td>\n  </tr>\n</table>\n"
+  
+id_46:
+  id: 46
+  plate_id: 42
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>crayon on paper. digitally retouched.</div>\n    </td>\n  </tr>\n</table>\n"
+  
+id_47:
+  id: 47
+  plate_id: 43
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>crayon on paper. digitally retouched.</div>\n    </td>\n  </tr>\n</table>\n"
+  
+id_48:
+  id: 48
+  plate_id: 44
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>crayon on paper. digitally retouched.</div>\n    </td>\n  </tr>\n</table>\n"
+  
+id_49:
+  id: 49
+  plate_id: 45
+  name: default
+  text: "    \r\n    090818 and 090810.\r\n    <br /><br />\r\n    <div>\r\n      {% for p in self.plates.all %}\r\n        <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\r\n          {% with p.get_display as d %}\r\n            <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\r\n          {% endwith %}\r\n        </a>\r\n      {% endfor %}\r\n    </div>\r\n    \r\n  "
+  
+id_50:
+  id: 50
+  plate_id: 45
+  name: summary
+  text: "\n    \n    090818 and 090810.\n    <br /><br />\n    <div>\n      {% for p in self.plates.all %}\n        <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n          {% with p.get_thumbnail as t %}\n            <img alt=\"{{p.name}}\" src=\"{{t.content.url}}\" width=\"{{t.width}}px\" height=\"{{t.height}}px\" />\n          {% endwith %}\n        </a>\n      {% endfor %}\n    </div>\n    \n  "
+  
+id_51:
+  id: 51
+  plate_id: 46
+  name: default
+  text: "\n    \n    two recent acrylics.\n    <br /><br />\n    <div>\n      {% for p in self.plates.all %}\n        <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n          {% with p.get_display as d %}\n            <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n          {% endwith %}\n        </a>\n      {% endfor %}\n    </div>\n    \n  "
+  
+id_52:
+  id: 52
+  plate_id: 46
+  name: summary
+  text: "\n    \n    two recent acrylics.\n    <br /><br />\n    <div>\n      {% for p in self.plates.all %}\n        {% with p.get_thumbnail as t %}\n          <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n            <img alt=\"{{p.name}}\" src=\"{{t.content.url}}\" style=\"border-width:0px;\" width=\"{{t.width}}px\" height=\"{{t.height}}px\" /></a>\n        {% endwith %}\n      {% endfor %}\n    </div>\n    \n  "
+  
+id_53:
+  id: 53
+  plate_id: 47
+  name: default
+  text: "{% with self.plates.all.0 as p %}{% plate p, template = blog %}{% endwith %}"
+  
+id_54:
+  id: 54
+  plate_id: 47
+  name: summary
+  text: "{% with self.plates.all.0 as p %}{% plate p, template = summary %}{% endwith %}"
+  
+id_55:
+  id: 55
+  plate_id: 48
+  name: default
+  text: "{% with self.plates.all.0 as p %}{% plate p, template = blog %}{% endwith %}"
+  
+id_56:
+  id: 56
+  plate_id: 48
+  name: summary
+  text: "{% with self.plates.all.0 as p %}{% plate p, template = summary %}{% endwith %}"
+  
+id_57:
+  id: 57
+  plate_id: 49
+  name: default
+  text: "       \r\n      work in progress. collective farmers are coming to rescue a woman tangled in the branches of a tree.\r\n      <br /><br />\r\n      <div>\r\n        {% with self.plates.all.0 as p %}\r\n          {% with p.get_display as d %}\r\n            <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\r\n              <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" /></a>\r\n          {% endwith %}\r\n        {% endwith %}\r\n      </div>\r\n      "
+  
+id_58:
+  id: 58
+  plate_id: 49
+  name: summary
+  text: "\n    \n    work in progress. collective farmers are coming to rescue a woman tangled in the branches of a tree.\n    <br /><br />\n    <div>\n      {% with self.plates.all.0 as p %}\n        {% with p.get_thumbnail as t %}\n          <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n            <img alt=\"{{p.name}}\" src=\"{{t.content.url}}\" width=\"{{t.width}}px\" height=\"{{t.height}}px\" /></a>\n        {% endwith %}\n      {% endwith %}\n    </div>\n    \n  "
+  
+id_59:
+  id: 59
+  plate_id: 50
+  name: default
+  text: "i call it finished.\n<br /><br />\n<div>\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_60:
+  id: 60
+  plate_id: 51
+  name: default
+  text: "gamayun.\n<br /><br />\n<div>\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_61:
+  id: 61
+  plate_id: 52
+  name: default
+  text: "three faces.\n<br /><br />\n<div>\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_62:
+  id: 62
+  plate_id: 53
+  name: default
+  text: "work in progress. after Chekhov's story \"The Lady with the Little Dog\".\n<br /><br />\n<div>\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_63:
+  id: 63
+  plate_id: 54
+  name: default
+  text: "two old works. from left to right: \"untitled\" and \"masha and the bear\".\n<br /><br />\n<div>\n  {% for p in self.plates.all %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endfor %}\n</div>\n\n"
+  
+id_64:
+  id: 64
+  plate_id: 55
+  name: default
+  text: "<div>\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_65:
+  id: 65
+  plate_id: 56
+  name: default
+  text: "<div>\n  {% with self.plates.all.0 as p %}\n    <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n      {% with p.get_display as d %}\n        <img alt=\"{{p.name}}\" src=\"{{d.content.url}}\" width=\"{{d.width}}px\" height=\"{{d.height}}px\" />\n      {% endwith %}\n    </a>\n  {% endwith %}\n</div>\n\n"
+  
+id_66:
+  id: 66
+  plate_id: 57
+  name: default
+  text: "works in progress.\n<br /><br />\n<div>\n  {% with self.content_parts.0 as p %}\n    <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n  {% endwith %}\n</div>\n"
+  
+id_67:
+  id: 67
+  plate_id: 58
+  name: default
+  text: "\n    \n    <div>\n      <div style=\"float:left;\">\n        {% with self.content_parts.0 as p %}\n          <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n        {% endwith %}\n      </div>\n      <div class=\"nobr\" style=\"float:left;padding-left:50px;\">\n        <div class=\"plate-title\">{{self.name}}</div>\n        <div>{{self.date}}</div>\n        <div>acrylic on paper</div>\n        <div>30.5 x 30.5 cm</div>\n      </div>\n      <div style=\"clear:both;\" />\n    </div>\n    \n  "
+  
+id_68:
+  id: 68
+  plate_id: 59
+  name: default
+  text: "\n    \n    <div>\n      <div style=\"float:left;\">\n        {% with self.content_parts.0 as p %}\n          <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n        {% endwith %}\n      </div>\n      <div class=\"nobr\" style=\"float:left;padding-left:50px;\">\n        <div class=\"plate-title\">{{self.name}}</div>\n        <div>{{self.date}}</div>\n        <div>acrylic on paper</div>\n        <div>30.5 x 30.5 cm</div>\n      </div>\n      <div style=\"clear:both;\" />\n    </div>\n    \n  "
+  
+id_69:
+  id: 69
+  plate_id: 60
+  name: default
+  text: "\n    \n    <div>\n      <div style=\"float:left;\">\n        {% with self.content_parts.0 as p %}\n          <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n        {% endwith %}\n      </div>\n      <div class=\"nobr\" style=\"float:left;padding-left:50px;\">\n        <div class=\"plate-title\">{{self.name}}</div>\n        <div>{{self.date}}</div>\n        <div>acrylic on paper</div>\n        <div>30.5 x 30.5 cm</div>\n      </div>\n      <div style=\"clear:both;\" />\n    </div>\n    \n  "
+  
+id_70:
+  id: 70
+  plate_id: 61
+  name: default
+  text: "\n    \n    <div>\n      <div style=\"float:left;\">\n        {% with self.content_parts.0 as p %}\n          <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n        {% endwith %}\n      </div>\n      <div class=\"nobr\" style=\"float:left;padding-left:50px;\">\n        <div class=\"plate-title\">{{self.name}}</div>\n        <div>{{self.date}}</div>\n        <div>acrylic and pasted newspaper on board</div>\n        <div>61 x 81.2 cm</div>\n      </div>\n      <div style=\"clear:both;\" />\n    </div>\n    \n  "
+  
+id_71:
+  id: 71
+  plate_id: 62
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>oil on linen</div>\n      <div>76.2 x 61 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_72:
+  id: 72
+  plate_id: 63
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>oil on canvas board</div>\n      <div>46 x 61 cm</div>\n      {% if self.plates.all %}\n        <div style=\"margin:25px 0 0 25px;\">\n          a progress snapshot:<p />\n          {% with self.plates.all.0 as p %}\n            {% with p.get_thumbnail as t %}\n              <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n                <img alt=\"\" src=\"{{t.content.url}}\" width=\"{{t.width}}px\" height=\"{{t.height}}px\" /></a>\n            {% endwith %}\n          {% endwith %}\n        </div>\n      {% endif %}\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_73:
+  id: 73
+  plate_id: 64
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>oil on canvas</div>\n      <div>61 x 76.2 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_74:
+  id: 74
+  plate_id: 65
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>oil on paper mounted on board</div>\n      <div>61 x 81.3 cm</div>\n      {% if self.plates.all %}\n        <div style=\"margin:25px 0 0 25px;\">\n          a progress snapshot:<p />\n          {% with self.plates.all.0 as p %}\n            {% with p.get_thumbnail as t %}\n              <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n                <img alt=\"\" src=\"{{t.content.url}}\" width=\"{{t.width}}px\" height=\"{{t.height}}px\" /></a>\n            {% endwith %}\n          {% endwith %}\n        </div>\n      {% endif %}\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_75:
+  id: 75
+  plate_id: 66
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>oil on paper mounted on board</div>\n      <div>61 x 81.3 cm</div>\n      {% if self.plates.all %}\n        <div style=\"margin:25px 0 0 25px;\">\n          a progress snapshot:<p />\n          {% with self.plates.all.0 as p %}\n            {% with p.get_thumbnail as t %}\n              <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n                <img alt=\"\" src=\"{{t.content.url}}\" width=\"{{t.width}}px\" height=\"{{t.height}}px\" /></a>\n            {% endwith %}\n          {% endwith %}\n        </div>\n      {% endif %}\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_76:
+  id: 76
+  plate_id: 67
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>oil on canvas board</div>\n      <div>46 x 61 cm</div>\n      <div style=\"margin:25px 0 0 25px;\">photo courtesy of Slava Fedorchuk</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_77:
+  id: 77
+  plate_id: 68
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>acrylic on canvas board</div>\n      <div>30.5 x 40.6 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_78:
+  id: 78
+  plate_id: 69
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>oil on canvas board</div>\n      <div>40.6 x 50.8 cm</div>\n      <div style=\"margin:25px 0 0 25px;\">\n        a progress snapshot:<p />\n        {% with self.plates.all.0 as p %}\n          {% with p.get_thumbnail as t %}\n            <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n              <img alt=\"\" src=\"{{t.content.url}}\" width=\"{{t.width}}px\" height=\"{{t.height}}px\" /></a>\n          {% endwith %}\n        {% endwith %}\n      </div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_79:
+  id: 79
+  plate_id: 70
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>acrylic underpainting</div>\n      <div>40.6 x 50.8 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_80:
+  id: 80
+  plate_id: 71
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>oil on paper</div>\n      <div>45.7 x 61 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_81:
+  id: 81
+  plate_id: 72
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>acrylic on paper</div>\n      <div>14 x 21.6 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_82:
+  id: 82
+  plate_id: 73
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>acrylic on paper</div>\n      <div>14 x 21.6 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_83:
+  id: 83
+  plate_id: 74
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>acrylic on paper</div>\n      <div>14 x 21.6 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_84:
+  id: 84
+  plate_id: 75
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>acrylic on paper</div>\n      <div>14 x 21.6 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_85:
+  id: 85
+  plate_id: 76
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>acrylic on paper</div>\n      <div>14 x 21.6 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_86:
+  id: 86
+  plate_id: 77
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>acrylic on paper</div>\n      <div>14 x 21.6 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_87:
+  id: 87
+  plate_id: 78
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>acrylic on paper</div>\n      <div>14 x 21.6 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_88:
+  id: 88
+  plate_id: 79
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>acrylic on paper</div>\n      <div>14 x 21.6 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_89:
+  id: 89
+  plate_id: 80
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>watercolor on paper</div>\n      <div>45.7 x 61 cm</div>\n      <div align=\"center\" style=\"margin:25px 0 0 25px;\">\n        {% with self.plates.all.0 as p %}\n          <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n            {% with p.get_thumbnail as t %}\n              <img alt=\"\" src=\"{{t.content.url}}\" style=\"display:block;\" width=\"{{t.width}}px\" height=\"{{t.height}}px\" />\n            {% endwith %}\n            <span class=\"nobr\">{{p.name}}</span>\n          </a>\n        {% endwith %}\n      </div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_90:
+  id: 90
+  plate_id: 81
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>watercolor on paper</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_91:
+  id: 91
+  plate_id: 82
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>watercolor on paper</div>\n      <div>45.7 x 61 cm</div>\n      <div style=\"margin:25px 0 0 25px;\">portrait of Laura Vasyutynskaya (<a href=\"http://www.lauravdesign.com/\" target=\"_blank\">http://www.lauravdesign.com</a>)</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_92:
+  id: 92
+  plate_id: 83
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>watercolor on paper</div>\n      <div>45.7 x 61 cm</div>\n      <div style=\"margin:25px 0 0 25px;\">painted from life</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_93:
+  id: 93
+  plate_id: 84
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>watercolor on paper</div>\n      <div>45.7 x 61 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_94:
+  id: 94
+  plate_id: 85
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>watercolor on paper</div>\n      <div>45.7 x 61 cm</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_95:
+  id: 95
+  plate_id: 86
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>oil on paper</div>\n      <div>69 x 93 cm</div>\n      <div style=\"margin:25px 0 0 25px;\">painted from life</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_96:
+  id: 96
+  plate_id: 87
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>watercolor on paper</div>\n      <div>45.7 x 61 cm</div>\n      <div style=\"margin:25px 0 0 25px;\">painted from life</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_97:
+  id: 97
+  plate_id: 88
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>oil on canvas</div>\n      <div>40.6 x 50.8 cm</div>\n      <table cellpadding=\"0\" cellspacing=\"0\" style=\"margin:25px 0 0 25px;\">\n        <tr><td class=\"nobr\">progress</td></tr>\n        <tr><td>&nbsp;</td></tr>\n        <tr>\n          <td class=\"nobr\">\n            {% for p in self.plates.all %}\n              {% with p.get_thumbnail as t %}\n                <a href=\"{% url mysite.ko.views.view_plate p.name %}\">\n                  <img alt=\"\" src=\"{{t.content.url}}\" width=\"{{t.width}}px\" height=\"{{t.height}}px\" /></a>\n              {% endwith %}\n            {% endfor %}\n          </td>\n        </tr>\n      </table>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_98:
+  id: 98
+  plate_id: 89
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>oil on canvas</div>\n      <div>40.6 x 50.8 cm</div>\n    </td>\n  </tr>\n</table>\n"
+  
+id_99:
+  id: 99
+  plate_id: 90
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>oil on canvas</div>\n      <div>40.6 x 50.8 cm</div>\n    </td>\n  </tr>\n</table>\n"
+  
+id_100:
+  id: 100
+  plate_id: 91
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>oil on canvas</div>\n      <div>40.6 x 50.8 cm</div>\n    </td>\n  </tr>\n</table>\n"
+  
+id_101:
+  id: 101
+  plate_id: 92
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>tennessee usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_102:
+  id: 102
+  plate_id: 93
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>tennessee usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_103:
+  id: 103
+  plate_id: 94
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_104:
+  id: 104
+  plate_id: 95
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_105:
+  id: 105
+  plate_id: 96
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_106:
+  id: 106
+  plate_id: 97
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_107:
+  id: 107
+  plate_id: 98
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_108:
+  id: 108
+  plate_id: 99
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_109:
+  id: 109
+  plate_id: 100
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_110:
+  id: 110
+  plate_id: 101
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_111:
+  id: 111
+  plate_id: 102
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_112:
+  id: 112
+  plate_id: 103
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_113:
+  id: 113
+  plate_id: 104
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_114:
+  id: 114
+  plate_id: 105
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_115:
+  id: 115
+  plate_id: 106
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>lansing michigan usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_116:
+  id: 116
+  plate_id: 107
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>east lansing michigan usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_117:
+  id: 117
+  plate_id: 108
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>east lansing michigan usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_118:
+  id: 118
+  plate_id: 109
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>east lansing michigan usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_119:
+  id: 119
+  plate_id: 110
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>east lansing michigan usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_120:
+  id: 120
+  plate_id: 111
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>east lansing michigan usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_121:
+  id: 121
+  plate_id: 112
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>east lansing michigan usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_122:
+  id: 122
+  plate_id: 113
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>east lansing michigan usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_123:
+  id: 123
+  plate_id: 114
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>east lansing michigan usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_124:
+  id: 124
+  plate_id: 115
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>east lansing michigan usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_125:
+  id: 125
+  plate_id: 116
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>east lansing michigan usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_126:
+  id: 126
+  plate_id: 117
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>east lansing michigan usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_127:
+  id: 127
+  plate_id: 118
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>east lansing michigan usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_128:
+  id: 128
+  plate_id: 119
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>east lansing michigan usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_129:
+  id: 129
+  plate_id: 120
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>east lansing michigan usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_130:
+  id: 130
+  plate_id: 121
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_131:
+  id: 131
+  plate_id: 122
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_132:
+  id: 132
+  plate_id: 123
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_133:
+  id: 133
+  plate_id: 124
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_134:
+  id: 134
+  plate_id: 125
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_135:
+  id: 135
+  plate_id: 126
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\r\n  <tr>\r\n    <td>\r\n      {% with self.content_parts.0 as p %}\r\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\r\n      {% endwith %}\r\n    </td>\r\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\r\n      <div class=\"plate-title\">{{self.name}}</div>\r\n      <div>{{self.date}}</div>\r\n      <div>bowling green ohio usa</div>\r\n    </td>\r\n  </tr>\r\n</table>\r\n\r\n"
+  
+id_136:
+  id: 136
+  plate_id: 127
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_137:
+  id: 137
+  plate_id: 128
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_138:
+  id: 138
+  plate_id: 129
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_139:
+  id: 139
+  plate_id: 130
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_140:
+  id: 140
+  plate_id: 131
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_141:
+  id: 141
+  plate_id: 132
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_142:
+  id: 142
+  plate_id: 133
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_143:
+  id: 143
+  plate_id: 134
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_144:
+  id: 144
+  plate_id: 135
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_145:
+  id: 145
+  plate_id: 136
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_146:
+  id: 146
+  plate_id: 137
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_147:
+  id: 147
+  plate_id: 138
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_148:
+  id: 148
+  plate_id: 139
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_149:
+  id: 149
+  plate_id: 140
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_150:
+  id: 150
+  plate_id: 141
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_151:
+  id: 151
+  plate_id: 142
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_152:
+  id: 152
+  plate_id: 143
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_153:
+  id: 153
+  plate_id: 144
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_154:
+  id: 154
+  plate_id: 145
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_155:
+  id: 155
+  plate_id: 146
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_156:
+  id: 156
+  plate_id: 147
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>bowling green ohio usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_157:
+  id: 157
+  plate_id: 148
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>dec 2006</div>\n      <div>kentucky usa</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_158:
+  id: 158
+  plate_id: 149
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>digital collage</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_159:
+  id: 159
+  plate_id: 150
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>digital collage</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_160:
+  id: 160
+  plate_id: 151
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>digital collage</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_161:
+  id: 161
+  plate_id: 152
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>digital collage</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_162:
+  id: 162
+  plate_id: 153
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n    </td>\n  </tr>\n</table>\n"
+  
+id_163:
+  id: 163
+  plate_id: 154
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n    </td>\n  </tr>\n</table>\n"
+  
+id_164:
+  id: 164
+  plate_id: 155
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div style=\"margin:25px 0 0 25px;\">drawn from life</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_165:
+  id: 165
+  plate_id: 156
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div style=\"margin:25px 0 0 25px;\">drawn from life</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_166:
+  id: 166
+  plate_id: 157
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div style=\"margin:25px 0 0 25px;\">drawn from life</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_167:
+  id: 167
+  plate_id: 158
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div style=\"margin:25px 0 0 25px;\">drawn from life</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_168:
+  id: 168
+  plate_id: 159
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div>21 x 28 cm (approx)</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_169:
+  id: 169
+  plate_id: 160
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div>21 x 28 cm (approx)</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_170:
+  id: 170
+  plate_id: 161
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div>21 x 28 cm (approx)</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_171:
+  id: 171
+  plate_id: 162
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div>21 x 28 cm (approx)</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_172:
+  id: 172
+  plate_id: 163
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div>21 x 28 cm (approx)</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_173:
+  id: 173
+  plate_id: 164
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div>21 x 28 cm (approx)</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_174:
+  id: 174
+  plate_id: 165
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div>21 x 28 cm (approx)</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_175:
+  id: 175
+  plate_id: 166
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div>21 x 28 cm (approx)</div>\n      <div style=\"margin:25px 0 0 25px;\">drawn from life</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_176:
+  id: 176
+  plate_id: 167
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div>21 x 28 cm (approx)</div>\n      <div style=\"margin:25px 0 0 25px;\">drawn from life</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_177:
+  id: 177
+  plate_id: 168
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div>21 x 28 cm (approx)</div>\n      <div style=\"margin:25px 0 0 25px;\">drawn from life</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_178:
+  id: 178
+  plate_id: 169
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div>21 x 28 cm (approx)</div>\n      <div style=\"margin:25px 0 0 25px;\">drawn from life</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_179:
+  id: 179
+  plate_id: 170
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div>21 x 28 cm (approx)</div>\n      <div style=\"margin:25px 0 0 25px;\">drawn from life</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_180:
+  id: 180
+  plate_id: 171
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pen on paper</div>\n      <div>21 x 28 cm (approx)</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_181:
+  id: 181
+  plate_id: 172
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_182:
+  id: 182
+  plate_id: 173
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n    </td>\n  </tr>\n</table>\n\n"
+  
+id_183:
+  id: 183
+  plate_id: 174
+  name: default
+  text: "<table cellpadding=\"0\" cellspacing=\"0\">\n  <tr>\n    <td>\n      {% with self.content_parts.0 as p %}\n        <img alt=\"{{self.name}}\" src=\"{{p.content.url}}\" width=\"{{p.width}}px\" height=\"{{p.height}}px\" />\n      {% endwith %}\n    </td>\n    <td class=\"nobr\" style=\"padding-left:50px;\" valign=\"top\">\n      <div class=\"plate-title\">{{self.name}}</div>\n      <div>{{self.date}}</div>\n      <div>pencil on paper</div>\n      <div>4 x 5.5 cm</div>\n    </td>\n  </tr>\n</table>\n"
+  
+id_184:
+  id: 184
+  plate_id: 14
+  name: query_string
+  text: "?c=0xcc9966&url=/mysite/static/trees.jpg"
+  

@@ -1,0 +1,9 @@
+    {% if forloop.counter0 == 0 %}
+      <img n="{% counter %}" source="rad_{{r}}xf.swf?embed_td=true&cfg={% url mysite.ko.views.wr_view name=name td='_td1' xml='.xml' %}" width="{{wc.x|mult:250}}" height="{{plate.plates.all.0.get_display.height}}" blendMode="NORMAL" type="APP"  />
+    {% endif %}
+
+
+      {% if forloop.counter0 == 0 %}
+	&#9;<font face="imgfont0"><font size="531.686523">&#x5C;</font></font>
+	<br><textformat rightmargin="500">
+      {% endif %}

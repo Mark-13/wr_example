@@ -1,0 +1,50 @@
+<% inheriting_view 'ko/wr_ko_template' do %>
+
+<% content_sub :img_base do %>
+  <% if av_type == 'mp3' || av_type == 'flv' %>
+    <img n="1" source=<%= "'wr_video/wr_media_ctrl#{r}.swf?src=#{pi}#{av_part[0].content}&lc_id=#{lc_ids[1]}'"%> width="75" height="40" blendMode="NORMAL" type="APP" />
+  <% end %>
+<% end %>
+
+<% content_sub :html_base do %>
+
+  <textformat leftmargin="0" rightmargin="9">
+
+  <font size=<%="'#{wc[:x]*20}'"%>>
+  <%=plate.name%><br>
+  <font size=<%= "'#{wc[:x]*18}'" %>>
+  <%= render inline: (f_p_td2 plate) %><br>
+  
+  <% if av_type == 'mp3' || av_type == 'flv' %>
+    <font face="imgfont0"><font size="60.686523">&#x5C;</font></font><br>
+  <% end %>
+  
+  <br>
+
+  <font size=<%="'#{wc[:x]*15}'" %>>
+  <% fontA0 = wr_font_name_A0 wc[:font] %> 
+  
+  <% tags = plate.tag_list %>
+  <% tags.each_index do |i| %>
+    <% if i==0 %>
+	<font face=<%="'#{wc[:font]}'"%>>
+    <% else %>
+	<font face=<%="'#{fontA0}'"%>>
+    <% end %>
+    tags = [</font><a href=<%="'#{tag_path tags[i] + ".xml"}'"%>><%=tags[i]%></a>,<br>   
+    <% if i == tags.count-1 %>
+       <font face=<%="'#{fontA0}'"%>>tags = </font>]<br>
+    <% end %>
+  <% end %>
+
+
+  <% if plate.parent %>
+    <% p  = plate.parent %>        
+    from = [<a href=<%="'#{plate_path "#{p.name}.xml"}'"%>><%=p.name%></a>,<br>
+    <font face=<%="'#{fontA0}'"%>>from = </font>]<br>
+  <% end %>
+
+<% end %>
+
+
+<% end %>

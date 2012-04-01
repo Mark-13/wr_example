@@ -1,0 +1,40 @@
+<% inheriting_view 'ko/wr_ko_template' do %>
+<% content_sub :img_base do %>
+    <img n="1" source="img_dee34b8c9.jpg" width="162" height="171" offset="1" blendMode="ALPHA" wyswyg="true" />
+    <img n="2" source="img_df9915c4f.jpg" width="33" height="171" offset="2" blendMode="MASK" />
+    <img n="3" source=<%="'wr_webcube/wr_webcube#{r}.swf'"%> width="588" height="171" offset="3" blendMode="" type="APP" />
+    <img n="4" source="img_blackline.jpg" width="1121" height="6" offset="38"  wyswyg="true" blendMode="ALPHA" />
+    <% default_content_for :img_content do %>
+      <img n="5" source="img_92f9ab556d.jpg" width="450" height="568" offset="48" blendMode="ALPHA" />
+    <% end %>
+    <img n=<%="'#{@i_n+=1}'"%> source="img_blackline.jpg" width="1121" height="6" offset="54"  wyswyg="true" blendMode="ALPHA" />
+<% end %>
+<% content_sub :text_width do %>
+  <text_width val="0" />
+<% end %>
+<% content_sub :html_base do %>
+    <font size="10"><br>
+    <textformat rightmargin="-1000">
+    <font face="imgfont0"><font size="160.067596">&#x69;</font></font>
+    <font face="imgfont0"><font size="160.067596">&#x2B;</font></font>
+    <font face="imgfont2"><font size="160.067596">&#x43;</font></font><br>
+    </textformat>
+    <p align="right"><font size=<%="'#{wc[:x]*24}'"%>>
+    root[at]konstantin[dot]co[dot]uk<br>
+    <p align="left"><font size="20"><font face="imgfont2"><font size="5.616407">&#x54;</font></font>
+    <font size="9"><br>
+    <font size=<%="'#{wc[:x]*20}'"%>>
+    <% default_content_for :menu do %>
+      <%= link_to "home", plates_path+".xml" %>
+    <% end %>
+    <%# {% if user.is_authenticated %}<a href="{% url django.contrib.auth.views.logout %}">logout</a>{% endif %}  %>
+    <font size="15"><br><font size="9"><br><br><br>
+    <% default_content_for :html_content do %><p align="center"><font face="imgfont0"><font size="531.686523">&#x5C;</font></font><% end %>
+    <br><font size="10"><br><br><br><br><p align="left">
+    <font face="imgfont2"><font size="5.616407">&#x54;</font></font>
+    <font size="9"><br>
+    <font size=<%="'#{wc[:x]*16}'"%>>copyright © konstantin.co.uk. all rights reserved.
+    <font size="20"><br><textformat tabstops=""><font size="10">
+<% end %>
+
+<% end %>

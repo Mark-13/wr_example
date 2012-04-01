@@ -1,12 +1,19 @@
 WrExample::Application.routes.draw do
 
-  constraints(:drink => /beer|drink/)  do
+  constraints(drink: /beer|drink/, format:  /xml/)  do
     match '/(:drink)/(:target)', to: 'beers#show'
   end
-  
-  root :to => 'beers#show'
-  
-  
+    
+  scope "/ko"  do
+    resources :plates, only: [:index, :show], controller: "ko"
+    match "plates/tag/(:id)"  => "ko#tag", :as => "tag" 
+  end
+
+  match "*path/wr_webcube/(:id)" => "ko#webcube"  
+
+  root :to => 'ko#root'
+  #root :to => 'beers#show'
+    
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

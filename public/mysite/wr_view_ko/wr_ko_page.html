@@ -1,0 +1,24 @@
+{% comment %} -*-html-*- Time-stamp: <paginator.html - root> {% endcomment %}
+{% comment %} copyright (c) konstantin.co.uk. all rights reserved. {% endcomment %}
+{% load assign %}
+{% load counter %}
+
+{% if not single_page %}
+
+  {% assign name="wr_xml" %}
+  {% if type == None %}
+  {% url mysite.ko.views.wr_view name=name xml='.xml' %}
+  {% else %}
+  {% url mysite.ko.views.wr_view type=type name=name xml='.xml' %}
+  {% endif %}
+  {% endassign %}
+
+  <span class="pages">
+    {% if page_obj.has_previous %} <a href="{{wr_xml}}?page={{page_obj.previous_page_number}}">&lt;</a> {% endif %}
+    {% for p in digg_page_range %}
+      {% if not p %} ... {% else %}{% ifequal p page_obj.number %}<span>{{p}}</span> {% else %} <a href="{{wr_xml}}?page={{p}}">{{p}}</a> {% endifequal %}{% endif %}
+    {% endfor %}
+    {% if page_obj.has_next %} <a href="{{wr_xml}}?page={{page_obj.next_page_number}}">&gt;</a> {% endif %}
+  </span>
+
+{% endif %}

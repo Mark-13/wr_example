@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<wordrad_cfg>
+    <title>konstantin.co.uk</title>
+    <main_swf source="rad_3xf.swf" />
+    <font_dir path="" />
+    <textr_dir path="" />
+    <img_dir path="" />
+    <textr_fg source="g_3a0270ad7.jpg" />
+    <textr_bg source="g_6fdd5346ca.jpg" />
+    <light val="textr_fg" />
+    <altw val="A8    SFBoa" />
+    <img n="1" width="162" height="171" offset="15" blendMode="ALPHA" wyswyg="true" source="img_dee34b8c9.jpg" />
+    <img n="2" width="33" height="171" offset="16" blendMode="MASK" source="img_df9915c4f.jpg" />
+    <img n="3" width="588" height="171" offset="17" blendMode="" source="wr_webcube/wr_webcube.swf" type="APP" />
+    <img n="4" width="1121" height="6" offset="53" blendMode="ALPHA" source="img_efb712b331.jpg" />
+    <img n="5" width="825" height="600" offset="63" blendMode="ALPHA" wyswyg="true" source="img_c6ddaa2129.jpg" />
+    <img n="6" width="1121" height="6" offset="69" blendMode="ALPHA" source="img_efb712b331.jpg" />
+    <text_width val="table" />
+    <font_swf source="D000.swf" />
+    <font_swf source="D000_A0.swf" />
+    <text_scale val="6.667000" scale0="1.333333" max_sz="561.650686" />
+    <textr_fgn source="fgn_cbf2f90f58.jpg" color="#000080" />
+    <textr_fgn source="g_6fdd5346ca.jpg" />
+    <a href="http://127.0.0.1:8000/" wr_n="0">home</a>
+    <htmlText><![CDATA[<textformat tabstops="768"><font color="#000000"><font face="3000"><font size="10">parameters.ttl<br><font face="imgfont0"><font size="160.067596">&#x69;</font></font><font face="imgfont0"><font size="160.067596">&#x2B;</font></font><font face="imgfont2"><font size="160.067596">&#x43;</font></font><br><p align="right"><font size="24">&#9;root[at]<font color="#000080">k<font color="#000000">onstantin[dot]co[dot]uk<br><p align="left"><font face="imgfont2"><font size="5.616407">&#x54;</font></font><font size="8"><br><font size="19"><u>home</u><font size="15"><br><p align="center"><font size="8"><br><br><br><font face="imgfont1"><font size="561.640686">&#x2D;</font></font><br><font size="10"><br><br><br><br><p align="left"><font face="imgfont2"><font size="5.616407">&#x54;</font></font><font size="8"><br><font size="16">copyright © konstantin.co.uk. all rights reserved.<font size="20"><br><textformat tabstops=""><font color="#000000"><font face="Arial"><font size="10">]]></htmlText>
+</wordrad_cfg>

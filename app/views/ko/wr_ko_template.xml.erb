@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<wordrad_cfg>
+    <title>konstantin.co.uk</title>
+    <main_swf source=<%="'rad_#{r}xf.swf'"%> />
+    <font_dir path=<%="'#{p}'"%> />
+    <textr_dir path=<%="'#{p}'"%> />
+    <img_dir path=<%="'#{p}'"%> />
+    <% default_content_for :textr_g do %>
+      <textr_fg source=<%="'#{wc[:dir]}/textures/#{wc[:fgnd]}.jpg'"%> />    
+      <textr_bg source=<%="'#{wc[:dir]}/textures/#{wc[:bgnd]}.jpg'"%> />
+    <% end %>
+    <light val=<%="'#{wc[:light]}'"%> />
+    <altw val=<%="'#{wc[:altw]}'"%> />
+    <%= yield :img_base %>	
+    <% default_content_for :text_width do %>
+      <text_width val="0" />
+    <% end %>
+    <font_swf source=<%="'#{wc[:dir]}/fonts/#{wc[:font_fn]}#{wc[:b] ? '_B' : ''}.swf'"%> />
+    <font_swf source=<%="'#{wc[:dir]}/fonts/#{wc[:font_fn]}#{wc[:b] ? '_B' : ''}_A0.swf'"%> />     
+    <text_scale val="6.667000" scale0="1.333333" max_sz="531.696523" />
+    <textr_fgn source=<%="'#{wc[:dir]}/textures/#{wc[:bgnd]}.jpg'"%> />
+    <xml_ttl val="4000" />
+    <htmlText><![CDATA[
+    <font face=<%="'#{wc[:font]}'"%>>
+    <%= yield :html_base %>
+    ]]>
+    </htmlText>
+</wordrad_cfg>

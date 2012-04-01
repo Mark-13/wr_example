@@ -1,0 +1,42 @@
+{% extends 'wr_ko_base.xml' %}
+{% load counter %}
+{% load wr_ko_filters %}
+{% load assign %}
+{% load customtags %}
+
+
+{% block img_content %}
+  {% for plate in object_list %}
+     <img n="{% counter %}" source="img_blackln.jpg" width="500" height="4" wyswyg="true" blendMode="ALPHA" />
+     {% if forloop.counter0 == "xxx" %}
+       <img n="{% counter %}" source="rad_{{r}}xf.swf?embed_td=true&cfg={% url mysite.ko.views.wr_view name=name td='_td1' xml='.xml' %}" width="{{wc.x|mult:300}}" height="300" blendMode="NORMAL" type="APP"  align="top" />
+     {% endif %}
+     {% plate plate f_p.f_p_blog_img %}
+  {% endfor %}
+{% endblock %}
+
+{% block menu %}
+  <a href="{% url admin '' %}">admin</a>
+{% endblock %}
+
+{% block html_content %}
+    <textformat leftmargin="200" rightmargin="50">
+      {% for plate in object_list %}
+        <font size="{{wc.x|mult:20}}">{{plate.datetime_display}}<br></font>
+        <font face="imgfont2"><font size="5.616407">&#x54;</font></font>
+        <font size="{{wc.x|mult:13}}"><br><br>
+        {% plate plate f_p.f_p_blog_html0 %}
+        </font>
+        {% if forloop.counter0 == "xxx" %}
+          <textformat leftmargin="0">
+            <font face="imgfont0"><font size="531.686523">&#x5C;</font></font>
+            {% plate plate f_p.f_p_blog_html2 %}
+          </textformat>
+        {% else %}
+          {% plate plate f_p.f_p_blog_html2 %}
+        {% endif %}
+        <font size="{{wc.x|mult:13}}"><br><br><br></font>
+      {% endfor %}
+      <font size="{{wc.x|mult:17}}">{% wr_pages %}</font>
+    </textformat>
+{% endblock %}

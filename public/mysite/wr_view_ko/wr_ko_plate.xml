@@ -1,0 +1,26 @@
+{% extends 'wr_ko_base.xml' %}
+{% load counter %}
+{% load assign %}
+{% load wr_ko_filters %}
+{% load wr_ko_tags %}
+
+
+{% block img_content %}
+
+{% with plate.content_parts.0 as q %}
+  <img n="{% counter %}" source="rad_{{r}}xf.swf?embed_td=true&cfg={% url mysite.ko.views.wr_view type name '_td1' '.xml' %}" width="{{wc.x|mult:250}}" height="{{q.height}}" offset="175" blendMode="NORMAL" type="APP"  />
+  <img n="{% counter %}" source="{{q.content.url}}" width="{{q.width}}" height="{{q.height}}" offset="176"  blendMode="{% blendMode q.name %}" wyswyg="true" />
+{% endwith %}
+{% endblock %}
+
+{% block text_width %}
+<text_width val="table" />
+{% endblock %}
+
+{% block html_content %}
+  <font face="imgfont0"><font size="531.686523">&#x5C;</font></font>
+  <font face="imgfont0"><font size="531.686523">&#x5C;</font></font>
+{% endblock %}
+
+
+

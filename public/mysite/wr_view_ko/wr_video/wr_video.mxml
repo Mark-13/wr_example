@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+  xmlns:s="library://ns.adobe.com/flex/spark" 
+  xmlns:m="*" 
+  verticalScrollPolicy="off"  
+  horizontalScrollPolicy="off" 
+  creationComplete="{Init()}"  
+
+>
+
+  <mx:Style>    	     
+
+  </mx:Style>    	     
+
+
+  <mx:Script>  
+    <![CDATA[    
+
+      import flextrace.Dumper;
+      import com.gskinner.utils.SWFBridgeAS3;	
+      import my_components.wr;	
+      import mx.core.UIComponent;		
+	
+      var clientObj:Object = {'play': play};      
+
+      var session:Object;  	
+      var s_o:SharedObject=null;
+
+      var myBridge:SWFBridgeAS3;
+                 
+      var src:Array;
+      var v_crnt=0;
+            
+      var src_id:String;
+      
+      var uic:UIComponent = new UIComponent();	
+      var ns:NetStream;	
+      var v:Video = new Video();	
+      var nc:NetConnection = new NetConnection();
+      var timer:Timer = new Timer(250);	
+
+      private function Init() {	       
+		              
+	src = parameters.src.split(";");
+        src.pop();
+
+        var src_id:String = wr.so_id(src[0]);
+        
+        try {       
+          s_o= SharedObject.getLocal(src_id,"/");
+        } catch (e:*) {}                
+    	  	
+        if (s_o) session = s_o.data;  	
+        else session = new Object();  	
+                      	
+        myBridge = new SWFBridgeAS3(parameters.lc_id, clientObj)
+                               
+        if (!session.play || ((v_crnt=src.indexOf(session.source)) == -1)) {
+
+	  session.startTime = 0;
+	  session.source = src[v_crnt=0];   
+	}        
+	
+	uic.addChild(v);
+	addChild(uic);	
+	v.width=Number(parameters.w);
+	v.height=Number(parameters.h);
+	
+        nc.connect(null);
+        ns  = new NetStream(nc);
+	ns.addEventListener("netStatus",play_end);
+
+	uic.addEventListener("removedFromStage",v_remove);
+
+        v.attachNetStream(ns);
+		
+        ns.play(session.source);
+      	ns.pause();
+      
+        timer.addEventListener("timer",load_handlr);
+      	timer.start();
+      
+      
+      }
+                        
+      
+      private function load_handlr(e:Event) {	
+
+	if (!ns.bytesLoaded || ns.bytesLoaded != ns.bytesTotal)	
+	  return
+			
+	timer.removeEventListener("timer",load_handlr);
+	timer.addEventListener("timer",timer_handlr);
+	
+	ns.seek(Number(session.startTime));
+        play(session.play || parameters.play)
+		
+      }
+
+
+      private function timer_handlr(e:Event) {	
+	
+	session.startTime = ns.time;
+		
+      }
+      
+      private function play(bPlay:Boolean = true) {
+                
+        session.play = bPlay;
+
+        if (bPlay) {                        	  
+          ns.resume(); 
+        }
+        else {
+          ns.pause();
+	}
+	
+      }
+      
+      public function play_end(e:NetStatusEvent) {
+                
+        if (e.info['code'] != "NetStream.Play.Stop")
+          return;
+
+        session.startTime = 0;  	  	  
+	if (src.length == 1) 
+	  ns.seek(0);
+	else {
+	  if (++v_crnt >= src.length) v_crnt=0
+	  session.source = src[v_crnt];
+        }
+        ns.play(session.source);      
+      
+      }
+  
+  
+  
+      private function v_remove(e:Event) {
+
+        //ns.close();
+	nc.close();
+		
+	v.attachNetStream(null);
+
+	timer.stop()
+	timer.removeEventListener("timer",timer_handlr);
+	ns.removeEventListener("netStatus",play_end);
+	uic.removeEventListener("removedFromStage",v_remove);
+	
+      }	  
+     
+
+    ]]>    
+
+  </mx:Script>  
+
+       
+</mx:Application>

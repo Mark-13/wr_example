@@ -1,0 +1,489 @@
+<?xml version="1.0"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" 
+  xmlns:s="library://ns.adobe.com/flex/spark" 
+  verticalScrollPolicy="off"  
+  horizontalScrollPolicy="off" 
+  creationComplete="{InitApp()}"
+  backgroundAlpha="0"
+>
+
+
+  <mx:Style>    	     
+
+   .CheckBold {  
+     icon:  ClassReference("webcube_check");
+   }
+
+
+    .TopPanels {
+        backgroundColor: "0x8E7486";
+        backgroundAlpha: ".5";
+        alpha: "1";
+        borderStyle: "solid";
+        borderThickness: "0";
+        cornerRadius: "4";	
+    }
+
+  </mx:Style>    	     
+
+
+  <mx:Script>  
+    <![CDATA[    
+
+      import flash.events.Event;      
+      import mx.events.ListEvent;  	
+      import mx.controls.Image;      
+      import mx.core.BitmapAsset;	  	
+      import mx.binding.utils.BindingUtils;  	
+      import mx.utils.ObjectUtil;                  
+      import mx.utils.ObjectProxy;                                            
+      import swf_address.*;
+      import flextrace.Dumper;
+
+             
+      private var session:Object;  	
+      private var s_o:SharedObject=null;	    	    	    	
+
+      private function InitApp():void {                    
+                           
+        try {       
+          s_o= SharedObject.getLocal("wr_webcube","/");      
+        } catch (e:*) {}                
+    	  	
+        if (s_o) session = s_o.data;  	
+        else session = new Object();  	
+      	
+        data_request.url = getPath(this.url)+"wcube.xml";                             	
+        data_request.send();       
+
+      }      
+  		
+
+      function getPath(url:String):String {  	  
+        return url.substring(0,url.lastIndexOf("/")+1);      
+      }      
+
+
+      private function exists(obj:Object, ... args):Boolean {  	
+    	
+        for (var n:int=0; n<args.length; n++) {  	
+          if (!obj.hasOwnProperty(args[n]))   	
+            return false;  	
+          if (n<(args.length-1))  	
+  	    obj = obj[args[n]];  
+        }  	
+  	  	
+        return true;		    	  	
+      }  	
+  	  	
+      private function obj_copy(obj:Object):Object {
+        var new_obj:Object =  new Object();
+        for (var p:String in obj) 
+	  new_obj[p] = obj[p];
+        return new_obj;
+      }
+
+      private function set(obj_set:Object, obj:Object, ...args):void {      
+      	
+        for (var n:int=0; n<args.length; n++) {  	   
+          if (n < args.length-1) {   	
+            if (!obj.hasOwnProperty(args[n])) 		  	       	            	
+              obj[args[n]] = new Object();  	
+            obj = obj[args[n]];  	
+            continue;  	
+          }  	
+          obj[args[n]] = obj_set;	          	
+        }		      	
+      }  	
+
+
+      //(HTTPService dataRequest:)
+
+      private var crnt_sel:Object;		   	
+      private var new_sel:Object;
+      private var new_sel_prox:ObjectProxy;	
+	
+      private function data_result(event:Event):void {	
+        		  
+        crnt_sel=data_request.lastResult.crnt_sel;	
+
+	new_sel = obj_copy(crnt_sel);
+	new_sel_prox = new ObjectProxy(new_sel);
+
+        BindingUtils.bindProperty(new_sel_prox, "img", ImgList, "selectedIndex");	
+        BindingUtils.bindProperty(new_sel_prox, "altw", blendmode_sel, "text");	
+        BindingUtils.bindProperty(new_sel_prox, "font", font_sel, "text");	
+        BindingUtils.bindProperty(new_sel_prox, "x", sel_x, "value");
+        BindingUtils.bindProperty(new_sel_prox, "b", sel_b, "selected");
+
+        new_sel_prox.addEventListener("propertyChange",enable_update);	
+        	     	        	
+        if (session.wc_open) {
+          FontList.validateNow();            
+	  on_click0(true);	
+	  session.wc_open = false;
+	}   
+	cnv.visible = true;          
+
+        for each (var font:Object in data_request.lastResult.fonts.font) {	
+          if (font.label == crnt_sel.font) {
+            font.x = crnt_sel.x;	
+            font.b = crnt_sel.b;	
+	  }
+          else {
+            if (exists(session,"fonts",font.label,"x"))	
+              font.x = session.fonts[font.label].x;	
+            if (exists(session,"fonts",font.label,"b"))	
+              font.b = session.fonts[font.label].b;	
+	  }
+	}
+
+      }	
+
+      private function enable_update(event:Event):void {	
+        btn_update.enabled=ObjectUtil.compare(new_sel,crnt_sel);	
+      }	
+
+  	 	
+    ]]>  
+
+  </mx:Script>  
+
+  <mx:Image  id="img" source="img.png" visible="false" complete="{InitImgList()}" />
+
+  <mx:HTTPService id="data_request" result="{data_result(event)}" />  
+
+  <mx:HTTPService id="post_update" method="POST" result="{update_result(event)}" />
+      
+  <mx:Resize id="expand" target="{cnv}" widthTo="{parentDocument.width}" heightTo="{parentDocument.height}"/>
+  <mx:Resize id="contract" target="{cnv}" widthTo="35" heightTo="35"/>
+
+
+  <mx:Canvas id="cnv" width="34" height="34" x="0" y="0"  
+    verticalScrollPolicy="off"    
+    horizontalScrollPolicy="off"  
+    visible="false"
+  >  
+    
+    <mx:Button   
+      id="xButton1" icon="@Embed('icon_288.png')" color="#993300"  x="0" y="0" width="34" height="34"  
+      click="on_click1();"  
+    >  
+      <mx:Script>  
+        <![CDATA[  
+
+          private function on_click1():void  {  
+            contract.play();	
+	  xButton0.visible = true;	
+          }  
+        
+        ]]>  
+      </mx:Script>  
+    </mx:Button>  
+
+    <mx:Button   
+      id="xButton0" icon="@Embed('icon_287.png')" color="#993300"  x="0" y="0" width="34" height="34"  
+      click="on_click0();"  
+    >  
+      <mx:Script>  
+        <![CDATA[  
+
+            private function on_click0(bNow:Boolean = false):void  {  
+
+              ImgList.selectedIndex = crnt_sel.img;  
+       	      BlendModeList.findString(crnt_sel.altw);	    	
+       	      FontList.findString(crnt_sel.font);	
+       	      sel_x.value=crnt_sel.x;	
+       	      sel_b.selected=crnt_sel.b;	
+
+              ImgList.scrollToIndex(ImgList.selectedIndex);	
+              BlendModeList.scrollToIndex(BlendModeList.selectedIndex);	
+              FontList.scrollToIndex(FontList.selectedIndex);	
+
+              expand.play();	
+              if (bNow) expand.end(); 	
+
+	      xButton0.visible = false;	
+            }  
+        ]]>  
+      </mx:Script>  
+    </mx:Button>  
+
+    <mx:Canvas id="pnl_top" x="44" y="0"   
+      width="{FontList.x + FontList.width-44}" height="34"         
+      styleName="TopPanels"  
+      dropShadowEnabled="true"  
+    >  
+
+      <mx:Button   
+        id="btn_update" label="Update" color="#993300"   
+        width="67" height="22" x="6" y="6"  
+        click="{update()}"  
+      >  
+
+        <mx:Script>  
+          <![CDATA[  
+
+
+            private function update():void  {                
+
+              if (((FontList.selectedItem.x == undefined) && (sel_x.value != 1)) ||  
+                 ((FontList.selectedItem.x != undefined) && (sel_x.value != FontList.selectedItem.x))) {	
+                set(sel_x.value,session,"fonts",FontList.selectedItem.label,"x");  
+	        FontList.selectedItem.x = sel_x.value;	
+              }	
+
+              if (((FontList.selectedItem.b == undefined) && sel_b.selected) ||  
+                 ((FontList.selectedItem.b != undefined) && (sel_b.selected != FontList.selectedItem.b))) {
+                set(sel_b.selected,session,"fonts",FontList.selectedItem.label,"b");  
+	        FontList.selectedItem.b = sel_b.selected;
+              }	
+
+              if (s_o) s_o.flush();	
+
+                
+              var crnt_img:Object = 
+                 data_request.lastResult.imglist.img[new_sel.img];
+                
+              new_sel.fgnd = crnt_img.fgnd;
+              new_sel.bgnd = crnt_img.bgnd;
+              new_sel.light = crnt_img.light;
+              new_sel.font_fn = data_request.lastResult.fonts.font[FontList.selectedIndex].fn;
+                                
+              post_update.url = getPath(parentDocument.url)+"update";                             	
+              post_update.send(new_sel);       
+	      	                          
+	      crnt_sel = obj_copy(new_sel);
+	      enable_update(null);	
+	     
+            }  
+      
+            private function update_result(event:Event):void {	
+
+	      var crnt_path:String = 
+	        SWFAddress.getValue().substr(1);
+	      crnt_path = crnt_path.replace(/(\?.*)*$/,".xml$&");
+		      
+	      session.wc_open = true;
+	      
+	      dispatchEvent(new TextEvent("link",true,false,crnt_path));
+
+	    }
+
+
+          ]]>  
+        </mx:Script>  
+
+      </mx:Button>  
+
+
+      <mx:Canvas id="pnl_t1"  x="81" y="4" visible="true"   
+        width="108" height="26"         
+        styleName="TopPanels"  
+      >  
+
+        <mx:Image  id="img_sel"  scaleContent="false"  
+           x="{(pnl_t1.width-100)/2}" y="{(pnl_t1.height-20)/2}"   
+           source="{get_img(ImgList.selectedIndex)}"              
+        />  
+
+      </mx:Canvas>  
+
+      <mx:Canvas id="pnl_t2"  x="197" y="4"  
+        width="126" height="26"         
+        styleName="TopPanels"  
+      >  
+
+        <mx:Text  id="blendmode_sel"   opaqueBackground="0xFFFFFF"    
+           x="{(pnl_t2.width-116)/2}" y="{(pnl_t2.height-18)/2}"   
+           width="116" height="18"	
+           text = "{BlendModeList.selectedItem}"         
+        />  
+        
+      </mx:Canvas>  
+      
+      <mx:Canvas id="pnl_t3"  x="331" y="4"  
+        width="{pnl_top.width-335}" height="26"         
+        styleName="TopPanels"  
+    	verticalScrollPolicy="off"    
+    	horizontalScrollPolicy="off"  
+      >  
+
+        <mx:Text  id="font_sel"  opaqueBackground="0xFFFFFF"    
+           x="5" y="{(pnl_t2.height-18)/2}"   
+           width="111" height="18"	
+           text = "{FontList.selectedItem.label}"  
+        />  
+
+          
+        <mx:NumericStepper id="sel_x"   
+          minimum="0.50" maximum="2.00"   
+          stepSize="0.05"   
+          value="1.00"   
+          x="{font_sel.x+font_sel.width+5}"  
+          y="{(pnl_t2.height-20)/2}"  
+          width="51" height="20"  
+          creationComplete="{sel_x.mx_internal::inputField.editable = false}"  
+        />  
+               
+        <mx:CheckBox 
+          id="sel_b"
+          x="{sel_x.x+sel_x.width+5}"  
+          y="{(pnl_t2.height-20)/2}"  
+          width="30" height="20"  
+          label=""
+          styleName="CheckBold"
+        />
+        
+        
+      </mx:Canvas>         
+      
+    </mx:Canvas>  
+
+    <mx:TileList id="ImgList" height="{2+int((parentDocument.height-44)/24)*24}" width="227"   
+      maxColumns="2" rowHeight="24" columnWidth="104" x="0" y="44"   
+      creationComplete="{InitImgList()}"  
+      selectionColor="0xFF9900"  
+      rollOverColor="0xFFFF00"  
+      dropShadowEnabled="true"  
+    >      
+      <mx:Script>  
+        <![CDATA[  
+  	  	  	
+  	private var bmd_arr:Array = new Array();	
+  		  	
+		
+	var nInit:int=2;
+  	private function InitImgList():void  {      	
+  	    	  
+	  if (--nInit > 0) return;
+
+  	  //ImgList.validateNow();
+  	  
+  	  var arr:Array = new Array();	
+            var r:Rectangle = new Rectangle(0,0,100,20);	  	    
+  	  var pt:Point = new Point(0,0);	
+  	  for (r.x=0; r.x<img.content.width; r.x+=100) {	
+  	    var bmd:BitmapData = new BitmapData(100,20,false,0);  		
+  	    bmd.copyPixels(Bitmap(img.content).bitmapData,r,pt);		
+  	    bmd_arr.push(bmd);	      		
+  	    var obj:Object = {label:"",n:bmd_arr.length-1};	      	
+  	    arr.push(obj);	
+  	  }	    	
+  	  ImgList.dataProvider = arr;	
+  	}	
+  		
+  	public function get_img(n:int):BitmapAsset {	
+  	   return new BitmapAsset(bmd_arr[n]);	  	
+  	}	
+  	  	
+
+        ]]>  
+      </mx:Script>  
+
+      <mx:itemRenderer>     
+        <mx:Component>     
+          <mx:Canvas> 	
+             <mx:Image x="2" source="{outerDocument.get_img(data.n)}" scaleContent="false" />     
+          </mx:Canvas>     
+        </mx:Component>     
+      </mx:itemRenderer>     
+
+
+    </mx:TileList>      
+
+      
+    <mx:List id="BlendModeList" height="{ImgList.height}" width="133"  
+      x="237" y="44"  dataProvider ="{InitBlendModeList()}"  
+      rowHeight="16" verticalAlign="middle" paddingTop="3"  
+      dropShadowEnabled="true"  
+    >      
+
+      <mx:Script>  
+        <![CDATA[  
+  	  	
+          private function InitBlendModeList():Array  {      	
+        
+            var arr:Array =    
+            new Array(   
+              "AA    S","A8    SFBoa","EA    SFBao","2A    SFBana","8A    SBFnoa","A2    SFBnoa","AB    SFBono",   
+              "AE    SBFnao","BA    SFBnao","88    SBa","A0    SFa","EE    SBo","FA    SFo","0A    SFna","22    SBna",   
+              "AF    SFno","BB    SBno","28    SFBxa","6A    SFBax","BE    SFBxo","82    SFBxna","9A    SFBnax",   
+              "A6    SBFnax","A9    SFBoxn","EB    SFBxno","2E    FBSFxox","3A    BFSBxox","AC    BFSBxax",   
+              "B8    FBSFxax","CA    SFBSxax","E2    SBFSxax","8B    SBFSxoxn","A3    SFBSxoxn","8E    BBSxFSxax",   
+              "B2    BBFxSBxox","E8    BBFxSBxax","2B    BBFxFSxaxn","80    SFBaa","C8    BSFoa","E0    FSBoa",   
+              "EC    BSFao","F8    FSBao","FE    SFBoo","02    SFBona","08    BSFnaa","20    SFBnaa","8C    BSFnoa",   
+              "B0    FSBnoa","BF    SFBano","CE    BSFnao","EF    BSFnoo","F2    FSBnao","FB    SFBnoo","0B    FBSnaon",   
+              "0E    FSBonon","1A    FSBFaox","23    BFSnaon","26    BSFBaox","2C    BFSBoax","2F    FBSnoan",   
+              "32    BSFBoox","38    FBSFoax","3B    BFSnoan","4A    SFBSoax","62    SBFSoax","8F    FSBanan",   
+              "B3    BSFanan","3E    BFSBnaox","6E    BSFBnoax","7A    SFBSnoax","9B    BSFBoaxn","A7    FSBFoaxn",   
+              "AD    SFBSaoxn","B9    SBFSaoxn","BC    BFSBanax","CB    BFSBaoxn","DA    SFBSanax","E3    FBSFaoxn",   
+              "E6    BSFBanax","83    BFSBnoaxn","86    SBFSBoaxx","89    BSFBnaoxn","92    SFBSFoaxx","98    BSFBonoxn",   
+              "9E    SBFSBaoxx","A1    FSBFnaoxn","A4    FSBFonoxn","B6    SFBSFaoxx","C2    BFSBonoxn","29    FBSFBaoxxn",   
+              "6B    FBSFBoaxxn","68    SBFSBonoxxn","E9    SBFSBanaxxn","00    0","CC    B","F0    F","FF    1",   
+              "0F    Fn","33    Bn","3C    FBx","5A    SFx","66    SBx","C0    FBa","FC    FBo","03    FBon","0C    BFna",   
+              "30    FBna","3F    FBan","99    SBxn","A5    FSxn","C3    FBxn","CF    BFno","F3    FBno","1E    FSBox",   
+              "36    BSFox","48    BSFxa","60    FSBxa","6C    BSFax","78    FSBax","96    SFBxx","DE    BSFxo","F6    FSBxo",   
+              "09    FSBxon","21    BSFxon","2D    FBSnox","39    BFSnox","4B    FSBnox","63    BSFnox","69    FSBxxn",   
+              "84    BSFxna","87    FSBaxn","90    FSBxna","93    BFSaxn","9C    BFSnax","9F    FSBxan","B4    FBSnax",   
+              "B7    BSFxan","C6    BSFnax","C9    BFSoxn","D2    FSBnax","E1    FSBoxn","ED    BSFxno","F9    FSBxno",   
+              "06    FSBxnon","12    BSFxnon","18    BFxFSxa","24    BFxSBxa","42    BSxFSxa","4E    FSBFxox","6F    FSBxnan",   
+              "72    BSFBxox","7B    BSFxnan","7E    BFxSBxo","D8    FSBFxax","E4    BSFBxax","1B    BSFBxaxn","27    BSFBxnox",   
+              "81    BFxSBxon","8D    BSFBxoxn","B1    FSBFxoxn","BD    BSxFSxan","DB    BFxSBxan","E7    BFxFSxan",   
+              "01    SFBoon","04    BSFona","07    FSBaon","10    FSBona","13    BSFaon","1F    FSBoan","37    BSFoan",   
+              "40    FBSnaa","4C    BSFana","70    FSBana","7F    SFBaan","C4    BFSnoa","CD    BSFono","D0    FBSnoa",   
+              "DC    BFSnao","DF    BSFano","F1    FSBono","F4    FBSnao","F7    FSBano","FD    FBSnoo","0D    FSBnaon",   
+              "1C    FBSFaox","31    BSFnaon","34    BFSBaox","46    SBFSaox","4F    FSBnoan","52    SFBSaox","58    FSBFoax",   
+              "64    BSFBoax","73    BSFnoan","3D    BFSBonox","5B    SFBSonox","5E    SFBSnaox","67    BSFBonox",   
+              "76    BSFBnaox","7C    BFSBnoax","9D    SBFSoaxn","B5    SFBSoaxn","C7    FBSFoaxn","D3    BFSBoaxn",   
+              "D9    BSFBaoxn","E5    FSBFaoxn","19    BSFBanaxn","25    FSBFanaxn","43    BFSBanaxn","85    FSBFnoaxn",   
+              "91    BSFBnoaxn","94    FBSFBoaxx","C1    BFSBnaoxn","D6    FBSFBaoxx","16    FBSFBanaxx","49    FSBFSaoxxn",   
+              "61    SBFSBaoxxn","6D    FSBFSoaxxn","79    SBFSBoaxxn","97    FBSFBonoxx","05    SFon","11    SBon","44    BSna",   
+              "50    FSna","5F    SFan","77    SBan","DD    BSno","F5    FSno","56    SFBox","41    SFBxon","59    SFBnox",   
+              "65    SBFnox","95    SFBaxn","D7    SFBxan","14    SFBxnon","5C    SFBSxox","74    SBFSxox","7D    SFBxnan",   
+              "1D    SBFSxaxn","35    BFSBxnox","47    FBSFxaxn","53    BFSBxaxn","C5    BFSBxoxn","D1    FBSFxoxn",   
+              "D4    BBFxFSxax","17    BBFxSBxaxn","4D    BBFxSBxoxn","71    BBSxFSxaxn","15    SFBaon","57    SFBoan",   
+              "45    SFBnaon","51    SBFnaon","54    SFBonon","5D    SFBnoan","75    SBFnoan","D5    SFBanan","55    Sn"   
+            );   
+
+            return arr;   
+          }	
+  	
+        ]]>  
+      </mx:Script>  
+
+    </mx:List>      
+           
+    <mx:List id="FontList" height="{ImgList.height}" width="195"  
+      x="380" y="44" rowHeight="16" verticalAlign="middle" paddingTop="3"  
+      dataProvider="{data_request.lastResult.fonts.font}"  
+      dropShadowEnabled="true"  
+      change="{fontlist_selchange(event)}"	  
+    >     
+  
+      <mx:Script>    
+        <![CDATA[    
+
+          private function fontlist_selchange(event:ListEvent):void  {    
+                          
+            if (FontList.selectedItem.hasOwnProperty("x"))  
+              sel_x.value = FontList.selectedItem.x;  
+            else	
+              sel_x.value=1;	
+
+            if (FontList.selectedItem.hasOwnProperty("b"))  
+              sel_b.selected = FontList.selectedItem.b;  
+            else	
+              sel_b.selected=false;	
+
+          }    
+
+        ]]>    
+      </mx:Script>    
+  
+    </mx:List>  
+  
+  
+  </mx:Canvas>
+   
+</mx:Application>

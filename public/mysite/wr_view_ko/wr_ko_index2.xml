@@ -1,0 +1,22 @@
+{% extends 'wr_ko_base.xml' %}
+{% load counter %}
+{% load wr_ko_filters %}
+{% load assign %}
+
+{% block img_content %}
+  <img n="{% counter %}" source="rad_{{r}}xf.swf?embed_td=h&cfg={% url mysite.ko.views.wr_view name=name td='_td0' xml='.xml' %}?page={{page_obj.number}}" width="525" height="3000" blendMode="NORMAL" type="APP"  />
+  <img n="{% counter %}" source="rad_{{r}}xf.swf?embed_td=w,h&cfg={% url mysite.ko.views.wr_view name=name td='_td1' xml='.xml' %}" width="{{wc.x|mult:250}}" height="300" blendMode="NORMAL" type="APP"  align="top" />
+{% endblock %}
+
+{% block text_width %}
+<text_width val="table" />
+{% endblock %}
+
+{% block html_content %}
+  <textformat leftmargin="125">
+  <font face="imgfont0"><font size="531.686523">&#x5C;</font></font>   
+  <font face="imgfont0"><font size="531.686523">&#x5C;</font></font><br>
+  {% wr_pages %}    
+  </textformat>
+{% endblock %}
+

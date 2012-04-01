@@ -1,0 +1,40 @@
+{% extends 'wr_ko_base.xml' %}
+{% load counter %}
+{% load wr_ko_filters %}
+{% load customtags %}
+
+
+{% block img_content %}
+{% for plate in object_list %}
+  {% with plate.get_thumbnail as t %}
+    <img n="{% counter %}" source="{{t.content.url}}" width="{{t.width}}" height="{{t.height}}"  blendMode="NORMAL" />
+  {% endwith %}
+{% endfor %}
+{% endblock %}
+
+{% block text_width %}
+  <text_width val="table" />
+{% endblock %}
+
+
+{% block html_content %}
+  <textformat leftmargin="120" >
+    <font size="{{wc.x|mult:18}}">
+      tag = {{tag.name}}
+    </font>
+    <font size="12">
+      <br><br>
+    </font>
+    {% for plate in object_list %}
+      <a href="{% url mysite.ko.views.wr_view type='p' name=plate.name xml='.xml' %}">
+        <font face="imgfont0"><font size="100">Z</font></font>
+      </a>
+      {% if not forloop.last and forloop.counter|divisibleby:"6" %}<br />{% endif %}
+    {% endfor %}
+    <font size="{{wc.x|mult:12}}">
+      <br><br>
+    <font size="{{wc.x|mult:14}}">
+    {% wr_pages %}
+    </font></font>
+  </textformat>
+{% endblock %}

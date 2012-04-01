@@ -1,0 +1,45 @@
+{% extends 'wr_ko_base.xml' %}
+{% load counter %}
+{% load assign %}
+{% load wr_ko_filters %}
+{% load wr_ko_tags %}
+
+
+{% block img_content %}
+
+{% with plate.get_display as q %}
+
+  <img n="{% counter %}" source="rad_{{r}}xf.swf?embed_td=true&cfg={% url mysite.ko.views.wr_view type name '_td1' '.xml' %}" width="{{wc.x|mult:250}}" height="{{q.height}}" offset="175" blendMode="NORMAL" type="APP"  />
+
+  {% assign name="cntr" %}{% counter %}{% endassign %}
+
+  {% if mp3  %}
+    <img n="{{cntr}}" 
+      source="wr_video/wr_sound{{r}}.swf?src={% for s in av_part %}{{s.content.url}};{% endfor %}&lc_id={{lc_ids.1}}" 
+      width="{{q.width}}" height="{{q.height}}" blendMode="NORMAL" type="APP"  />  
+    <img n="{{cntr}}" source="{{q.content.url}}" width="{{q.width}}" height="{{q.height}}" blendMode="{% blendMode q.name %}" wyswyg="true" />
+  {% endif %}
+
+  {% if flv %}
+    <img n="{{cntr}}" 
+      source="wr_video/wr_video{{r}}.swf?src={% for s in av_part %}{{s.content.url}};{% endfor %}&lc_id={{lc_ids.1}}&w={{q.width}}&h={{q.height}}" 
+      width="{{q.width}}" height="{{q.height}}" blendMode="ALPHA" type="APP" e_wyswyg="true"/>  
+  {% endif %}
+
+  {% if swf %}           
+  <img n="{{cntr}}" source="{{swf.0.content.url}}{{qstr}}" width="{{q.width}}" height="{{q.height}}" blendMode="ALPHA" e_wyswyg="true" type="APP" />
+  {% endif %}
+
+
+{% endwith %}
+{% endblock %}
+
+{% block text_width %}
+<text_width val="table" />
+{% endblock %}
+
+{% block html_content %}
+  <font face="imgfont0"><font size="531.686523">&#x5C;</font></font>
+  <font face="imgfont0"><font size="531.686523">&#x5C;</font></font>
+{% endblock %}
+

@@ -1,0 +1,30 @@
+{% extends 'wr_ko_template.xml' %}
+
+{% load wr_ko_filters %}
+{% load assign %}
+{% load tagging_tags %}
+{% load customtags %}
+
+{% block html_base %}
+
+  <font size="{{wc.x|mult:18}}">
+  {% assign name="fontA0" %}{{wc.font|wr_font_name_A0}}{% endassign %}
+
+  {% tags_for_model ko.Plate as tags with counts %}
+  {% if tags %}
+    {% for tag in tags %}
+      {% if not forloop.first %}
+        <font face="{{fontA0}}">
+      {% else %}
+        <font face="{{wc.font}}">
+      {% endif %}
+      tags = [</font><a href="{% url mysite.ko.views.wr_view type='t' name=tag.name xml='.xml' %}">{{tag.name}}</a>,<br>
+      {% if forloop.last %}
+        <font face="{{fontA0}}">tags = </font>]<br>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  </font>
+
+{% endblock %}

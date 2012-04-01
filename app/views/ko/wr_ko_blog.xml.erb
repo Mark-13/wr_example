@@ -1,0 +1,16 @@
+<% inheriting_view 'ko/wr_ko_base' do %>
+
+<% content_sub :img_content do %>
+  <%= render inline: (f_p_blog_img plate) %>
+<% end %>
+
+
+<% content_sub :html_content do %>
+  <textformat leftmargin="150" >
+  <font size=<%="'#{wc[:x]*18}'"%>>
+  <%= render inline: (f_p_blog_html plate) %>
+  </font>
+  </textformat>
+<% end %>
+
+<% end %>
