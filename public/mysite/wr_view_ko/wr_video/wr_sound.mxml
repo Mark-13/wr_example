@@ -49,7 +49,7 @@
 
 	timer.addEventListener("timer",timer_handlr);
                       
-        myBridge = new SWFBridgeAS3(parameters.lc_id, clientObj)
+        myBridge = new SWFBridgeAS3(parameters.lc_id, clientObj,"wr_sound ")
                                
         s = new SoundEffect();	
         s.useDuration=false
