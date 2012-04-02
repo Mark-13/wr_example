@@ -52,7 +52,7 @@
         if (s_o) session = s_o.data;  	
         else session = new Object();  	
                       	
-	myBridge.connect("test");
+	myBridge.connect(parameters.lc_id);
 	myBridge.client = this;
          
         if (!session.play || ((v_crnt=src.indexOf(session.source)) == -1)) {
