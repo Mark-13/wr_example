@@ -21,8 +21,6 @@ module KoHelper
 
     @td = params[:id][/_td.$/] if params[:id]
        
-    end
-
   end
 
   def blendMode(part)

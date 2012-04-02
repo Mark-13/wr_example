@@ -17,7 +17,7 @@ class KoController < ApplicationController
     @qstr = plate.templates.find_by_name('query_string').text \
       if av_part.count>0 and av_type == 'swf'
 
-    if !td || !sessions[:lc_id]
+    if !td || !session[:lc_id]
       session[:lc_id] = Array.new(3).map{rand(2**50)}  	
     end
   
