@@ -55,7 +55,7 @@
                       	
 	
 	timer_b.addEventListener("timer",timer_b_init);
-	timer_b.start;
+	timer_b.start();
          
         if (!session.play || ((v_crnt=src.indexOf(session.source)) == -1)) {
 
