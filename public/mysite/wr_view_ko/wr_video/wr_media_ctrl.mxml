@@ -21,7 +21,7 @@
       
       var clientObj:Object = new Object();
       
-      var myBridge:LocalConnection = null;
+      var myBridge:LocalConnection = new LocalConnection();
 
       private function Init() {
              
@@ -54,10 +54,7 @@
       <![CDATA[    
 
 	private function click(e:Event) {
-		  
-	  if (!myBridge)
-	    myBridge = new LocalConnection();
-	  	  
+		  	  	  
 	  myBridge.send(parameters.lc_id,"play",t_buttons.selectedIndex);
 				  	  
 	}
