@@ -55,7 +55,6 @@
 
 	private function click(e:Event) {
 		  	  	  
-	  Dumper.info(parameters.lc_id);	  
 	  myBridge.send(parameters.lc_id,"play",t_buttons.selectedIndex);
 				  	  
 	}

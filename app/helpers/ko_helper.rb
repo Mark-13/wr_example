@@ -17,18 +17,10 @@ module KoHelper
            font_fn: 'Old_Copperfield', font: 'Old Copperfield', b: true
     }
   
-    @wc = store[:wc] ? Marshal.load(store[:wc]) : wc0;                         
-
+    @wc = store[:wc] ? Marshal.load(store[:wc]) : wc0;
 
     @td = params[:id][/_td.$/] if params[:id]
        
-    if td and session[:lc_ids]
-      @lc_ids  =  session[:lc_ids]
-      puts "lllllllllllllllll #{@lc_ids[1]}"
-    else             
-      @lc_ids = session[:lc_ids] = Array.new(4).map{rand(2**16)} 
-      puts "LLLLLLLLLLLLLLLL #{@lc_ids[1]}"
-
     end
 
   end
