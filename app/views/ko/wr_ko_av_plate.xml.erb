@@ -14,7 +14,7 @@
   
   <% elsif av_type == 'flv'  %>
     <img n=<%="'#{@i_n+=1}'"%> 
-      source=<%="'wr_video/wr_video#{r}.swf?src="%><% av_part.each {|s| concat (pi+s.content+';')}%><%= raw "&lc_id=#{@lc_ids[1]}&w=#{q.width}&h=#{q.height} '"%> 
+      source=<%="'wr_video/wr_video#{r}.swf?src="%><% av_part.each {|s| concat (pi+s.content+';')}%><%= raw "&lc_id=#{lc_ids[1]}&w=#{q.width}&h=#{q.height} '"%> 
       <%= raw "width='#{q.width}' height='#{q.height}' blendMode='ALPHA' type='APP' e_wyswyg='true'/>"  %>  
 
   <% elsif av_type == 'swf' %>           
