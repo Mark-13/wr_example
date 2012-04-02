@@ -17,18 +17,14 @@
     <![CDATA[    
 
       import flextrace.Dumper;
-      import net.teratechnologies.common.BiDirLocalConnection;
       import my_components.wr;
       
       var clientObj:Object = new Object();
       
-      var myBridge:BiDirLocalConnection;
+      var myBridge:LocalConnection = new LocalConnection();
 
       private function Init() {
              
-        myBridge = new BiDirLocalConnection(BiDirLocalConnection.ROLE_MASTER,this,parameters.lc_id);
-        myBridge.connect(); 
-
         try {       
           var s_o:SharedObject = 
              SharedObject.getLocal(wr.so_id(parameters.src),"/");          
@@ -59,7 +55,14 @@
 
 	private function click(e:Event) {
 		  
-	  myBridge.send("play",t_buttons.selectedIndex);
+	  Dumper.info(parameters.lc_id);
+	
+	  var rest:Array = new Array();
+          rest.unshift(t_buttons.selectedIndex); 
+	  rest.unshift("play");
+	  rest.unshift(parameters.lc_id);
+	  	  
+	  myBridge.send.apply(myBridge,rest);
 				  	  
 	}
   	 	

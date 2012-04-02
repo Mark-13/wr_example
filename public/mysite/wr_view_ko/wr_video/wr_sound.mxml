@@ -16,7 +16,6 @@
 
       import flextrace.Dumper;
       import mx.effects.SoundEffect;	
-      import net.teratechnologies.common.BiDirLocalConnection;
       import my_components.wr;	
 
       var timer:Timer = new Timer(500,0);
@@ -26,7 +25,8 @@
       var session:Object;  	
       var s_o:SharedObject=null;
 
-      var myBridge:BiDirLocalConnection;
+      var myBridge: LocalConnection = new LocalConnection();
+
       
       var s:SoundEffect;
             
@@ -49,9 +49,11 @@
 
 	timer.addEventListener("timer",timer_handlr);
                       
-        myBridge = new BiDirLocalConnection(BiDirLocalConnection.ROLE_SLAVE,this,parameters.lc_id);
-        myBridge.connect(); 
-                                      
+	myBridge.connect(parameters.lc_id);
+	myBridge.client = this;
+        
+        Dumper.info(parameters.lc_id);
+        
         s = new SoundEffect();	
         s.useDuration=false
 	s.addEventListener("effectEnd",play_end);

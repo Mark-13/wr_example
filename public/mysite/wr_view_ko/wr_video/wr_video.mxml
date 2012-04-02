@@ -17,7 +17,6 @@
     <![CDATA[    
 
       import flextrace.Dumper;
-      import net.teratechnologies.common.BiDirLocalConnection;
       import my_components.wr;	
       import mx.core.UIComponent;		
 	
@@ -26,7 +25,7 @@
       var session:Object;  	
       var s_o:SharedObject=null;
 
-      var myBridge:BiDirLocalConnection;
+      var myBridge: LocalConnection = new LocalConnection();
                  
       var src:Array;
       var v_crnt=0;
@@ -53,8 +52,8 @@
         if (s_o) session = s_o.data;  	
         else session = new Object();  	
                       	
-        myBridge = new BiDirLocalConnection(BiDirLocalConnection.ROLE_SLAVE,this,parameters.lc_id);
-        myBridge.connect(); 
+	myBridge.connect(parameters.lc_id);
+	myBridge.client = this;
          
         if (!session.play || ((v_crnt=src.indexOf(session.source)) == -1)) {
 
