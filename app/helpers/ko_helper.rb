@@ -87,11 +87,9 @@ module KoHelper
     arr = f_p_arr plate    
 
     t = find_tem(plate)
-
-    t =~ /(.*?)(<div|<table)/m
-    
-    ret = $1
-        
+      
+    ret = (t =~ /(.*?)(<div|<table)/m) ? $1 : ""
+            
     ret += "<br>" if not ret =~ /<br>\s+$/
     
     arr.each do |p|    
