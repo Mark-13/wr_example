@@ -24,11 +24,15 @@ module KoHelper
        
     if td and store[:lc_ids]
       @lc_ids  =  Marshal.load(store[:lc_ids])
-    else 
+      puts "lllllllllllllllll #{@lc_ids[1]}"
+
+    else             
       @lc_ids = Array.new(4).map{rand(2**16)} 
       store[:lc_ids] = { 
-       :value => Marshal.dump(@lc_ids), 
+       :value => Marshal.dump(@lc_ids),      
       }
+      puts "LLLLLLLLLLLLLLLL #{@lc_ids[1]}"
+
     end
 
   end
