@@ -26,7 +26,7 @@
       var s_o:SharedObject=null;
 
       var myBridge: LocalConnection;
-      var timer_b: Timer = new Timer(2000,1);
+      var timer_b: Timer = new Timer(3000,1);
       
       var src:Array;
       var v_crnt=0;
