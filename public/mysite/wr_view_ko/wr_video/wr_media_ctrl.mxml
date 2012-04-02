@@ -21,7 +21,7 @@
       
       var clientObj:Object = new Object();
       
-      var myBridge:LocalConnection = new LocalConnection();
+      var myBridge:LocalConnection = null;
 
       private function Init() {
              
@@ -55,14 +55,10 @@
 
 	private function click(e:Event) {
 		  
-	  Dumper.info(parameters.lc_id);
-	
-	  var rest:Array = new Array();
-          rest.unshift(t_buttons.selectedIndex); 
-	  rest.unshift("play");
-	  rest.unshift(parameters.lc_id);
+	  if (!myBridge)
+	    myBridge = new LocalConnection();
 	  	  
-	  myBridge.send.apply(myBridge,rest);
+	  myBridge.send(parameters.lc_id,"play",t_buttons.selectedIndex);
 				  	  
 	}
   	 	
