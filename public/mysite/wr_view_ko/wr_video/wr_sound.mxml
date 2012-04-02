@@ -49,7 +49,7 @@
 
 	timer.addEventListener("timer",timer_handlr);
                       
-	myBridge.connect(parameters.lc_id);
+	myBridge.connect("test");
 	myBridge.client = this;
         
         Dumper.info(parameters.lc_id);
