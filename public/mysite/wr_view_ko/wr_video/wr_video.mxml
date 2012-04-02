@@ -87,6 +87,9 @@
                         
       private function timer_b_init(e:Event) {
 	timer_b.stop();
+      	
+      	Dumper.info("timer_b_init");
+      	
       	myBridge = new LocalConnection();
       	myBridge.connect(parameters.lc_id);
       	myBridge.client = this;
