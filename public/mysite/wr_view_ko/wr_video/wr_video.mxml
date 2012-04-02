@@ -40,8 +40,6 @@
 
       private function Init() {	       
 		              
-	Dumper.info(myBridge.domain);
-	
 	src = parameters.src.split(";");
         src.pop();
 
@@ -54,7 +52,7 @@
         if (s_o) session = s_o.data;  	
         else session = new Object();  	
                       	
-	myBridge.connect(parameters.lc_id);
+	myBridge.connect("test");
 	myBridge.client = this;
          
         if (!session.play || ((v_crnt=src.indexOf(session.source)) == -1)) {

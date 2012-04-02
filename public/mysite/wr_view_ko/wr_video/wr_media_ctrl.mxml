@@ -55,7 +55,7 @@
 
 	private function click(e:Event) {
 		  	  	  
-	  myBridge.send(parameters.lc_id,"play",t_buttons.selectedIndex);
+	  myBridge.send("test","play",t_buttons.selectedIndex);
 				  	  
 	}
   	 	
