@@ -22,15 +22,11 @@ module KoHelper
 
     @td = params[:id][/_td.$/] if params[:id]
        
-    if td and store[:lc_ids]
-      @lc_ids  =  Marshal.load(store[:lc_ids])
+    if td and session[:lc_ids]
+      @lc_ids  =  session[:lc_ids]
       puts "lllllllllllllllll #{@lc_ids[1]}"
-
     else             
-      @lc_ids = Array.new(4).map{rand(2**16)} 
-      store[:lc_ids] = { 
-       :value => Marshal.dump(@lc_ids),      
-      }
+      @lc_ids = session[:lc_ids] = Array.new(4).map{rand(2**16)} 
       puts "LLLLLLLLLLLLLLLL #{@lc_ids[1]}"
 
     end
