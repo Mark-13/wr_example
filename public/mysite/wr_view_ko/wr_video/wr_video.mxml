@@ -25,9 +25,8 @@
       var session:Object;  	
       var s_o:SharedObject=null;
 
-      var myBridge: LocalConnection;
-      var timer_b: Timer = new Timer(4000,1);
-      
+      var myBridge: LocalConnection = new LocalConnection();
+                 
       var src:Array;
       var v_crnt=0;
             
@@ -41,6 +40,8 @@
 
       private function Init() {	       
 		              
+	Dumper.info(myBridge.domain);
+	
 	src = parameters.src.split(";");
         src.pop();
 
@@ -53,9 +54,8 @@
         if (s_o) session = s_o.data;  	
         else session = new Object();  	
                       	
-	
-	timer_b.addEventListener("timer",timer_b_init);
-	timer_b.start();
+	myBridge.connect(parameters.lc_id);
+	myBridge.client = this;
          
         if (!session.play || ((v_crnt=src.indexOf(session.source)) == -1)) {
 
@@ -85,16 +85,7 @@
       
       }
                         
-      private function timer_b_init(e:Event) {
-	timer_b.stop();
-      	
-      	Dumper.info("timer_b_init");
-      	
-      	myBridge = new LocalConnection();
-      	myBridge.connect(parameters.lc_id);
-      	myBridge.client = this;
-      }
-      	      
+      
       private function load_handlr(e:Event) {	
 
 	if (!ns.bytesLoaded || ns.bytesLoaded != ns.bytesTotal)	
