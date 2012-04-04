@@ -1,6 +1,6 @@
 module KoHelper
   
-  attr_accessor :lc_ids, :td, :p, :pi, :wc, :r, :i_n, :plate, :plates, :av_type, :av_part, :qstr 
+  attr_accessor :td, :p, :pi, :wc, :r, :i_n, :plate, :plates, :av_type, :av_part, :qstr 
 
   def default_context 
 
