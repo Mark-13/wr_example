@@ -11,11 +11,11 @@ module KoHelper
     
     @p = "/mysite/wr_view_ko/"
         
-    if (ENV["RAILS_ENV"] == :development)
-      @pi = "http://wr_example.s3-website-us-east-1.amazonaws.com/public/static/"
-    else
+    #if (ENV["RAILS_ENV"] == :development)
+    #  @pi = "http://wr_example.s3-website-us-east-1.amazonaws.com/public/static/"
+    #else
       @pi = "/mysite/static/"
-    end
+    #end
         
     @r = 3
     
