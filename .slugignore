@@ -15,4 +15,4 @@
 /tmp
 
 
-/public/mysite/static/*
+# /public/mysite/static/*
