@@ -5,11 +5,18 @@ module KoHelper
   def default_context 
 
    params[:nocache] = nil
-
+    
+    
     @i_n = 4
     
     @p = "/mysite/wr_view_ko/"
-    @pi = "/mysite/static/"
+        
+    if (ENV["RAILS_ENV"] == :development)
+      @pi = "http://wr_example.s3-website-us-east-1.amazonaws.com/public/static/"
+    else
+      @pi = "/mysite/static/"
+    end
+        
     @r = 3
     
     wc0 = {dir: 'wr_webcube', img: 36, fgnd: 836, bgnd: 835, 
