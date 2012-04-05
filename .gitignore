@@ -15,5 +15,5 @@
 /tmp
 
 
-/public/mysite/static/*
-/public/website/media/*
+/public/mysite/static/
+/public/website/media/
