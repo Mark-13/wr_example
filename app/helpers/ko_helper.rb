@@ -11,7 +11,7 @@ module KoHelper
     @p = "/mysite/wr_view_ko/"
     @pi = "/mysite/static/"
 
-    @pi = $AWS_S3_PATH + pi if ENV["RAILS_ENV"] == "development"         
+    @pi = $AWS_S3_PATH + pi if ENV["RAILS_ENV"] == "production"         
 
     @r = 3
     
