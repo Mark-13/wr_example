@@ -5,18 +5,14 @@ module KoHelper
   def default_context 
 
    params[:nocache] = nil
-    
-    
+
     @i_n = 4
     
     @p = "/mysite/wr_view_ko/"
-        
-    #if (ENV["RAILS_ENV"] == :development)
-    #  @pi = "http://wr_example.s3-website-us-east-1.amazonaws.com/public/static/"
-    #else
-      @pi = "/mysite/static/"
-    #end
-        
+    @pi = "/mysite/static/"
+
+    @pi = $AWS_S3_PATH + pi if ENV["RAILS_ENV"] == "production"         
+
     @r = 3
     
     wc0 = {dir: 'wr_webcube', img: 36, fgnd: 836, bgnd: 835, 

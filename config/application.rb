@@ -18,6 +18,8 @@ end
 module WrExample
   class Application < Rails::Application
 
+    $AWS_S3_PATH =  "s3.amazonaws.com/wr_example"
+	
     config.action_controller.include_all_helpers = false
 
     # Settings in config/environments/* take precedence over those specified here.

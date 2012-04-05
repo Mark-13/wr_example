@@ -1,4 +1,9 @@
-lc_ids = Array.new(4).map{rand(2**49..2**50)}
+
+$S = "Hello "
 
 
-puts lc_ids
+t = "Bye"
+
+t = $S+t
+
+puts t
