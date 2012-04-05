@@ -19,7 +19,7 @@
       <%= raw "width='#{q.width}' height='#{q.height}' blendMode='ALPHA' type='APP' e_wyswyg='true'/>"  %>  
 
   <% when 'swf' %>           
-    <%= raw "source='#{pi+av_part[0].content+qstr}' width='#{q.width}' height='#{q.height}' blendMode='ALPHA' e_wyswyg='true' type='APP' />" %>
+    <%= raw "source='#{uri(pi)+av_part[0].content+qstr}' width='#{q.width}' height='#{q.height}' blendMode='ALPHA' e_wyswyg='true' type='APP' />" %>
   <% end %>
 
 <% end %>
