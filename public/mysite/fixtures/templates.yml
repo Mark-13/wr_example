@@ -1100,5 +1100,5 @@ id_184:
   id: 184
   plate_id: 14
   name: query_string
-  text: "?c=0xcc9966&url=/mysite/static/trees.jpg"
+  text: "\"?c=0xcc9966&url=#{uri(pi)}trees.jpg\""
   
