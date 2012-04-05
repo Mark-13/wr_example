@@ -1,9 +1,11 @@
+require 'uri'
 
-$S = "Hello "
+def uri(s)
+  URI.escape(s, /[^#{URI::PATTERN::UNRESERVED}]/)
+end
+
+$S = uri "Hello:::??? "
 
 
-t = "Bye"
 
-t = $S+t
-
-puts t
+puts $S

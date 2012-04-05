@@ -70,7 +70,7 @@
 
       private function S_Init(e:Event) {	       
 	
-        play(session.play || parameters.play)
+        //play(session.play || parameters.play)
       }
       
       public function play(bPlay:Boolean = true) {

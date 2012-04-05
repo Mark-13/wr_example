@@ -2,7 +2,7 @@
 
 <% content_sub :img_base do %>
   <% if av_type == 'mp3' || av_type == 'flv' %>
-    <img n="1" source=<%= raw "'wr_video/wr_media_ctrl#{r}.swf?src=#{pi}#{av_part[0].content}&lc_id=#{session[:lc_id][0]}'"%> width="75" height="40" blendMode="NORMAL" type="APP" />
+    <img n="1" source=<%= raw "'wr_video/wr_media_ctrl#{r}.swf?src=#{uri(pi)}#{av_part[0].content}&lc_id=#{session[:lc_id][0]}'"%> width="75" height="40" blendMode="NORMAL" type="APP" />
   <% end %>
 <% end %>
 

@@ -10,12 +10,12 @@
 
   <% case av_type %>
   <% when 'mp3' %>
-      <%=  "source='wr_video/wr_sound#{r}.swf?src="%><% av_part.each {|s| concat (pi+s.content+';')}%><%= raw "&lc_id=#{session[:lc_id][0]} '"%> 
+      <%=  "source='wr_video/wr_sound#{r}.swf?src="%><% av_part.each {|s| concat uri(pi+s.content+';')}%><%= raw "&lc_id=#{session[:lc_id][0]} '"%> 
       <%=  raw "width='#{q.width}' height='#{q.height}' blendMode='NORMAL' type='APP' />" %>  
     <%=  raw "<img n='#{i_n}' source='#{pi+q.content}' width='#{q.width}' height='#{q.height}' blendMode='#{blendMode q.name}' wyswyg='true' />" %>
   
   <% when 'flv' %>
-      source=<%="'wr_video/wr_video#{r}.swf?src="%><% av_part.each {|s| concat (pi+s.content+';')}%><%= raw "&lc_id=#{session[:lc_id][0]}&w=#{q.width}&h=#{q.height} '"%> 
+      source=<%="'wr_video/wr_video#{r}.swf?src="%><% av_part.each {|s| concat uri(pi+s.content+';')}%><%= raw "&lc_id=#{session[:lc_id][0]}&w=#{q.width}&h=#{q.height} '"%> 
       <%= raw "width='#{q.width}' height='#{q.height}' blendMode='ALPHA' type='APP' e_wyswyg='true'/>"  %>  
 
   <% when 'swf' %>           

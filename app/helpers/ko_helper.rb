@@ -124,3 +124,6 @@ module KoHelper
 end
 
 
+def uri(s)
+  URI.escape(s, /[^#{URI::PATTERN::UNRESERVED}]/)
+end

@@ -74,6 +74,8 @@
 
         v.attachNetStream(ns);
 		
+	ns.checkPolicyFile = true
+
         ns.play(session.source);
       	ns.pause();
       
