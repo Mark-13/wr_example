@@ -6,7 +6,7 @@ module BeersHelper
   
   def pi
    ret = "/website/media/"
-   ret = $AWS_S3_PATH + ret if ENV["RAILS_ENV"] == "production"
+   ret = $AWS_S3_PATH + ret if ENV["RAILS_ENV"] == "development"
   end 
   
   def opp(drink)
