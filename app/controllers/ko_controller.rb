@@ -24,7 +24,7 @@ class KoController < ApplicationController
     if params[:id] =~ /^blog/
       render 'wr_ko_blog'       
     elsif av_part.count>0 and not td
-      render'wr_ko_av_plate'
+      render 'wr_ko_av_plate'
     else 
       render 'wr_ko_plate' + td.to_s
     end
